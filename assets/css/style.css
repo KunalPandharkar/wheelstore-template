@@ -1,9 +1,7 @@
 /*  X-Small devices (portrait phones, less than 576px)
  No media query for `xs` since this is the default in Bootstrap */
 
-.avatar-initials-mobile {
-    font-size: 0.8rem;
-}
+
 
 .language-change-mobile {
     font-size: 0.8rem;
@@ -33,50 +31,7 @@
 /* 
 <!-- Custom CSS for Location Strip --> */
 
-/* Location strip styling */
-.location-strip {
-    /* background-color: #f8f9fa; */
-    /* Light background */
-    color: #1C1C1C;
-    /* Dark text color */
-    font-size: 0.9rem;
-    /* Slightly smaller font */
-    border-bottom: 1px solid #e9ecef;
-    /* Bottom border for separation */
-    cursor: pointer;
-    /* Indicate it's clickable */
-}
 
-/* Location icon */
-.location-icon {
-    color: #007bff;
-    /* Primary color for the icon */
-    font-size: 1.2rem;
-    /* Larger icon size for visibility */
-}
-
-/* Location text */
-.location-text {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    flex-grow: 1;
-    font-weight: 500;
-    /* Allows text to grow and truncate if needed */
-}
-
-/* Update location button styling */
-.update-location {
-    color: #007bff;
-    /* Match the icon color */
-    font-size: 1rem;
-}
-
-/* Hover effect for the location strip */
-.location-strip:hover {
-    background-color: #e2e6ea;
-    /* Slightly darker background on hover */
-}
 
 /* < !-- Custom CSS for Enhanced Styling --> */
 
@@ -112,6 +67,7 @@
     /* Rounded corners */
 
     background-color: #f8f9fa;
+
     padding: 0.5rem;
 
     transition: box-shadow 0.3s ease;
@@ -192,36 +148,33 @@
     overflow: hidden;
     scroll-snap-align: start;
     transition: transform 0.3s ease;
+    min-width: 14rem;
+    max-width: 20rem;
 }
 
-.shop-card:hover {
-    transform: scale(1.05);
-}
+
 
 /* Card Image */
 .shop-card-image {
     width: 100%;
-    height: 120px;
+    height: 7.5rem;
     background-size: cover;
     background-position: center;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
 }
 
-/* Card Content */
-.shop-card-content {
-    padding: 12px;
-}
+
 
 .shop-card-title {
-    font-size: 1em;
+    font-size: 0.8rem;
     font-weight: bold;
     color: #333;
     margin-bottom: 8px;
 }
 
 .shop-card-description {
-    font-size: 0.9em;
+    font-size: 0.7rem;
     color: #555;
 }
 
