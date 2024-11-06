@@ -1,0 +1,992 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Stylesheeet -->
+    <link rel="stylesheet" href="assets/style.css">
+
+    <!-- material icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <title>Vego - Aapka Apna Garage !</title>
+
+</head>
+
+<body>
+
+    <!-- header - navigation bar start-->
+    <section class="topnavbar">
+        <nav class="navbar navbar-expand-xl navbar-dark redbg" aria-label="Main navigation">
+            <div class="container-fluid">
+
+                <button class="navbar-toggler p-0 border-0 homenavtoggle" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#mob-sidebar" aria-controls="mob-sidebar">
+                    <span id="sb-toggle" class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- logo -->
+                <a id="vego-logo" class="navbar-brand " href="#">
+                    <img src="assets/images/logo.png" alt="logo" class=" align-text-top">
+                </a>
+                <!-- logo end -->
+
+                <!-- lang mobile-->
+                <div id="langchange" class="dropdown langmob">
+                    <a class="text-light dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        En
+                    </a>
+                    <ul id="langchangeitems" class="dropdown-menu  dropdown-menu-end dropdown-menu-lg-start"
+                        aria-labelledby="dropdownMenu2">
+                        <li><button class="dropdown-item" type="button">Marathi</button></li>
+                        <li><button class="dropdown-item" type="button">Japanese</button></li>
+                        <li><button class="dropdown-item" type="button">German</button></li>
+                    </ul>
+                </div>
+                <!-- lang end -->
+
+                <!-- searchbar -->
+                <div class="input-group searchbargrp">
+                    <input type="text" class="form-control" placeholder="Search For Garages and Service Centers"
+                        aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <button id="sbarbtn" class="btn" type="button" id="button-addon2">
+                        <span class="material-icons">
+                            search
+                        </span>
+                    </button>
+                </div>
+                <!-- searchbar end -->
+
+                <!-- navbar items in desktop -->
+                <div id="desknavitems" class="navbar-collapse offcanvas-collapse">
+                    <!-- lang -->
+                    <div id="langchange" class="dropdown">
+                        <a class="text-light dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            En
+                        </a>
+                        <ul id="langchangeitems" class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                            <li><button class="dropdown-item" type="button">Marathi</button></li>
+                            <li><button class="dropdown-item" type="button">Japanese</button></li>
+                            <li><button class="dropdown-item" type="button">German</button></li>
+                        </ul>
+                    </div>
+                    <!-- lang end -->
+                    <li>
+                        <a href="#" class="navlinks text-white">
+
+                            <span class="material-icons homelink-active">
+                                home
+                            </span>
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="navlinks text-white">
+
+                            <span class="material-icons">
+                                miscellaneous_services
+                            </span>
+
+                            Services
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="navlinks text-white">
+
+                            <span class="material-icons">
+                                engineering
+                            </span>
+
+                            Work With Us
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="navlinks text-white">
+
+                            <span class="material-icons">
+                                call
+                            </span>
+
+                            Contact Us
+                        </a>
+                    </li>
+
+                    <li data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                        <a href="#" class="navlinks text-white">
+
+                            <span class="material-icons">
+                                account_circle
+                            </span>
+
+                            Profile
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="navlinks text-white" data-bs-toggle="offcanvas"
+                            data-bs-target="#locationoffcanvas" aria-controls="locationoffcanvas">
+
+                            <span class="material-icons">
+                                my_location
+                            </span>
+
+                            Purna - 431512
+                        </a>
+                    </li>
+
+
+                </div>
+        </nav>
+
+
+        <!-- user location section -->
+        <div class="nav-scroller bg-body ">
+            <nav class="nav nav-underline " aria-label="Secondary navigation">
+                <div class="nav-link" data-bs-toggle="offcanvas" data-bs-target="#locationoffcanvas"
+                    aria-controls="locationoffcanvas">
+                    <div class="locationicon">
+                        <span class="material-icons ">
+                            my_location
+                        </span>
+                    </div>
+                    <p class="cityname">Near Me</p>
+                </div>
+
+                <div class="nav-link">
+                    <div class="cityimage">
+                        <img src="assets/images/Chennai.webp" alt="">
+                    </div>
+                    <p class="cityname">Aurangabad</p>
+                </div>
+                <div class="nav-link">
+                    <div class="cityimage">
+                        <img src="assets/images/delhi.webp" alt="">
+                    </div>
+                    <p class="cityname">Purna</p>
+                </div>
+                <div class="nav-link">
+                    <div class="cityimage">
+                        <img src="assets/images/bangalore.webp" alt="">
+                    </div>
+                    <p class="cityname">Pune</p>
+                </div>
+                <div class="nav-link">
+                    <div class="cityimage">
+                        <img src="assets/images/Chennai.webp" alt="">
+                    </div>
+                    <p class="cityname">Hydrebad</p>
+                </div>
+                <div class="nav-link">
+                    <div class="cityimage">
+                        <img src="assets/images/delhi.webp" alt="">
+                    </div>
+                    <p class="cityname">Parbhani</p>
+                </div>
+                <div class="nav-link">
+                    <div class="cityimage">
+                        <img src="assets/images/bangalore.webp" alt="">
+                    </div>
+                    <p class="cityname">Nanded</p>
+                </div>
+                <div class="nav-link">
+                    <div class="cityimage">
+                        <img src="assets/images/Chennai.webp" alt="">
+                    </div>
+                    <p class="cityname">Aurangabad</p>
+                </div>
+                <div class="nav-link">
+                    <div class="cityimage">
+                        <img src="assets/images/delhi.webp" alt="">
+                    </div>
+                    <p class="cityname">Purna</p>
+                </div>
+                <div class="nav-link">
+                    <div class="cityimage">
+                        <img src="assets/images/bangalore.webp" alt="">
+                    </div>
+                    <p class="cityname">Pune</p>
+                </div>
+                <div class="nav-link">
+                    <div class="cityimage">
+                        <img src="assets/images/Chennai.webp" alt="">
+                    </div>
+                    <p class="cityname">Hydrebad</p>
+                </div>
+                <div class="nav-link">
+                    <div class="cityimage">
+                        <img src="assets/images/delhi.webp" alt="">
+                    </div>
+                    <p class="cityname">Parbhani</p>
+                </div>
+                <div class="nav-link">
+                    <div class="cityimage">
+                        <img src="assets/images/bangalore.webp" alt="">
+                    </div>
+                    <p class="cityname">Nanded</p>
+                </div>
+            </nav>
+        </div>
+        <!-- end user location section -->
+
+        <!-- sidebar in mobile start -->
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="mob-sidebar" aria-labelledby="mob-sidebarLabel">
+
+            <!-- sidebar header -->
+            <div id="mobsidebarheader" class="">
+                <a class="float-end" data-bs-dismiss="offcanvas" aria-label="Close">
+                    <span class="material-icons text-white-50">
+                        close
+                    </span>
+                </a>
+                <div id="mobsidebarusername" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                    aria-controls="offcanvasRight" onclick='location.href = "userprofile.html"'>
+                    <p><em>Hello, Kunal Pandharkar</em> <span class="material-icons text-white-50">edit_note</span></p>
+                    <p class="mobno">7774843561</p>
+                </div>
+            </div>
+            <!-- sidebar header end -->
+
+
+            <!-- sidebar links start -->
+            <div id="mobsidebaritems">
+
+                <div onclick="location.href=''" class="mobsidebaritem">
+                    <a href="">Home</a>
+                    <span class="material-icons">
+                        navigate_next
+                    </span>
+                </div>
+
+                <div onclick="location.href=''" class="mobsidebaritem">
+                    <a href="">Emergency Service</a>
+                    <span class="material-icons">
+                        navigate_next
+                    </span>
+                </div>
+
+                <div onclick="location.href=''" class="mobsidebaritem">
+                    <a href="">Nearby Garages</a>
+                    <span class="material-icons">
+                        navigate_next
+                    </span>
+                </div>
+
+                <div onclick="location.href=''" class="mobsidebaritem">
+                    <a href="">Nearby Service Centers</a>
+                    <span class="material-icons">
+                        navigate_next
+                    </span>
+                </div>
+
+                <div onclick="location.href=''" class="mobsidebaritem">
+                    <a href="">Work With Us</a>
+                    <span class="material-icons">
+                        navigate_next
+                    </span>
+                </div>
+
+                <div onclick="location.href=''" class="mobsidebaritem">
+                    <a href="">Contact Us</a>
+                    <span class="material-icons">
+                        navigate_next
+                    </span>
+                </div>
+
+                <div onclick="location.href=''" class="mobsidebaritem">
+                    <a href="">Login/SignUp</a>
+                    <span class="material-icons">
+                        navigate_next
+                    </span>
+                </div>
+
+            </div>
+            <!-- sidebar links end -->
+
+        </div>
+        <!-- sidebar in mobile end -->
+
+        <!-- location offcanvas -->
+        <div class="offcanvas offcanvas-bottom" tabindex="-1" id="locationoffcanvas"
+            aria-labelledby="locationoffcanvasLabel">
+
+            <div class="offcanvas-body small">
+                <h6><strong>Choose Your Location</strong></h6>
+                <span class="text-secondary">Select a delivery location to see product availability and delivery
+                    options</span>
+
+                <div id="defaultaddress">
+                    <span id="defname"><strong> Samruddhi Vaidya -</strong></span>
+                    <span id="defcity"><strong>AURANGABAD</strong></span>
+                    <span id="defpin"> Cidco-N6, Shivaji Nagar 431009</span>
+                </div>
+
+                <a href="" class="text-primary"><small>Change or edit address</small></a>
+                <hr>
+
+                <div class="input-group mt-3 mb-3">
+                    <input type="text" class="form-control" placeholder="Enter Your Location"
+                        aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <button class="btn btn-secondary" type="button" id="button-addon2">
+                        Detect
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- location offcanvas end-->
+
+    </section>
+    <!-- header - navigation bar end -->
+
+    <div class="b-example-divider"></div>
+    <!-- vego services -->
+    <section class="sectioncolor">
+        <div class="siteheading">
+            <h6>
+                Our Services
+            </h6>
+        </div>
+        <div class="headingunderline"></div>
+        <div class="vegoservices text-center text-secondary">
+            <div class="service emg">
+                <img src="assets/images/emergency.png" alt="">
+                <p>Emergency</p>
+            </div>
+            <div class="service emg">
+                <img src="assets/images/schedule.png" alt="">
+                <p>Schedule Service</p>
+            </div>
+            <div class="service">
+                <img src="assets/images/garage.png" alt="">
+                <p>Garages</p>
+            </div>
+            <div class="service">
+                <img src="assets/images/service-center.png" alt="">
+                <p>Service Centers</p>
+            </div>
+
+            <div class="service">
+                <img src="assets/images/car-wash.png" alt="">
+                <p>Vehicle Wash</p>
+            </div>
+            <div class="service">
+                <img src="assets/images/workshop.png" alt="">
+                <p>Workshop</p>
+            </div>
+        </div>
+
+    </section>
+    <!-- end vego services -->
+
+    <div class="b-example-divider"></div>
+
+    <!-- nearby garage -->
+    <section class="sectioncolor pb-2">
+        <div class="siteheading">
+            <h6>
+                Nearby Garages
+            </h6>
+        </div>
+        <div class="headingunderline"></div>
+
+
+        <div class="topshops">
+
+
+            <div class="scroll">
+                <div class="horizontal-scroll">
+                    <div class="scroll-container">
+
+                        <div class="shopcard">
+                            <img src="assets/images/garage1.jpg" alt="">
+                            <div class="shopinfocard">
+                                <h5>Arihant Honda Garage</h5>
+                                <small>2-Wheeler</small>
+                                <span class=" servicebrand">3km </span>
+                            </div>
+                        </div>
+                        <div class="shopcard">
+                            <img src="assets/images/garage2.jpg" alt="">
+                            <div class="shopinfocard">
+                                <h5>Arihant Honda Garage</h5>
+                                <small>2-Wheeler</small>
+                                <span class=" servicebrand">3km </span>
+                            </div>
+                        </div>
+                        <div class="shopcard">
+                            <img src="assets/images/garage3.jpg" alt="">
+                            <div class="shopinfocard">
+                                <h5>Arihant Honda Garage</h5>
+                                <small>2-Wheeler</small>
+                                <span class=" servicebrand">3km </span>
+                            </div>
+                        </div>
+                        <div class="shopcard">
+                            <img src="assets/images/garage4.jpg" alt="">
+                            <div class="shopinfocard">
+                                <h5>Arihant Honda Garage</h5>
+                                <small>2-Wheeler</small>
+                                <span class=" servicebrand">3km </span>
+                            </div>
+                        </div>
+                        <div class="shopcard mx-3">
+                            <img src="assets/images/garage1.jpg" alt="">
+                            <div class="shopinfocard">
+                                <h5>Arihant Honda Garage</h5>
+                                <small>2-Wheeler</small>
+                                <span class=" servicebrand">3km </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="scroll-container">
+
+                        <div class="shopcard">
+                            <img src="assets/images/garage1.jpg" alt="">
+                            <div class="shopinfocard">
+                                <h5>Arihant Honda Garage</h5>
+                                <small>2-Wheeler</small>
+                                <span class=" servicebrand">3km </span>
+                            </div>
+                        </div>
+                        <div class="shopcard">
+                            <img src="assets/images/garage2.jpg" alt="">
+                            <div class="shopinfocard">
+                                <h5>Arihant Honda Garage</h5>
+                                <small>2-Wheeler</small>
+                                <span class=" servicebrand">3km </span>
+                            </div>
+                        </div>
+                        <div class="shopcard">
+                            <img src="assets/images/garage3.jpg" alt="">
+                            <div class="shopinfocard">
+                                <h5>Arihant Honda Garage</h5>
+                                <small>2-Wheeler</small>
+                                <span class=" servicebrand">3km </span>
+                            </div>
+                        </div>
+                        <div class="shopcard">
+                            <img src="assets/images/garage4.jpg" alt="">
+                            <div class="shopinfocard">
+                                <h5>Arihant Honda Garage</h5>
+                                <small>2-Wheeler</small>
+                                <span class=" servicebrand">3km </span>
+                            </div>
+                        </div>
+                        <div class="shopcard mx-3">
+                            <img src="assets/images/garage1.jpg" alt="">
+                            <div class="shopinfocard">
+                                <h5>Arihant Honda Garage</h5>
+                                <small>2-Wheeler</small>
+                                <span class=" servicebrand">3km </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+    <!-- end nearby garages -->
+    <div class="b-example-divider"></div>
+
+    <!-- nearby service centers -->
+    <section class="sectioncolor pb-2">
+        <div class="siteheading">
+            <h6>
+                Nearby Service Centers
+            </h6>
+        </div>
+        <div class="headingunderline"></div>
+
+
+        <div class="topshops">
+
+
+            <div class="scroll">
+                <div class="horizontal-scroll">
+                    <div class="scroll-container">
+
+                        <div class="shopcard">
+                            <img src="assets/images/garage1.jpg" alt="">
+                            <div class="shopinfocard">
+                                <h5>Arihant Honda Garage</h5>
+                                <small class="text-secondary">2-Wheeler</small>
+                                <span class="text-secondary fw-bold servicebrand">Honda</span>
+                                <span class=" servicebrand">3km</span>
+                            </div>
+
+                        </div>
+                        <div class="shopcard">
+                            <img src="assets/images/garage2.jpg" alt="">
+                            <div class="shopinfocard">
+                                <h5>Arihant Honda Garage</h5>
+                                <small class="text-secondary">2-Wheeler</small>
+                                <span class="text-secondary fw-bold  servicebrand">Honda</span>
+                                <span class=" servicebrand">3km</span>
+                            </div>
+                        </div>
+                        <div class="shopcard">
+                            <img src="assets/images/garage3.jpg" alt="">
+                            <div class="shopinfocard">
+                                <h5>Arihant Honda Garage</h5>
+                                <small class="text-secondary">2-Wheeler</small>
+                                <span class="text-secondary fw-bold  servicebrand">Honda</span>
+                                <span class=" servicebrand">3km</span>
+                            </div>
+                        </div>
+                        <div class="shopcard">
+                            <img src="assets/images/garage4.jpg" alt="">
+                            <div class="shopinfocard">
+                                <h5>Arihant Honda Garage</h5>
+                                <small class="text-secondary">2-Wheeler</small>
+                                <span class="text-secondary fw-bold  servicebrand">Honda</span>
+                                <span class=" servicebrand">3km</span>
+                            </div>
+                        </div>
+                        <div class="shopcard mx-3">
+                            <img src="assets/images/garage1.jpg" alt="">
+                            <div class="shopinfocard">
+                                <h5>Arihant Honda Garage</h5>
+                                <small class="text-secondary">2-Wheeler</small>
+                                <span class="text-secondary fw-bold  servicebrand">Honda</span>
+                                <span class=" servicebrand">3km</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="scroll-container">
+
+                        <div class="shopcard">
+                            <img src="assets/images/garage1.jpg" alt="">
+                            <div class="shopinfocard">
+                                <h5>Arihant Honda Garage</h5>
+                                <small class="text-secondary">2-Wheeler</small>
+                                <span class="text-secondary fw-bold  servicebrand">Honda</span>
+                                <span class=" servicebrand">3km</span>
+                            </div>
+                        </div>
+                        <div class="shopcard">
+                            <img src="assets/images/garage2.jpg" alt="">
+                            <div class="shopinfocard">
+                                <h5>Arihant Honda Garage</h5>
+                                <small class="text-secondary">2-Wheeler</small>
+                                <span class="text-secondary fw-bold  servicebrand">Honda</span>
+                                <span class=" servicebrand">3km</span>
+                            </div>
+                        </div>
+                        <div class="shopcard">
+                            <img src="assets/images/garage3.jpg" alt="">
+                            <div class="shopinfocard">
+                                <h5>Arihant Honda Garage</h5>
+                                <small class="text-secondary">2-Wheeler</small>
+                                <span class="text-secondary fw-bold  servicebrand">Honda</span>
+                                <span class=" servicebrand">3km</span>
+                            </div>
+                        </div>
+                        <div class="shopcard">
+                            <img src="assets/images/garage4.jpg" alt="">
+                            <div class="shopinfocard">
+                                <h5>Arihant Honda Garage</h5>
+                                <small class="text-secondary">2-Wheeler</small>
+                                <span class="text-secondary fw-bold  servicebrand">Honda</span>
+                                <span class=" servicebrand">3km</span>
+                            </div>
+                        </div>
+                        <div class="shopcard mx-3">
+                            <img src="assets/images/garage1.jpg" alt="">
+                            <div class="shopinfocard">
+                                <h5>Arihant Honda Garage</h5>
+                                <small class="text-secondary">2-Wheeler</small>
+                                <span class="text-secondary fw-bold  servicebrand">Honda</span>
+                                <span class=" servicebrand">3km</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+    <!-- end service centers -->
+
+    <div class="b-example-divider"></div>
+
+    <!-- find right service center -->
+    <section class=" sectioncolor pb-2">
+        <div class="siteheading">
+            <h6>
+                Find The Right Service Center
+            </h6>
+        </div>
+        <div class="headingunderline"></div>
+        <div class="findserviceform">
+            <form action="">
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Brand</label>
+                    <input type="email" placeholder="Honda" class="form-control" id="exampleInputEmail1"
+                        aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">make sure you have entered correct location</div>
+                </div>
+                <label for="inputState" class="form-label">Type Wheeler</label>
+                <select id="inputState" class="form-select">
+                    <option>two-wheeler</option>
+                    <option>three-wheeler</option>
+                    <option>four-wheeler</option>
+                    <option>twleve-wheeler</option>
+                    <option>other-wheeler</option>
+
+                </select>
+                <div class="d-grid mt-4">
+                    <button class="btn btn-sm" type="button">Find Service Center</button>
+                </div>
+            </form>
+        </div>
+
+    </section>
+    <!-- end find right service center -->
+
+
+    <div class="b-example-divider"></div>
+    <!-- ======= Footer ======= -->
+    <footer id="footer" class="">
+        <div class="footer-top bg-dark">
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="col-lg-6">
+
+                        <div class="row">
+
+                            <div class="col-sm-6">
+
+                                <div class="footer-info">
+                                    <a href="https://kp-technologies.com/" class="logo me-auto"><img
+                                            src="assets/images/logo.png" alt="" class="img-fluid"></a>
+
+                                    <p>We are here to provide everything for your Business and to facilitate you.
+                                        KpTechnologies will make your business endless and worryless !
+                                    </p>
+                                </div>
+
+                                <div class="footer-newsletter">
+                                    <h4>Our Newsletter</h4>
+                                    <p>
+                                        Sign up to our newsletter, so you can be the first to find out the latest news
+                                        and tips about our applications, as well as general updates !
+                                    </p>
+                                    <form action="" method="post" class="mt-3">
+                                        <input type="email" name="email"><input type="submit" value="Subscribe">
+                                    </form>
+                                </div>
+
+                            </div>
+
+                            <div class="col-sm-6">
+                                <div class="footer-links">
+                                    <h4>Useful Links</h4>
+                                    <ul>
+                                        <li> <a href="#hero">Home</a></li>
+                                        <li> <a href="#services">Services</a> </li>
+                                        <li> <a href="#features">Products</a></li>
+                                        <li> <a href="android_development">Android apps</a></li>
+                                        <li> <a href="website_development">Websites</a></li>
+
+                                    </ul>
+                                </div>
+
+                                <div class="footer-links">
+                                    <h4>Contact Us</h4>
+                                    <p>
+                                        Kunal Niwas, <br> Adarsh Colony, Purna 431511<br> Maharashtra <br>
+                                        <strong>Phone:</strong> <a href="tel:7774843561">7774843561</a><br>
+                                        <strong>Email:</strong> <a
+                                            href="mailto:kptechnologiz@gmail.com">kptechnologiz@gmail.com</a><br>
+                                    </p>
+                                </div>
+
+                                <div class="social-links">
+                                    <a href="https://wa.me/message/R7FU5JKF6726K1" class="youtube">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+                                            <path
+                                                d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" />
+                                        </svg>
+                                    </a>
+                                    <a href="https://twitter.com/Kunal81082144?s=09" class="twitter">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                                            <path
+                                                d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+                                        </svg>
+                                    </a>
+                                    <a href="https://www.facebook.com/KPTechnologies-107027698117641/" class="facebook">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                                            <path
+                                                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                                        </svg></a>
+                                    <a href="https://www.instagram.com/kp_technologies/" class="instagram">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                                            <path
+                                                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                                        </svg>
+                                    </a>
+                                    <a href="https://www.linkedin.com/in/kunal-pandharkar-513994188" class="linkedin">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                                            <path
+                                                d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z" />
+                                        </svg>
+                                    </a>
+
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-6" id="feedbackform">
+
+                        <div class="form">
+
+                            <h4>Send us a message</h4>
+                            <!-- <p>We would love to hear from you, feel free to contact us anytime !</p> -->
+
+                            <form role="form" class="php-email-form" method="POST">
+                                <div class="form-group">
+                                    <input type="text" name="name" class="form-control" id="name"
+                                        placeholder="Your Name" required>
+                                </div>
+                                <div class="form-group mt-3">
+                                    <input type="email" class="form-control" name="email" id="email"
+                                        placeholder="Your Email" required>
+                                </div>
+                                <div class="form-group mt-3">
+                                    <input type="text" class="form-control" name="subject" id="subject"
+                                        placeholder="Subject" required>
+                                </div>
+                                <div class="form-group mt-3">
+                                    <textarea class="form-control" name="message" rows="5" placeholder="Message"
+                                        required></textarea>
+                                </div>
+
+
+
+                                <div class="text-center mt-2">
+
+                                    <button type="submit" title="Send Message">Send
+                                        Message</button>
+                                </div>
+                            </form>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div>
+
+        </div>
+
+
+    </footer>
+    <!-- End  Footer -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+        <div class="footer-top bg-dark">
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="col-lg-6 col-6">
+
+                        <div class="row">
+
+
+                            <div class="col-sm-3">
+                                <div class="footer-links">
+                                    <h4>Maharashtra</h4>
+                                    <ul>
+                                        <li><a href="#">Parbhani</a></li>
+                                        <li><a href="#">Aurangabad</a></li>
+                                        <li><a href="#">Pune</a></li>
+                                        <li><a href="#">Mumbai</a></li>
+                                        <li><a href="#">Nanded</a></li>
+
+                                    </ul>
+                                </div>
+
+                            </div>
+
+                            <div class="col-sm-3">
+                                <div class="footer-links">
+                                    <h4>Cities</h4>
+                                    <ul>
+                                        <li><a href="#">Ahemadnagar</a></li>
+                                        <li><a href="#">Latur</a></li>
+                                        <li><a href="#">Thane</a></li>
+                                        <li><a href="#">Jalna</a></li>
+                                        <li><a href="#">Jalgaon</a></li>
+
+                                    </ul>
+                                </div>
+
+
+
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="footer-links">
+                                    <h4>Cities</h4>
+                                    <ul>
+                                        <li><a href="#">Nagpur</a></li>
+                                        <li><a href="#">Akola</a></li>
+                                        <li><a href="#">Amravati</a></li>
+                                        <li><a href="#">Bhandara</a></li>
+                                        <li><a href="#">Hingoli</a></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+
+                            <div class="col-sm-3">
+                                <div class="footer-links">
+                                    <h4>Cities</h4>
+                                    <ul>
+                                        <li><a href="#">Buldhana</a></li>
+                                        <li><a href="#">Dhule</a></li>
+                                        <li><a href="#">Gondia</a></li>
+                                        <li><a href="#">Kolhapur</a></li>
+                                        <li><a href="#">Nashik</a></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                    <div class="col-lg-6 col-6">
+
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <div class="footer-links">
+                                    <h4>Cities</h4>
+                                    <ul>
+                                        <li><a href="#">Osmanabad</a></li>
+                                        <li><a href="#">Palghar</a></li>
+                                        <li><a href="#">Raigad</a></li>
+                                        <li><a href="#">Ratnagiri</a></li>
+                                        <li><a href="#">Sangli</a></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="footer-links">
+                                    <h4>Cities</h4>
+                                    <ul>
+                                        <li><a href="#">Satara</a></li>
+                                        <li><a href="#">Yavatmal</a></li>
+                                        <li><a href="#">Solapur</a></li>
+                                        <li><a href="#">Wardha</a></li>
+                                        <li><a href="#">Washim</a></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+
+                            <div class="col-sm-3">
+                                <div class="footer-links">
+                                    <h4>Other Cities</h4>
+                                    <ul>
+                                        <li><a href="#">Delhi</a></li>
+                                        <li><a href="#">Bangalore</a></li>
+                                        <li><a href="#">Hydreabad</a></li>
+                                        <li><a href="#">Kolkatta</a></li>
+                                        <li><a href="#">Jaipur</a></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+
+                            <div class="col-sm-3">
+                                <div class="footer-links">
+                                    <h4>Other Cities</h4>
+                                    <ul>
+                                        <li><a href="#">Amritsar</a></li>
+                                        <li><a href="#">Ahmedabad</a></li>
+                                        <li><a href="#">Chennai</a></li>
+                                        <li><a href="#">Indore</a></li>
+                                        <li><a href="#">Agra</a></li>
+                                    </ul>
+                                </div>
+
+
+
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+            </div>
+            <div class="container" id="copyright">
+                <div class="copyright">
+                    &copy; Copyright <a href="https://kp-technologies.com"><strong>KpTechnologies</strong></a>. All
+                    Rights
+                    Reserved
+                </div>
+                <div class="credits">
+
+                </div>
+            </div>
+        </div>
+
+        <div>
+
+        </div>
+
+
+    </footer>
+    <!-- End  Footer -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

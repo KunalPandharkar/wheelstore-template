@@ -1,0 +1,402 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Stylesheeet -->
+    <link rel="stylesheet" href="assets/style.css">
+
+    <!-- material icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <title>Vego - Aapka Apna Garage !</title>
+
+</head>
+
+<body>
+
+
+    <!-- header - navigation bar start-->
+    <section class="topnavbar">
+        <nav class="navbar navbar-expand-xl navbar-dark redbg" aria-label="Main navigation" id="garagenavbar">
+            <div class="container-fluid">
+
+                <!-- searchbar -->
+                <div class="input-group searchbargrp searchbargaragelist">
+                    <button id="sbarbtn" class="btn " type="button">
+                        <span class="material-icons">
+                            arrow_back
+                        </span>
+                    </button>
+                    <input type="text" class="form-control" value="Aurangabad" aria-label="Recipient's username"
+                        aria-describedby="button-addon2">
+                    <button id="sbarbtn" class="btn " type="button">
+                        <span class="material-icons">
+                            close
+                        </span>
+                    </button>
+
+                </div>
+                <!-- searchbar end -->
+        </nav>
+
+        <!-- location offcanvas -->
+        <div class="offcanvas offcanvas-bottom" tabindex="-1" id="locationoffcanvas"
+            aria-labelledby="locationoffcanvasLabel">
+
+            <div class="offcanvas-body small">
+                <h6><strong>Choose Your Location</strong></h6>
+                <span class="text-secondary">Select a delivery location to see product availability and delivery
+                    options</span>
+
+                <div id="defaultaddress">
+                    <span id="defname"><strong> Samruddhi Vaidya -</strong></span>
+                    <span id="defcity"><strong>AURANGABAD</strong></span>
+                    <span id="defpin"> Cidco-N6, Shivaji Nagar 431009</span>
+                </div>
+
+                <a href="" class="text-primary"><small>Change or edit address</small></a>
+                <hr>
+
+                <div class="input-group mt-3 mb-3">
+                    <input type="text" class="form-control" placeholder="Enter Your Location"
+                        aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <button class="btn btn-secondary" type="button" id="button-addon2">
+                        Detect
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- location offcanvas end-->
+
+    </section>
+    <!-- header - navigation bar end -->
+
+    <!-- Filter and sort options -->
+    <div class="sortfilter" data-bs-toggle="offcanvas" data-bs-target="#sortcanvas" aria-controls="sortcanvas">
+        <div class="sort">
+            <span class="material-icons">
+                import_export
+            </span>
+            <p>Sort</p>
+        </div>
+        <div class="sort">
+            <span class="material-icons">
+                sort
+            </span>
+            <p> Filter</p>
+        </div>
+    </div>
+    <!-- end Filter and sort options -->
+    <div class="b-example-divider"></div>
+
+
+    <!-- garage cards section -->
+
+    <section class=" pb-2">
+
+        <div class="shopcardgaragelist ">
+            <div class="shoprow1">
+                <div class="shopimg">
+                    <img src="assets/images/garage1.jpg" alt="">
+                </div>
+                <div class="shopinfo">
+                    <div class="shopname">
+                        <h5>Arihant Honda Garage</h5>
+                    </div>
+                    <div class="shopratings">
+                        <span class="material-icons">
+                            star
+                        </span>
+                        <span class="material-icons">
+                            star
+                        </span>
+                        <span class="material-icons">
+                            star
+                        </span>
+                        <span class="material-icons">
+                            star
+                        </span>
+                        <span class="material-icons">
+                            star
+                        </span>
+                    </div>
+                    <div class="shopadress mt-1">
+                        <p class="text-secondary"><span class="material-icons">
+                                near_me
+                            </span> Mathura Nagar, Cidco N-6, Shivaji Nagar, Aurangabad 431512</p>
+                    </div>
+                </div>
+            </div>
+            <div class="shoprow2">
+                <div class="typewheeler text-secondary">
+                    <p>Local</p>
+                </div>
+                <div class="distance " style="margin-left: 0.5rem;color: var(--red)">
+                    <p> 50₹</p>
+                </div>
+                <div class="typewheeler">
+                    <p>Honda</p>
+                </div>
+            </div>
+            <div class="shoprow2">
+                <div class="openorclose">
+                    <p>Open Now</p>
+                </div>
+                <div class="distance">
+                    <p> <strong>4km</strong> </p>
+                </div>
+
+                <div class="typewheeler text-secondary">
+                    <p>2-Wheeler</p>
+                </div>
+            </div>
+        </div>
+        <div class="b-example-divider"></div>
+
+        <div class="shopcardgaragelist ">
+            <div class="shoprow1">
+                <div class="shopimg">
+                    <img src="assets/images/garage1.jpg" alt="">
+                </div>
+                <div class="shopinfo">
+                    <div class="shopname">
+                        <h5>Arihant Honda Garage</h5>
+                    </div>
+                    <div class="shopratings">
+                        <span class="material-icons">
+                            star
+                        </span>
+                        <span class="material-icons">
+                            star
+                        </span>
+                        <span class="material-icons">
+                            star
+                        </span>
+                        <span class="material-icons">
+                            star
+                        </span>
+                        <span class="material-icons">
+                            star
+                        </span>
+                    </div>
+                    <div class="shopadress mt-1">
+                        <p class="text-secondary"><span class="material-icons">
+                                near_me
+                            </span> Mathura Nagar, Cidco N-6, Shivaji Nagar, Aurangabad 431512</p>
+                    </div>
+                </div>
+            </div>
+            <div class="shoprow2">
+                <div class="typewheeler text-secondary">
+                    <p>Local</p>
+                </div>
+                <div class="distance " style="margin-left: 0.5rem;color: var(--red)">
+                    <p> 50₹</p>
+                </div>
+                <div class="typewheeler">
+                    <p>Honda</p>
+                </div>
+            </div>
+            <div class="shoprow2">
+                <div class="openorclose">
+                    <p>Open Now</p>
+                </div>
+                <div class="distance">
+                    <p> <strong>4km</strong> </p>
+                </div>
+
+                <div class="typewheeler text-secondary">
+                    <p>2-Wheeler</p>
+                </div>
+            </div>
+        </div>
+        <div class="b-example-divider"></div>
+        <div class="shopcardgaragelist ">
+            <div class="shoprow1">
+                <div class="shopimg">
+                    <img src="assets/images/garage1.jpg" alt="">
+                </div>
+                <div class="shopinfo">
+                    <div class="shopname">
+                        <h5>Arihant Honda Garage</h5>
+                    </div>
+                    <div class="shopratings">
+                        <span class="material-icons">
+                            star
+                        </span>
+                        <span class="material-icons">
+                            star
+                        </span>
+                        <span class="material-icons">
+                            star
+                        </span>
+                        <span class="material-icons">
+                            star
+                        </span>
+                        <span class="material-icons">
+                            star
+                        </span>
+                    </div>
+                    <div class="shopadress mt-1">
+                        <p class="text-secondary"><span class="material-icons">
+                                near_me
+                            </span> Mathura Nagar, Cidco N-6, Shivaji Nagar, Aurangabad 431512</p>
+                    </div>
+                </div>
+            </div>
+            <div class="shoprow2">
+                <div class="typewheeler text-secondary">
+                    <p>Local</p>
+                </div>
+                <div class="distance " style="margin-left: 0.5rem;color: var(--red)">
+                    <p> 50₹</p>
+                </div>
+                <div class="typewheeler">
+                    <p>Honda</p>
+                </div>
+            </div>
+            <div class="shoprow2">
+                <div class="openorclose">
+                    <p>Open Now</p>
+                </div>
+                <div class="distance">
+                    <p> <strong>4km</strong> </p>
+                </div>
+
+                <div class="typewheeler text-secondary">
+                    <p>2-Wheeler</p>
+                </div>
+            </div>
+        </div>
+        <div class="b-example-divider"></div>
+        <div class="shopcardgaragelist ">
+            <div class="shoprow1">
+                <div class="shopimg">
+                    <img src="assets/images/garage1.jpg" alt="">
+                </div>
+                <div class="shopinfo">
+                    <div class="shopname">
+                        <h5>Arihant Honda Garage</h5>
+                    </div>
+                    <div class="shopratings">
+                        <span class="material-icons">
+                            star
+                        </span>
+                        <span class="material-icons">
+                            star
+                        </span>
+                        <span class="material-icons">
+                            star
+                        </span>
+                        <span class="material-icons">
+                            star
+                        </span>
+                        <span class="material-icons">
+                            star
+                        </span>
+                    </div>
+                    <div class="shopadress mt-1">
+                        <p class="text-secondary"><span class="material-icons">
+                                near_me
+                            </span> Mathura Nagar, Cidco N-6, Shivaji Nagar, Aurangabad 431512</p>
+                    </div>
+                </div>
+            </div>
+            <div class="shoprow2">
+                <div class="typewheeler text-secondary">
+                    <p>Local</p>
+                </div>
+                <div class="distance " style="margin-left: 0.5rem;color: var(--red)">
+                    <p> 50₹</p>
+                </div>
+                <div class="typewheeler">
+                    <p>Honda</p>
+                </div>
+            </div>
+            <div class="shoprow2">
+                <div class="openorclose">
+                    <p>Open Now</p>
+                </div>
+                <div class="distance">
+                    <p> <strong>4km</strong> </p>
+                </div>
+
+                <div class="typewheeler text-secondary">
+                    <p>2-Wheeler</p>
+                </div>
+            </div>
+        </div>
+        <div class="b-example-divider"></div>
+
+
+
+
+
+        <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-center mt-2">
+                <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                    </a>
+                </li>
+                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                <li class="page-item"><a class="page-link" href="#">5</a></li>
+                <li class="page-item"><a class="page-link" href="#">6</a></li>
+
+                <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="offcanvas offcanvas-bottom" tabindex="-1" id="sortcanvas" aria-labelledby="sortcanvasLabel">
+            <div class="offcanvas-body small">
+                <h6><strong>Sort and Filter</strong></h6>
+
+                <select class="form-select sortinput" aria-label="Default select example" multiple>
+                    <option selected>Sort By Delivery Price : Low</option>
+                    <option value="1">Sort By Delivery Price : High</option>
+                    <option value="2">Sort By Distance</option>
+                    <option value="3">Sort By Ratings</option>
+                </select>
+
+                <select class="form-select" aria-label="Default select example" multiple>
+                    <option selected>Filter By : 2-wheeler</option>
+                    <option value="1">Filter By : 3-Wheeler</option>
+                    <option value="2">Filter By : 4-Wheeler</option>
+                    <option value="3">Filter By : Others</option>
+                    <option value="3">Filter By : Authorized</option>
+                    <option value="3">Filter By : Local</option>
+                </select>
+
+
+                <div class="d-grid mt-3">
+                    <button class="btn btn-sm" type="button">Apply Filters</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- end garage cards section -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
