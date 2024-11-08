@@ -736,7 +736,7 @@ progress {
     .container-md,
     .container-sm,
     .container-xl {
-        max-width: 1140px
+        max-width: 1400px
     }
 }
 
@@ -21263,7 +21263,7 @@ input[type=number] {
 }
 
 .list-checked-item[hover]:hover {
-    color: #e3324a
+    color: #008060
 }
 
 [class*=list-checked-bg-] .list-checked-item::before,
@@ -21272,7 +21272,7 @@ input[type=number] {
 }
 
 .list-checked-primary .list-checked-item::before {
-    background-image: url("data:image/svg+xml,%3csvg width='18' height='18' viewBox='0 0 18 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M13.3035 4.76425C13.5718 4.44865 14.0451 4.41027 14.3607 4.67853C14.6763 4.9468 14.7147 5.42012 14.4464 5.73572L8.07144 13.2357C7.79896 13.5563 7.31616 13.5901 7.00171 13.3105L3.62671 10.3105C3.31713 10.0354 3.28924 9.5613 3.56443 9.25172C3.83962 8.94213 4.31367 8.91424 4.62326 9.18943L7.42515 11.68L13.3035 4.76425Z' fill='%23e3324a'/%3e%3c/svg%3e")
+    background-image: url("data:image/svg+xml,%3csvg width='18' height='18' viewBox='0 0 18 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M13.3035 4.76425C13.5718 4.44865 14.0451 4.41027 14.3607 4.67853C14.6763 4.9468 14.7147 5.42012 14.4464 5.73572L8.07144 13.2357C7.79896 13.5563 7.31616 13.5901 7.00171 13.3105L3.62671 10.3105C3.31713 10.0354 3.28924 9.5613 3.56443 9.25172C3.83962 8.94213 4.31367 8.91424 4.62326 9.18943L7.42515 11.68L13.3035 4.76425Z' fill='%23008060'/%3e%3c/svg%3e")
 }
 
 .list-checked-bg-primary .list-checked-item::before {
@@ -25527,7 +25527,8 @@ input[type=number] {
     font-weight: 700;
     letter-spacing: .03125rem;
     text-transform: uppercase;
-    margin-bottom: 1rem
+    margin-bottom: 1.5rem;
+   
 }
 
 .text-dark {

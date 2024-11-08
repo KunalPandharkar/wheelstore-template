@@ -496,11 +496,9 @@
     </header>
     <!-- ========== END HEADER ========== -->
 
-
-
     <!-- Offcanvas -->
-    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel"
-        style="width: 75%;">
+    <div class="offcanvas offcanvas-start mobile-sidebar" tabindex="-1" id="offcanvasExample"
+        aria-labelledby="offcanvasExampleLabel" style="width: 75%;">
         <div class="offcanvas-header">
             <h5 class="offcanvas-title" id="offcanvasExampleLabel">Welcome, Kunal Pandharkar</h5>
             <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -551,8 +549,7 @@
     </div>
     <!-- End Offcanvas -->
 
-
-
+    <!-- location-box -->
     <div class="location-box">
 
         <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom"
@@ -574,286 +571,963 @@
             </div>
         </div>
     </div>
+    <!-- end location-box -->
 
 
+    <main id="content" role="main">
 
-    <div class="hero-section">
+        <div class="hero-section">
 
-        <!-- Hero -->
-        <div class="bg-primary-dark overflow-hidden">
-            <div class="container position-relative content-space-1">
-                <div class="w-lg-65 text-center mx-lg-auto">
-                    <h1 class="h2 text-white mb-3 heading-hero">How can we help ?
-                    </h1>
+            <!-- Hero -->
+            <div class="bg-primary-dark overflow-hidden">
+                <div class="container position-relative content-space-1">
+                    <div class="w-lg-65 text-center mx-lg-auto">
+                        <h1 class="h2 text-white mb-3 heading-hero">How can we help ?
+                        </h1>
 
-                    <!-- Input Card -->
-                    <div class="input-card search-box-hero mb-sm-3">
-                        <div class="input-card-form">
-                            <input type="text" class="form-control" placeholder="" id="search-input"
-                                aria-label="Search for answers">
+                        <!-- Input Card -->
+                        <div class="input-card search-box-hero mb-sm-3">
+                            <div class="input-card-form">
+                                <input type="text" class="form-control" placeholder="" id="search-input"
+                                    aria-label="Search for answers">
+                            </div>
+                            <button type="button" class="btn btn-primary btn-icon">
+                                <i class="bi-search"></i>
+                            </button>
                         </div>
-                        <button type="button" class="btn btn-primary btn-icon">
-                            <i class="bi-search"></i>
-                        </button>
+                        <!-- End Input Card -->
+
+                        <!-- Links -->
+                        <div class="d-none d-sm-flex justify-content-center align-items-center">
+                            <span class="text-white-70 me-2">Common troubleshooting topics:</span>
+
+                            <a class="link-bordered link-light" href="#">gulp</a>
+                            <span class="text-white me-1">,</span>
+                            <a class="link-bordered link-light" href="#">customization</a>
+                            <span class="text-white me-1">,</span>
+                            <a class="link-bordered link-light" href="#">refund</a>
+                            <span class="text-white me-1">,</span>
+                            <a class="link-bordered link-light" href="#">license</a>
+                        </div>
+                        <!-- End Links -->
                     </div>
-                    <!-- End Input Card -->
 
-                    <!-- Links -->
-                    <div class="d-none d-sm-flex justify-content-center align-items-center">
-                        <span class="text-white-70 me-2">Common troubleshooting topics:</span>
-
-                        <a class="link-bordered link-light" href="#">gulp</a>
-                        <span class="text-white me-1">,</span>
-                        <a class="link-bordered link-light" href="#">customization</a>
-                        <span class="text-white me-1">,</span>
-                        <a class="link-bordered link-light" href="#">refund</a>
-                        <span class="text-white me-1">,</span>
-                        <a class="link-bordered link-light" href="#">license</a>
-                    </div>
-                    <!-- End Links -->
                 </div>
-
-                <!-- Background Shapes -->
-                <div class="position-absolute" style="top: -6rem; left: -6rem;">
-                    <img src="../assets/svg/components/shape-1-soft-light.svg" alt="SVG" width="500"
-                        style="width: 12rem;">
-                </div>
-                <div class="position-absolute" style="bottom: -6rem; right: -7rem;">
-                    <img src="../assets/svg/components/shape-7-soft-light.svg" alt="SVG" width="250">
-                </div>
-                <!-- End Background Shapes -->
             </div>
+            <!-- End Hero -->
         </div>
-        <!-- End Hero -->
-    </div>
 
 
-
-    <div class="service-icons bg-soft-secondary   ">
-        <!-- Icons Grid Container -->
-        <div class="container pt-4 pb-4">
-            <span class="text-cap">CATEGORIES</span>
-            <div class="row row-cols-3 row-cols-md-3 row-cols-lg-6 g-4">
-                <!-- Icon Card Example -->
-                <div class="col">
-                    <div class="icon-card text-center">
-                        <i class="bi bi-tools icon"></i>
-                        <!-- <img src="assets/images/png/service-center.png" alt="" class="img-fluid service-img"> -->
-                        <h6 class="mt-2">Garages</h6>
+        <div class="service-icons bg-soft-secondary">
+            <!-- Icons Grid Container -->
+            <div class="container pt-4 pb-4">
+                <span class="text-cap">CATEGORIES</span>
+                <div class="row row-cols-3 row-cols-md-3 row-cols-lg-6 g-4">
+                    <!-- Icon Card Example -->
+                    <div class="col">
+                        <div class="icon-card text-center">
+                            <i class="bi bi-tools icon"></i>
+                            <!-- <img src="assets/images/png/service-center.png" alt="" class="img-fluid service-img"> -->
+                            <h6 class="mt-2">Garages</h6>
+                        </div>
                     </div>
-                </div>
-                <div class="col">
-                    <div class="icon-card text-center">
-                        <i class="bi bi-car-front icon"></i>
-                        <h6 class="mt-2">Service Centers</h6>
+                    <div class="col">
+                        <div class="icon-card text-center">
+                            <i class="bi bi-car-front icon"></i>
+                            <h6 class="mt-2">Service Centers</h6>
+                        </div>
                     </div>
-                </div>
-                <div class="col">
-                    <div class="icon-card text-center">
-                        <i class="bi bi-house-door icon"></i>
-                        <h6 class="mt-2">Showrooms</h6>
+                    <div class="col">
+                        <div class="icon-card text-center">
+                            <i class="bi bi-house-door icon"></i>
+                            <h6 class="mt-2">Showrooms</h6>
+                        </div>
                     </div>
-                </div>
-                <div class="col">
-                    <div class="icon-card text-center">
-                        <i class="bi bi-water icon"></i>
-                        <h6 class="mt-2">Washing Centers</h6>
+                    <div class="col">
+                        <div class="icon-card text-center">
+                            <i class="bi bi-water icon"></i>
+                            <h6 class="mt-2">Washing Centers</h6>
+                        </div>
                     </div>
-                </div>
-                <div class="col">
-                    <div class="icon-card text-center">
-                        <i class="bi bi-shop icon"></i>
-                        <h6 class="mt-2">Automobile Shops</h6>
+                    <div class="col">
+                        <div class="icon-card text-center">
+                            <i class="bi bi-shop icon"></i>
+                            <h6 class="mt-2">Automobile Shops</h6>
+                        </div>
                     </div>
-                </div>
-                <div class="col">
-                    <div class="icon-card text-center">
-                        <i class="bi bi-gear icon"></i>
-                        <h6 class="mt-2">Find Spare Parts</h6>
+                    <div class="col">
+                        <div class="icon-card text-center">
+                            <i class="bi bi-gear icon"></i>
+                            <h6 class="mt-2">Find Spare Parts</h6>
+                        </div>
                     </div>
-                </div>
-                <div class="col">
-                    <div class="icon-card text-center">
-                        <i class="bi bi-bicycle icon"></i>
-                        <h6 class="mt-2">Second-Hand Dealers</h6>
+                    <div class="col">
+                        <div class="icon-card text-center">
+                            <i class="bi bi-bicycle icon"></i>
+                            <h6 class="mt-2">Second-Hand Dealers</h6>
+                        </div>
                     </div>
-                </div>
-                <div class="col">
-                    <div class="icon-card text-center">
-                        <i class="bi bi-ev-front icon"></i>
-                        <h6 class="mt-2">Workshops</h6>
+                    <div class="col">
+                        <div class="icon-card text-center">
+                            <i class="bi bi-ev-front icon"></i>
+                            <h6 class="mt-2">Workshops</h6>
+                        </div>
                     </div>
                 </div>
             </div>
+
         </div>
 
-    </div>
+
+        <div class="top-garages">
+            <!-- Icons Grid Container -->
+            <div class="container pt-4">
+                <span class="text-cap">TOP GARAGES IN ADARSH COLONY, PURNA</span>
+            </div>
+
+            <div class="container">
+
+                <div class="slider-container">
+                    <!-- Card -->
+                    <div class="card shop-card card-transition">
+                        <div class="card-pinned">
+                            <img class="card-img-top shop-card-image" src="assets/images/png/garage1.jpg"
+                                alt="Image Description">
+
+                            <span class="card-pinned-top-start">
+                                <span class="badge bg-primary rounded-pill">Open</span>
+                            </span>
+                        </div>
+
+                        <div class="card-body p-2">
+                            <h3 class="card-title shop-card-title "><a class="text-dark" href="#">Krishna Narayan Two
+                                    Wheeler Bajaj Service Center and Automobile Shop <i
+                                        class="bi-patch-check-fill text-primary" data-bs-toggle="tooltip"
+                                        data-placement="top" title="Top endorsed"></i> </a></h3>
+                            <p class="card-text shop-card-description mb-1">2-Wheeler, 3-Wheeler Garage</p>
+                            <p class="card-text shop-card-description mb-1"><i
+                                    class="bi bi-star-fill text-warning"></i><i
+                                    class="bi bi-star-fill text-warning"></i><i
+                                    class="bi bi-star-fill text-warning"></i><i
+                                    class="bi bi-star-fill text-warning"></i> 134k reviews</p>
+                            <p class="card-text shop-card-description mb-0">Kunal Niwas, New Adarsh Colony, Purna, Dist.
+                                Parbhani 431511 Maharashtra, India</p>
+                        </div>
+
+                        <div class="card-footer p-2 pt-0">
+                            <a class="card-link shop-card-description" href="#">Open till 6 PM</a>
+                        </div>
+                    </div>
+                    <!-- End Card -->
+                    <!-- Card -->
+                    <div class="card shop-card card-transition">
+                        <div class="card-pinned">
+                            <img class="card-img-top shop-card-image" src="assets/images/png/garage1.jpg"
+                                alt="Image Description">
+
+                            <span class="card-pinned-top-start">
+                                <span class="badge bg-primary rounded-pill">Open</span>
+                            </span>
+                        </div>
+
+                        <div class="card-body p-2">
+                            <h3 class="card-title shop-card-title "><a class="text-dark" href="#">Krishna Narayan Two
+                                    Wheeler Bajaj Service Center and Automobile Shop <i
+                                        class="bi-patch-check-fill text-primary" data-bs-toggle="tooltip"
+                                        data-placement="top" title="Top endorsed"></i> </a></h3>
+                            <p class="card-text shop-card-description mb-1">2-Wheeler, 3-Wheeler Garage</p>
+                            <p class="card-text shop-card-description mb-1"><i
+                                    class="bi bi-star-fill text-warning"></i><i
+                                    class="bi bi-star-fill text-warning"></i><i
+                                    class="bi bi-star-fill text-warning"></i><i
+                                    class="bi bi-star-fill text-warning"></i> 134k reviews</p>
+                            <p class="card-text shop-card-description mb-0">Kunal Niwas, New Adarsh Colony, Purna, Dist.
+                                Parbhani 431511 Maharashtra, India</p>
+                        </div>
+
+                        <div class="card-footer p-2 pt-0">
+                            <a class="card-link shop-card-description" href="#">Open till 6 PM</a>
+                        </div>
+                    </div>
+                    <!-- End Card -->
+                    <!-- Card -->
+                    <div class="card shop-card card-transition">
+                        <div class="card-pinned">
+                            <img class="card-img-top shop-card-image" src="assets/images/png/garage1.jpg"
+                                alt="Image Description">
+
+                            <span class="card-pinned-top-start">
+                                <span class="badge bg-primary rounded-pill">Open</span>
+                            </span>
+                        </div>
+
+                        <div class="card-body p-2">
+                            <h3 class="card-title shop-card-title "><a class="text-dark" href="#">Krishna Narayan Two
+                                    Wheeler Bajaj Service Center and Automobile Shop <i
+                                        class="bi-patch-check-fill text-primary" data-bs-toggle="tooltip"
+                                        data-placement="top" title="Top endorsed"></i> </a></h3>
+                            <p class="card-text shop-card-description mb-1">2-Wheeler, 3-Wheeler Garage</p>
+                            <p class="card-text shop-card-description mb-1"><i
+                                    class="bi bi-star-fill text-warning"></i><i
+                                    class="bi bi-star-fill text-warning"></i><i
+                                    class="bi bi-star-fill text-warning"></i><i
+                                    class="bi bi-star-fill text-warning"></i> 134k reviews</p>
+                            <p class="card-text shop-card-description mb-0">Kunal Niwas, New Adarsh Colony, Purna, Dist.
+                                Parbhani 431511 Maharashtra, India</p>
+                        </div>
+
+                        <div class="card-footer p-2 pt-0">
+                            <a class="card-link shop-card-description" href="#">Open till 6 PM</a>
+                        </div>
+                    </div>
+                    <!-- End Card -->
+                    <!-- Card -->
+                    <div class="card shop-card card-transition">
+                        <div class="card-pinned">
+                            <img class="card-img-top shop-card-image" src="assets/images/png/garage1.jpg"
+                                alt="Image Description">
+
+                            <span class="card-pinned-top-start">
+                                <span class="badge bg-primary rounded-pill">Open</span>
+                            </span>
+                        </div>
+
+                        <div class="card-body p-2">
+                            <h3 class="card-title shop-card-title "><a class="text-dark" href="#">Krishna Narayan Two
+                                    Wheeler Bajaj Service Center and Automobile Shop <i
+                                        class="bi-patch-check-fill text-primary" data-bs-toggle="tooltip"
+                                        data-placement="top" title="Top endorsed"></i> </a></h3>
+                            <p class="card-text shop-card-description mb-1">2-Wheeler, 3-Wheeler Garage</p>
+                            <p class="card-text shop-card-description mb-1"><i
+                                    class="bi bi-star-fill text-warning"></i><i
+                                    class="bi bi-star-fill text-warning"></i><i
+                                    class="bi bi-star-fill text-warning"></i><i
+                                    class="bi bi-star-fill text-warning"></i> 134k reviews</p>
+                            <p class="card-text shop-card-description mb-0">Kunal Niwas, New Adarsh Colony, Purna, Dist.
+                                Parbhani 431511 Maharashtra, India</p>
+                        </div>
+
+                        <div class="card-footer p-2 pt-0">
+                            <a class="card-link shop-card-description" href="#">Open till 6 PM</a>
+                        </div>
+                    </div>
+                    <!-- End Card -->
 
 
-    <div class="top-garages bg-soft-warning">
-        <!-- Icons Grid Container -->
-        <div class="container pt-4">
-            <span class="text-cap">TOP GARAGES IN ADARSH COLONY, PURNA</span>
+
+
+
+                </div>
+            </div>
+
         </div>
 
+        <div class="top-garages mb-4">
+            <!-- Icons Grid Container -->
+            <div class="container pt-4">
+                <span class="text-cap">TOP SERVICE CENTERS IN ADARSH COLONY, PURNA</span>
+            </div>
+
+            <div class="container">
+
+                <div class="slider-container">
+                    <!-- Card -->
+                    <div class="card shop-card card-transition">
+                        <div class="card-pinned">
+                            <img class="card-img-top shop-card-image" src="assets/images/png/garage1.jpg"
+                                alt="Image Description">
+
+                            <span class="card-pinned-top-start">
+                                <span class="badge bg-primary rounded-pill">Open</span>
+                            </span>
+
+
+                        </div>
+
+                        <div class="card-body p-2">
+                            <h3 class="card-title shop-card-title "><a class="text-dark" href="#">Krishna Narayan Two
+                                    Wheeler Bajaj Service Center and Automobile Shop <i
+                                        class="bi-patch-check-fill text-primary" data-bs-toggle="tooltip"
+                                        data-placement="top" title="Top endorsed"></i> </a></h3>
+                            <p class="card-text shop-card-description mb-1">2-Wheeler, 3-Wheeler Garage</p>
+                            <p class="card-text shop-card-description mb-1"><i
+                                    class="bi bi-star-fill text-warning"></i><i
+                                    class="bi bi-star-fill text-warning"></i><i
+                                    class="bi bi-star-fill text-warning"></i><i
+                                    class="bi bi-star-fill text-warning"></i> 134k reviews</p>
+                            <p class="card-text shop-card-description mb-0">Kunal Niwas, New Adarsh Colony, Purna, Dist.
+                                Parbhani 431511 Maharashtra, India</p>
+
+
+                        </div>
+
+                        <div class="card-footer p-2 pt-0 d-flex justify-content-between align-items-center">
+                            <a class="card-link shop-card-description" href="#">Open till 6 PM</a>
+                            <img class="avatar avatar-lg avatar-4x3" src="assets/images/png/bajaj.png" alt="Logo">
+                        </div>
+                    </div>
+                    <!-- End Card -->
+                    <!-- Card -->
+                    <div class="card shop-card card-transition">
+                        <div class="card-pinned">
+                            <img class="card-img-top shop-card-image" src="assets/images/png/garage1.jpg"
+                                alt="Image Description">
+
+                            <span class="card-pinned-top-start">
+                                <span class="badge bg-primary rounded-pill">Open</span>
+                            </span>
+                        </div>
+
+                        <div class="card-body p-2">
+                            <h3 class="card-title shop-card-title "><a class="text-dark" href="#">Krishna Narayan Two
+                                    Wheeler Bajaj Service Center and Automobile Shop <i
+                                        class="bi-patch-check-fill text-primary" data-bs-toggle="tooltip"
+                                        data-placement="top" title="Top endorsed"></i> </a></h3>
+                            <p class="card-text shop-card-description mb-1">2-Wheeler, 3-Wheeler Garage</p>
+                            <p class="card-text shop-card-description mb-1"><i
+                                    class="bi bi-star-fill text-warning"></i><i
+                                    class="bi bi-star-fill text-warning"></i><i
+                                    class="bi bi-star-fill text-warning"></i><i
+                                    class="bi bi-star-fill text-warning"></i> 134k reviews</p>
+                            <p class="card-text shop-card-description mb-0">Kunal Niwas, New Adarsh Colony, Purna, Dist.
+                                Parbhani 431511 Maharashtra, India</p>
+                        </div>
+
+                        <div class="card-footer p-2 pt-0">
+                            <a class="card-link shop-card-description" href="#">Open till 6 PM</a>
+                        </div>
+                    </div>
+                    <!-- End Card -->
+                    <!-- Card -->
+                    <div class="card shop-card card-transition">
+                        <div class="card-pinned">
+                            <img class="card-img-top shop-card-image" src="assets/images/png/garage1.jpg"
+                                alt="Image Description">
+
+                            <span class="card-pinned-top-start">
+                                <span class="badge bg-primary rounded-pill">Open</span>
+                            </span>
+                        </div>
+
+                        <div class="card-body p-2">
+                            <h3 class="card-title shop-card-title "><a class="text-dark" href="#">Krishna Narayan Two
+                                    Wheeler Bajaj Service Center and Automobile Shop <i
+                                        class="bi-patch-check-fill text-primary" data-bs-toggle="tooltip"
+                                        data-placement="top" title="Top endorsed"></i> </a></h3>
+                            <p class="card-text shop-card-description mb-1">2-Wheeler, 3-Wheeler Garage</p>
+                            <p class="card-text shop-card-description mb-1"><i
+                                    class="bi bi-star-fill text-warning"></i><i
+                                    class="bi bi-star-fill text-warning"></i><i
+                                    class="bi bi-star-fill text-warning"></i><i
+                                    class="bi bi-star-fill text-warning"></i> 134k reviews</p>
+                            <p class="card-text shop-card-description mb-0">Kunal Niwas, New Adarsh Colony, Purna, Dist.
+                                Parbhani 431511 Maharashtra, India</p>
+                        </div>
+
+                        <div class="card-footer p-2 pt-0">
+                            <a class="card-link shop-card-description" href="#">Open till 6 PM</a>
+                        </div>
+                    </div>
+                    <!-- End Card -->
+                    <!-- Card -->
+                    <div class="card shop-card card-transition">
+                        <div class="card-pinned">
+                            <img class="card-img-top shop-card-image" src="assets/images/png/garage1.jpg"
+                                alt="Image Description">
+
+                            <span class="card-pinned-top-start">
+                                <span class="badge bg-primary rounded-pill">Open</span>
+                            </span>
+                        </div>
+
+                        <div class="card-body p-2">
+                            <h3 class="card-title shop-card-title "><a class="text-dark" href="#">Krishna Narayan Two
+                                    Wheeler Bajaj Service Center and Automobile Shop <i
+                                        class="bi-patch-check-fill text-primary" data-bs-toggle="tooltip"
+                                        data-placement="top" title="Top endorsed"></i> </a></h3>
+                            <p class="card-text shop-card-description mb-1">2-Wheeler, 3-Wheeler Garage</p>
+                            <p class="card-text shop-card-description mb-1"><i
+                                    class="bi bi-star-fill text-warning"></i><i
+                                    class="bi bi-star-fill text-warning"></i><i
+                                    class="bi bi-star-fill text-warning"></i><i
+                                    class="bi bi-star-fill text-warning"></i> 134k reviews</p>
+                            <p class="card-text shop-card-description mb-0">Kunal Niwas, New Adarsh Colony, Purna, Dist.
+                                Parbhani 431511 Maharashtra, India</p>
+                        </div>
+
+                        <div class="card-footer p-2 pt-0">
+                            <a class="card-link shop-card-description" href="#">Open till 6 PM</a>
+                        </div>
+                    </div>
+                    <!-- End Card -->
+
+
+
+
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="bg-soft-warning wheelstore-info">
+            <div class="container content-space-1 content-space-md-3">
+                <div class="row">
+                    <div class="col-md-4 mb-2 mb-md-0">
+                        <span class="text-cap">EVERYTHING YOU NEED</span>
+                        <p>Wheelstore connects you to top garages, service centers, showrooms, second-hand dealers and
+                            other automobile services in your city. Enjoy easy access to quality automobile services and
+                            products from your mobile.</p>
+
+                    </div>
+                    <!-- End Col -->
+
+                    <div class="col-md-8">
+                        <div class="ps-lg-5">
+                            <div class="row">
+                                <div class="w-lg-75 mx-lg-auto">
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-6">
+                                            <!-- List Checked -->
+                                            <ul class="list-checked list-checked-primary">
+                                                <li class="list-checked-item">Nearby Garages</li>
+                                                <li class="list-checked-item">Nearby Service Centers</li>
+                                                <li class="list-checked-item">Nearby Showrooms</li>
+                                                <li class="list-checked-item">Nearby Workshops</li>
+                                            </ul>
+                                            <!-- End List Checked -->
+                                        </div>
+                                        <!-- End Col -->
+
+                                        <div class="col-sm-12 col-md-6">
+                                            <!-- List Checked -->
+                                            <ul class="list-checked list-checked-primary">
+                                                <li class="list-checked-item">Find Spare Parts</li>
+                                                <li class="list-checked-item">Second-Hand Dealers</li>
+                                                <li class="list-checked-item">Nearby Automobile Shops</li>
+                                                <li class="list-checked-item">Nearby Washing Centers</li>
+                                            </ul>
+                                            <!-- End List Checked -->
+                                        </div>
+                                        <!-- End Col -->
+
+                                    </div>
+                                    <!-- End Row -->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Col -->
+                    </div>
+                    <!-- End Row -->
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="register-your-shop pb-4 pt-4">
+
+            <!-- Features -->
+            <div class="container overflow-hidden">
+                <!-- Heading -->
+                <div class="w-lg-65 text-center mx-lg-auto mb-7">
+                    <h3 class="text-cap mb-3">Connect with Thousands of Local Customers</h3>
+                    <p class="">Put Your Shop Online. Reach More Customers with Wheelstore.</p>
+                </div>
+                <!-- End Heading -->
+
+                <div class="row justify-content-end align-items-md-center">
+                    <div class="col-md-6 mb-7 mb-md-0">
+                        <!-- Mobile Device -->
+                        <figure class="device-mobile text-center mx-auto">
+                            <div class="device-mobile-frame">
+                                <img class="device-mobile-img"
+                                    src="assets/images/WhatsApp Image 2024-11-06 at 13.46.06_1fe0adeb.jpg"
+                                    alt="Image Description">
+                            </div>
+
+                            <div class="position-absolute top-50 translate-middle-y zi-n1" style="right: -7rem;">
+                                <img class="img-fluid" src="assets/svg/components/shape-8.svg" alt="SVG"
+                                    style="width: 10rem;">
+                            </div>
+                        </figure>
+                        <!-- End Mobile Device -->
+                    </div>
+                    <!-- End Col -->
+
+                    <div class="col-md-6">
+                        <div class="p-md-5 p-lg-7">
+                            <!-- Heading -->
+                            <div class="mb-4">
+                                <h3 class="text-cap mb-2">Get Your Shop Online with Wheelstore</h3>
+                                <p>With Wheelstore, you can easily get your shop’s details online and make it easy for
+                                    customers to find you</p>
+                            </div>
+                            <!-- End Heading -->
+
+                            <!-- List Checked -->
+                            <ul class="list-checked list-checked-primary mb-4">
+                                <li class="list-checked-item"> <strong> 24/7 Visibility</strong> : Your shop details are
+                                    online, accessible
+                                    anytime</li>
+                                <li class="list-checked-item"><strong>Working Hours</strong> : Customers know when
+                                    you’re
+                                    open and close</li>
+                                <li class="list-checked-item"><strong>Contact Options</strong> : Customers can reach you
+                                    via
+                                    phone, email, or
+                                    WhatsApp</li>
+                                <li class="list-checked-item"><strong>Share</strong> : Your Shop on all social media
+                                    platforms like <i class="bi bi-whatsapp"></i> <i class="bi bi-instagram"></i> <i
+                                        class="bi bi-facebook"></i></li>
+                                <li class="list-checked-item"><strong>Google Maps Location</strong> : Easily found on
+                                    Google
+                                    and Maps</li>
+                            </ul>
+                            <!-- End List Checked -->
+                        </div>
+                    </div>
+                    <!-- End Col -->
+                </div>
+                <!-- End Row -->
+            </div>
+            <!-- End Features -->
+
+            <!-- Features -->
+            <div class="container overflow-hidden">
+                <div class="row justify-content-end align-items-md-center">
+                    <div class="col-md-6 order-md-2 mb-7 mb-md-0">
+                        <!-- Mobile Device -->
+                        <figure class="device-mobile text-center mx-auto">
+                            <div class="device-mobile-frame">
+                                <img class="device-mobile-img"
+                                    src="assets/images/WhatsApp Image 2024-11-06 at 13.46.06_7f3626e3.jpg"
+                                    alt="Image Description">
+                            </div>
+
+                            <div class="position-absolute top-50 translate-middle-y zi-n1" style="right: -7rem;">
+                                <img class="img-fluid" src="assets/svg/components/shape-1.svg" alt="SVG"
+                                    style="width: 10rem;">
+                            </div>
+                        </figure>
+                        <!-- End Mobile Device -->
+                    </div>
+                    <!-- End Col -->
+
+                    <div class="col-md-6">
+                        <div class="p-md-5 p-lg-7">
+                            <!-- Heading -->
+                            <div class="mb-4">
+                                <h3 class="text-cap mb-2">Showcase Your Services and Products with Wheelstore</h3>
+                                <p>With Wheelstore, you can easily add all the important details about your shop.</p>
+                            </div>
+                            <!-- End Heading -->
+
+                            <!-- List Checked -->
+                            <ul class="list-checked list-checked-primary mb-4">
+                                <li class="list-checked-item"><strong>Services Pricing</strong> : List Your Services &
+                                    Prices</li>
+                                <li class="list-checked-item"><strong>Products</strong> : Let the customers know which
+                                    products are available
+                                </li>
+                                <li class="list-checked-item"><strong>Upload Shop Images</strong> : Display your shop
+                                    and
+                                    work to attract
+                                    customers.</li>
+                                <li class="list-checked-item"><strong>Customer Reviews</strong> : Display reviews and
+                                    ratings from customers
+                                    to build trust in your services</li>
+
+                            </ul>
+                            <!-- End List Checked -->
+                        </div>
+                    </div>
+                    <!-- End Col -->
+                </div>
+                <!-- End Row -->
+            </div>
+            <!-- End Features -->
+
+            <!-- Features -->
+            <div class="container overflow-hidden ">
+                <div class="row justify-content-end align-items-md-center">
+                    <div class="col-md-6 mb-7 mb-md-0">
+                        <!-- Mobile Device -->
+                        <figure class="device-mobile text-center mx-auto">
+                            <div class="device-mobile-frame">
+                                <img class="device-mobile-img"
+                                    src="assets/images/WhatsApp Image 2024-11-06 at 13.46.06_cf9cb7b7.jpg"
+                                    alt="Image Description">
+                            </div>
+
+                            <div class="position-absolute top-50 translate-middle-y zi-n1" style="left: -7rem;">
+                                <img class="img-fluid" src="assets/svg/components/shape-7.svg" alt="SVG"
+                                    style="width: 7rem;">
+                            </div>
+                        </figure>
+                        <!-- End Mobile Device -->
+                    </div>
+                    <!-- End Col -->
+
+                    <div class="col-md-6">
+                        <div class="p-md-5 p-lg-7">
+                            <!-- Heading -->
+                            <div class="mb-0">
+                                <h3 class="text-cap mb-2">Get Your Shop Registered for Free and Unlock All Features</h3>
+                                <p>Get your shop online for free, showcase your services, and reach more customers</p>
+
+                            </div>
+                            <!-- End Heading -->
+                            <a class="btn btn-primary link" href="#">Register Your Shop for free</a>
+
+
+                        </div>
+                    </div>
+                    <!-- End Col -->
+                </div>
+                <!-- End Row -->
+            </div>
+            <!-- End Features -->
+
+
+        </div>
+
+
+
+
+
+        <div class="frequently-asked-questions">
+            <!-- FAQ -->
+            <div class="container content-space-t-1 content-space-t-md-2 ">
+                <!-- Heading -->
+                <div class="w-lg-50 text-center mx-lg-auto mb-7">
+                    <h3 class="text-cap ">Frequently Asked Questions</h3>
+                </div>
+                <!-- End Heading -->
+
+                <!-- Accordion -->
+                <div class="w-lg-85 mx-lg-auto pb-4">
+                    <div class="accordion accordion-flush" id="accordionFAQEg1">
+                        <!-- Accordion Item -->
+                        <div class="accordion-item">
+                            <div class="accordion-header" id="headingOneEg1">
+                                <a class="accordion-button" role="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOneEg1" aria-expanded="true"
+                                    aria-controls="collapseOneEg1">
+                                    What is Wheelstore ?
+                                </a>
+                            </div>
+                            <div id="collapseOneEg1" class="accordion-collapse collapse show"
+                                aria-labelledby="headingOneEg1" data-bs-parent="#accordionFAQEg1">
+                                <div class="accordion-body">
+                                    Wheelstore is an online platform that helps you find nearby garages, service
+                                    centers, showrooms, second-hand vehicle dealers, washing centers, workshops, and
+                                    spare parts for your vehicle. We provide comprehensive information and ratings
+                                    to
+                                    help you choose the best services and products for your automobile needs.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Accordion Item -->
+
+                        <!-- Accordion Item -->
+                        <div class="accordion-item">
+                            <div class="accordion-header" id="headingTwoEg1">
+                                <a class="accordion-button collapsed" role="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwoEg1" aria-expanded="false"
+                                    aria-controls="collapseTwoEg1">
+                                    How do I find a service center or garage near me?
+                                </a>
+                            </div>
+                            <div id="collapseTwoEg1" class="accordion-collapse collapse" aria-labelledby="headingTwoEg1"
+                                data-bs-parent="#accordionFAQEg1">
+                                <div class="accordion-body">
+                                    Simply enter your location or city in location box, and Wheelstore will display
+                                    a
+                                    list of nearby service centers, garages, and other automotive services. You can
+                                    filter the results based on ratings, and specific services offered.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Accordion Item -->
+
+                        <!-- Accordion Item -->
+                        <div class="accordion-item">
+                            <div class="accordion-header" id="headingThreeEg1">
+                                <a class="accordion-button collapsed" role="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThreeEg1" aria-expanded="false"
+                                    aria-controls="collapseThreeEg1">
+                                    Can I find spare parts for my vehicle on Wheelstore?
+                                </a>
+                            </div>
+                            <div id="collapseThreeEg1" class="accordion-collapse collapse"
+                                aria-labelledby="headingThreeEg1" data-bs-parent="#accordionFAQEg1">
+                                <div class="accordion-body">
+                                    Yes, you can find a variety of spare parts for different types of vehicles on
+                                    Wheelstore. Just use our search feature to look for the specific parts you need,
+                                    and
+                                    you will see a list of shops and dealers that have them in stock.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Accordion Item -->
+
+
+
+                        <!-- Accordion Item -->
+                        <div class="accordion-item">
+                            <div class="accordion-header" id="headingFiveEg1">
+                                <a class="accordion-button collapsed" role="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFiveEg1" aria-expanded="false"
+                                    aria-controls="collapseFiveEg1">
+                                    How often is the information on Wheelstore updated?
+                                </a>
+                            </div>
+                            <div id="collapseFiveEg1" class="accordion-collapse collapse"
+                                aria-labelledby="headingFiveEg1" data-bs-parent="#accordionFAQEg1">
+                                <div class="accordion-body">
+                                    We regularly update our database to ensure that the information provided is
+                                    accurate
+                                    and upto-date. Our team works diligently to add new shops and services and to
+                                    remove
+                                    those that are no longer in operation.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Accordion Item -->
+
+                        <!-- Accordion Item -->
+                        <div class="accordion-item">
+                            <div class="accordion-header" id="headingSixEg1">
+                                <a class="accordion-button collapsed" role="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseSixEg1" aria-expanded="false"
+                                    aria-controls="collapseSixEg1">
+                                    How can I add my shop or service to Wheelstore?
+                                </a>
+                            </div>
+                            <div id="collapseSixEg1" class="accordion-collapse collapse" aria-labelledby="headingSixEg1"
+                                data-bs-parent="#accordionFAQEg1">
+                                <div class="accordion-body">
+                                    If you own an automotive shop or provide related services, you can add your
+                                    business to Wheelstore by filling out the 'Add Your Shop' form on our website.
+                                    Our team will review your submission and, once approved, your business will be
+                                    listed on our platform.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Accordion Item -->
+                    </div>
+                </div>
+                <!-- End Accordion -->
+            </div>
+            <!-- End FAQ -->
+        </div>
+
+
+
+
+
+    </main>
+
+
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="bg-primary-dark border-top border-white-10">
         <div class="container">
-
-            <div class="slider-container">
-                <!-- Card -->
-                <div class="card shop-card card-transition">
-                    <div class="card-pinned">
-                        <img class="card-img-top shop-card-image" src="assets/images/png/garage1.jpg"
-                            alt="Image Description">
-
-                        <span class="card-pinned-top-start">
-                            <span class="badge bg-primary rounded-pill">Open</span>
-                        </span>
+            <div class="row content-space-1">
+                <div class="col-lg-3 mb-7 mb-lg-0">
+                    <!-- Logo -->
+                    <div class="mb-5">
+                        <a class="navbar-brand" href="index-2.html" aria-label="Space">
+                            <img class="navbar-brand-logo" src="assets/images/png/logo-color.png"
+                                alt="Image Description">
+                        </a>
                     </div>
+                    <!-- End Logo -->
 
-                    <div class="card-body p-2">
-                        <h3 class="card-title shop-card-title "><a class="text-dark" href="#">Krishna Narayan Two
-                                Wheeler Bajaj Service Center and Automobile Shop <i
-                                    class="bi-patch-check-fill text-primary" data-bs-toggle="tooltip"
-                                    data-placement="top" title="Top endorsed"></i> </a></h3>
-                        <p class="card-text shop-card-description mb-1">2-Wheeler, 3-Wheeler Garage</p>
-                        <p class="card-text shop-card-description mb-1"><i class="bi bi-star-fill text-warning"></i><i
-                                class="bi bi-star-fill text-warning"></i><i class="bi bi-star-fill text-warning"></i><i
-                                class="bi bi-star-fill text-warning"></i> 134k reviews</p>
-                        <p class="card-text shop-card-description mb-0">Kunal Niwas, New Adarsh Colony, Purna, Dist.
-                            Parbhani 431511 Maharashtra, India</p>
-                    </div>
+                    <span class="d-block">
+                        <label for="selectLanguage" class="form-label text-white">Choose language</label>
+                    </span>
 
-                    <div class="card-footer p-2 pt-0">
-                        <a class="card-link shop-card-description" href="#">Open till 6 PM</a>
+                    <!-- Button Group -->
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-soft-light btn-sm dropdown-toggle" id="selectLanguage"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="d-flex align-items-center">
+                                <img class="avatar avatar-xss avatar-circle me-2"
+                                    src="assets/vendor/flag-icon-css/flags/1x1/us.svg" alt="Image description"
+                                    width="16" />
+                                <span>English (US)</span>
+                            </span>
+                        </button>
+
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item d-flex align-items-center active" href="#">
+                                <img class="avatar avatar-xss avatar-circle me-2"
+                                    src="assets/vendor/flag-icon-css/flags/1x1/us.svg" alt="Image description"
+                                    width="16" />
+                                <span>English (US)</span>
+                            </a>
+                            <a class="dropdown-item d-flex align-items-center" href="#">
+                                <img class="avatar avatar-xss avatar-circle me-2"
+                                    src="assets/vendor/flag-icon-css/flags/1x1/gb.svg" alt="Image description"
+                                    width="16" />
+                                <span>English (UK)</span>
+                            </a>
+                            <a class="dropdown-item d-flex align-items-center" href="#">
+                                <img class="avatar avatar-xss avatar-circle me-2"
+                                    src="assets/vendor/flag-icon-css/flags/1x1/de.svg" alt="Image description"
+                                    width="16" />
+                                <span>Deutsch</span>
+                            </a>
+                            <a class="dropdown-item d-flex align-items-center" href="#">
+                                <img class="avatar avatar-xss avatar-circle me-2"
+                                    src="assets/vendor/flag-icon-css/flags/1x1/dk.svg" alt="Image description"
+                                    width="16" />
+                                <span>Dansk</span>
+                            </a>
+                            <a class="dropdown-item d-flex align-items-center" href="#">
+                                <img class="avatar avatar-xss avatar-circle me-2"
+                                    src="assets/vendor/flag-icon-css/flags/1x1/es.svg" alt="Image description"
+                                    width="16" />
+                                <span>Español</span>
+                            </a>
+                            <a class="dropdown-item d-flex align-items-center" href="#">
+                                <img class="avatar avatar-xss avatar-circle me-2"
+                                    src="assets/vendor/flag-icon-css/flags/1x1/nl.svg" alt="Image description"
+                                    width="16" />
+                                <span>Nederlands</span>
+                            </a>
+                            <a class="dropdown-item d-flex align-items-center" href="#">
+                                <img class="avatar avatar-xss avatar-circle me-2"
+                                    src="assets/vendor/flag-icon-css/flags/1x1/it.svg" alt="Image description"
+                                    width="16" />
+                                <span>Italiano</span>
+                            </a>
+                            <a class="dropdown-item d-flex align-items-center" href="#">
+                                <img class="avatar avatar-xss avatar-circle me-2"
+                                    src="assets/vendor/flag-icon-css/flags/1x1/cn.svg" alt="Image description"
+                                    width="16" />
+                                <span>中文 (繁體)</span>
+                            </a>
+                        </div>
                     </div>
+                    <!-- End Button Group -->
                 </div>
-                <!-- End Card -->
-                <!-- Card -->
-                <div class="card shop-card card-transition">
-                    <div class="card-pinned">
-                        <img class="card-img-top shop-card-image" src="assets/images/png/garage1.jpg"
-                            alt="Image Description">
+                <!-- End Col -->
 
-                        <span class="card-pinned-top-start">
-                            <span class="badge bg-primary rounded-pill">Open</span>
-                        </span>
-                    </div>
+                <div class="col-sm mb-7 mb-sm-0">
+                    <span class="text-cap text-primary-light mb-2">Resources</span>
 
-                    <div class="card-body p-2">
-                        <h3 class="card-title shop-card-title "><a class="text-dark" href="#">Krishna Narayan Two
-                                Wheeler Bajaj Service Center and Automobile Shop <i
-                                    class="bi-patch-check-fill text-primary" data-bs-toggle="tooltip"
-                                    data-placement="top" title="Top endorsed"></i> </a></h3>
-                        <p class="card-text shop-card-description mb-1">2-Wheeler, 3-Wheeler Garage</p>
-                        <p class="card-text shop-card-description mb-1"><i class="bi bi-star-fill text-warning"></i><i
-                                class="bi bi-star-fill text-warning"></i><i class="bi bi-star-fill text-warning"></i><i
-                                class="bi bi-star-fill text-warning"></i> 134k reviews</p>
-                        <p class="card-text shop-card-description mb-0">Kunal Niwas, New Adarsh Colony, Purna, Dist.
-                            Parbhani 431511 Maharashtra, India</p>
-                    </div>
+                    <!-- List -->
+                    <ul class="list-unstyled list-py-1 mb-0">
+                        <li><a class="link-sm link-light" href="#">Register Your Shop</a></li>
+                        <li><a class="link-sm link-light" href="#">Blogs</a></li>
+                        <li><a class="link-sm link-light" href="#">Customer Feedbacks</a></li>
+                        <li><a class="link-sm link-light" href="#">Support <i
+                                    class="bi-box-arrow-up-right ms-1"></i></a></li>
 
-                    <div class="card-footer p-2 pt-0">
-                        <a class="card-link shop-card-description" href="#">Open till 6 PM</a>
-                    </div>
+                    </ul>
+                    <!-- End List -->
                 </div>
-                <!-- End Card -->
-                <!-- Card -->
-                <div class="card shop-card card-transition">
-                    <div class="card-pinned">
-                        <img class="card-img-top shop-card-image" src="assets/images/png/garage1.jpg"
-                            alt="Image Description">
+                <!-- End Col -->
 
-                        <span class="card-pinned-top-start">
-                            <span class="badge bg-primary rounded-pill">Open</span>
-                        </span>
-                    </div>
+                <div class="col-sm mb-7 mb-sm-0">
+                    <span class="text-cap text-primary-light mb-2">Quick Links</span>
 
-                    <div class="card-body p-2">
-                        <h3 class="card-title shop-card-title "><a class="text-dark" href="#">Krishna Narayan Two
-                                Wheeler Bajaj Service Center and Automobile Shop <i
-                                    class="bi-patch-check-fill text-primary" data-bs-toggle="tooltip"
-                                    data-placement="top" title="Top endorsed"></i> </a></h3>
-                        <p class="card-text shop-card-description mb-1">2-Wheeler, 3-Wheeler Garage</p>
-                        <p class="card-text shop-card-description mb-1"><i class="bi bi-star-fill text-warning"></i><i
-                                class="bi bi-star-fill text-warning"></i><i class="bi bi-star-fill text-warning"></i><i
-                                class="bi bi-star-fill text-warning"></i> 134k reviews</p>
-                        <p class="card-text shop-card-description mb-0">Kunal Niwas, New Adarsh Colony, Purna, Dist.
-                            Parbhani 431511 Maharashtra, India</p>
-                    </div>
-
-                    <div class="card-footer p-2 pt-0">
-                        <a class="card-link shop-card-description" href="#">Open till 6 PM</a>
-                    </div>
+                    <!-- List -->
+                    <ul class="list-unstyled list-py-1 mb-0">
+                        <li><a class="link-sm link-light" href="#">Garages</a></li>
+                        <li><a class="link-sm link-light" href="#">Service Centers</a></li>
+                        <li><a class="link-sm link-light" href="#">Showrooms</a></li>
+                        <li><a class="link-sm link-light" href="#">Washing Centers</a></li>
+                        <li><a class="link-sm link-light" href="#">Workshops</a></li>
+                        <li><a class="link-sm link-light" href="#">Spare Parts</a></li>
+                        <li><a class="link-sm link-light" href="#">2nd-Hand Dealers</a></li>
+                    </ul>
+                    <!-- End List -->
                 </div>
-                <!-- End Card -->
-                <!-- Card -->
-                <div class="card shop-card card-transition">
-                    <div class="card-pinned">
-                        <img class="card-img-top shop-card-image" src="assets/images/png/garage1.jpg"
-                            alt="Image Description">
+                <!-- End Col -->
 
-                        <span class="card-pinned-top-start">
-                            <span class="badge bg-primary rounded-pill">Open</span>
-                        </span>
-                    </div>
+                <div class="col-sm mb-7 mb-sm-0">
+                    <span class="text-cap text-primary-light mb-2">Wheelstore</span>
 
-                    <div class="card-body p-2">
-                        <h3 class="card-title shop-card-title "><a class="text-dark" href="#">Krishna Narayan Two
-                                Wheeler Bajaj Service Center and Automobile Shop <i
-                                    class="bi-patch-check-fill text-primary" data-bs-toggle="tooltip"
-                                    data-placement="top" title="Top endorsed"></i> </a></h3>
-                        <p class="card-text shop-card-description mb-1">2-Wheeler, 3-Wheeler Garage</p>
-                        <p class="card-text shop-card-description mb-1"><i class="bi bi-star-fill text-warning"></i><i
-                                class="bi bi-star-fill text-warning"></i><i class="bi bi-star-fill text-warning"></i><i
-                                class="bi bi-star-fill text-warning"></i> 134k reviews</p>
-                        <p class="card-text shop-card-description mb-0">Kunal Niwas, New Adarsh Colony, Purna, Dist.
-                            Parbhani 431511 Maharashtra, India</p>
-                    </div>
-
-                    <div class="card-footer p-2 pt-0">
-                        <a class="card-link shop-card-description" href="#">Open till 6 PM</a>
-                    </div>
+                    <!-- List -->
+                    <ul class="list-unstyled list-py-1 mb-0">
+                        <li><a class="link-sm link-light" href="#">Company</a></li>
+                        <!-- <li><a class="link-sm link-light" href="#">Careers <span
+                                    class="badge bg-warning text-dark rounded-pill ms-2">We're hiring</span></a></li> -->
+                        <li><a class="link-sm link-light" href="#">Contact us</a></li>
+                        <li><a class="link-sm link-light" href="#">About us</a></li>
+                        <li><a class="link-sm link-light" href="#">Security</a></li>
+                    </ul>
+                    <!-- End List -->
                 </div>
-                <!-- End Card -->
-                <!-- Card -->
-                <div class="card shop-card card-transition">
-                    <div class="card-pinned">
-                        <img class="card-img-top shop-card-image" src="assets/images/png/garage1.jpg"
-                            alt="Image Description">
+                <!-- End Col -->
 
-                        <span class="card-pinned-top-start">
-                            <span class="badge bg-primary rounded-pill">Open</span>
-                        </span>
-                    </div>
 
-                    <div class="card-body p-2">
-                        <h3 class="card-title shop-card-title "><a class="text-dark" href="#">Krishna Narayan Two
-                                Wheeler Bajaj Service Center and Automobile Shop <i
-                                    class="bi-patch-check-fill text-primary" data-bs-toggle="tooltip"
-                                    data-placement="top" title="Top endorsed"></i> </a></h3>
-                        <p class="card-text shop-card-description mb-1">2-Wheeler, 3-Wheeler Garage</p>
-                        <p class="card-text shop-card-description mb-1"><i class="bi bi-star-fill text-warning"></i><i
-                                class="bi bi-star-fill text-warning"></i><i class="bi bi-star-fill text-warning"></i><i
-                                class="bi bi-star-fill text-warning"></i> 134k reviews</p>
-                        <p class="card-text shop-card-description mb-0">Kunal Niwas, New Adarsh Colony, Purna, Dist.
-                            Parbhani 431511 Maharashtra, India</p>
-                    </div>
 
-                    <div class="card-footer p-2 pt-0">
-                        <a class="card-link shop-card-description" href="#">Open till 6 PM</a>
-                    </div>
+                <div class="col-sm">
+                    <span class="text-cap text-primary-light mb-2">Legal</span>
+
+                    <!-- List -->
+                    <ul class="list-unstyled list-py-1 mb-5">
+                        <li><a class="link-sm link-light" href="#">Terms of use</a></li>
+                        <li><a class="link-sm link-light" href="#">Privacy policy <i
+                                    class="bi-box-arrow-up-right ms-1"></i></a></li>
+                    </ul>
+                    <!-- End List -->
+
+                    <span class="text-cap text-primary-light mb-2">Docs</span>
+
+                    <!-- List -->
+                    <ul class="list-unstyled list-py-1 mb-0">
+                        <li><a class="link-sm link-light" href="#">Documentation</a></li>
+                        <li><a class="link-sm link-light" href="#">Snippets</a></li>
+                    </ul>
+                    <!-- End List -->
                 </div>
-                <!-- End Card -->
+                <!-- End Col -->
+            </div>
+            <!-- End Row -->
 
+            <div class="border-top border-white-10"></div>
 
+            <div class="row align-items-md-end py-5">
+                <div class="col-md mb-3 mb-md-0">
+                    <p class="text-white mb-0">© Wheelstore 2024. All rights reserved.</p>
+                </div>
 
-
+                <div class="col-md d-md-flex justify-content-md-end">
+                    <!-- Socials -->
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item">
+                            <a class="btn btn-icon btn-sm btn-soft-light rounded-circle" href="#">
+                                <i class="bi-facebook"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="btn btn-icon btn-sm btn-soft-light rounded-circle" href="#">
+                                <i class="bi-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="btn btn-icon btn-sm btn-soft-light rounded-circle" href="#">
+                                <i class="bi-github"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="btn btn-icon btn-sm btn-soft-light rounded-circle" href="#">
+                                <i class="bi-slack"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- End Socials -->
+                </div>
             </div>
         </div>
-
-    </div>
-
-
+    </footer>
+    <!-- ========== END FOOTER ========== -->
 
 
 
