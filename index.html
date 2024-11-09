@@ -16,10 +16,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-
-
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/site.css">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -30,10 +28,15 @@
 
 <body>
 
+
     <!-- ========== HEADER ========== -->
-    <header id="header" class="navbar navbar-expand-lg bg-white  navbar-end navbar-sticky-top">
+    <header id="header" class="navbar navbar-expand-lg navbar-end navbar-absolute-top navbar-show-hide navbar-dark  "
+        data-hs-header-options='{
+        "fixMoment": 500,
+        "fixEffect": "slide"
+      }'>
         <div class="container">
-            <nav class=" js-mega-menu navbar-nav-wrap ">
+            <nav class="js-mega-menu navbar-nav-wrap">
 
                 <!-- Toggler -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
@@ -49,14 +52,15 @@
 
 
                 <!-- Default Logo -->
-                <a class="navbar-brand" href="index-2.html" aria-label="Wheelstore">
-                    <img class="navbar-brand-logo" src="assets/images/png/logo-no-background.png" alt="wheelstore logo">
+                <a class="navbar-brand" href="index-2.html" aria-label="Wheelstore" style=" filter: invert(1);">
+                    <img class="navbar-brand-logo" src="assets/images/png/logo-no-background (1).png"
+                        alt="wheelstore logo">
                 </a>
                 <!-- End Default Logo -->
 
                 <!-- Dropdown -->
                 <div class="dropdown d-lg-none" style="margin-left: auto;" id="selectlanguage">
-                    <a class="dropdown-toggle language-change-mobile" href="#" id="dropdownMenuLink"
+                    <a class="nav-link dropdown-toggle language-change-mobile" href="#" id="dropdownMenuLink"
                         data-bs-toggle="dropdown" aria-expanded="false">En</a>
                     <div class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuLink">
                         <a class="dropdown-item " href="../blog-classic.html">English</a>
@@ -88,15 +92,17 @@
                     <ul class="navbar-nav">
 
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Home</a>
+                            <a class="nav-link active " href="#">Home</a>
                         </li>
+
+
                         <!-- Landings -->
                         <li class="hs-has-mega-menu nav-item" data-hs-mega-menu-item-options='{
                     "desktop": {
                       "maxWidth": "30rem"
                     }
                   }'>
-                            <a id="landingsMegaMenu" class="hs-mega-menu-invoker nav-link dropdown-toggle active"
+                            <a id="landingsMegaMenu" class="hs-mega-menu-invoker nav-link dropdown-toggle"
                                 aria-current="page" href="#" role="button" aria-expanded="false">Services</a>
 
                             <!-- Mega Menu -->
@@ -353,74 +359,10 @@
                         <!-- End Landings -->
 
 
-                        <!-- Language -->
 
 
 
-                        <!-- Button Group -->
-                        <div class="btn-group">
-                            <button type="button" class="btn btn-sm dropdown-toggle language-change-desktop"
-                                id="selectLanguage" data-bs-toggle="dropdown" aria-expanded="false">
-                                <span class="d-flex align-items-center">
-                                    <img class="avatar avatar-xss avatar-circle me-2"
-                                        src="assets/vendor/flag-icon-css/flags/1x1/us.svg" alt="Image description"
-                                        width="16" />
-                                    <span>English (US)</span>
-                                </span>
-                            </button>
 
-                            <div class="dropdown-menu">
-                                <a class="dropdown-item d-flex align-items-center active" href="#">
-                                    <img class="avatar avatar-xss avatar-circle me-2"
-                                        src="assets/vendor/flag-icon-css/flags/1x1/us.svg" alt="Image description"
-                                        width="16" />
-                                    <span>English (US)</span>
-                                </a>
-                                <a class="dropdown-item d-flex align-items-center" href="#">
-                                    <img class="avatar avatar-xss avatar-circle me-2"
-                                        src="assets/vendor/flag-icon-css/flags/1x1/gb.svg" alt="Image description"
-                                        width="16" />
-                                    <span>English (UK)</span>
-                                </a>
-                                <a class="dropdown-item d-flex align-items-center" href="#">
-                                    <img class="avatar avatar-xss avatar-circle me-2"
-                                        src="assets/vendor/flag-icon-css/flags/1x1/de.svg" alt="Image description"
-                                        width="16" />
-                                    <span>Deutsch</span>
-                                </a>
-                                <a class="dropdown-item d-flex align-items-center" href="#">
-                                    <img class="avatar avatar-xss avatar-circle me-2"
-                                        src="assets/vendor/flag-icon-css/flags/1x1/dk.svg" alt="Image description"
-                                        width="16" />
-                                    <span>Dansk</span>
-                                </a>
-                                <a class="dropdown-item d-flex align-items-center" href="#">
-                                    <img class="avatar avatar-xss avatar-circle me-2"
-                                        src="assets/vendor/flag-icon-css/flags/1x1/es.svg" alt="Image description"
-                                        width="16" />
-                                    <span>Español</span>
-                                </a>
-                                <a class="dropdown-item d-flex align-items-center" href="#">
-                                    <img class="avatar avatar-xss avatar-circle me-2"
-                                        src="assets/vendor/flag-icon-css/flags/1x1/nl.svg" alt="Image description"
-                                        width="16" />
-                                    <span>Nederlands</span>
-                                </a>
-                                <a class="dropdown-item d-flex align-items-center" href="#">
-                                    <img class="avatar avatar-xss avatar-circle me-2"
-                                        src="assets/vendor/flag-icon-css/flags/1x1/it.svg" alt="Image description"
-                                        width="16" />
-                                    <span>Italiano</span>
-                                </a>
-                                <a class="dropdown-item d-flex align-items-center" href="#">
-                                    <img class="avatar avatar-xss avatar-circle me-2"
-                                        src="assets/vendor/flag-icon-css/flags/1x1/cn.svg" alt="Image description"
-                                        width="16" />
-                                    <span>中文 (繁體)</span>
-                                </a>
-                            </div>
-                        </div>
-                        <!-- End Button Group -->
 
 
 
@@ -435,7 +377,7 @@
                                 </span></a>
 
 
-                            <!-- Mega Menu -->
+
                             <div class="hs-sub-menu dropdown-menu" aria-labelledby="dropdownMenuButtonWithIcon"
                                 style="min-width: 12rem;">
                                 <a class="dropdown-item " href="../blog-classic.html">Your Account</a>
@@ -445,28 +387,24 @@
                                     Subscriptions</a>
                                 <a class="dropdown-item " href="../blog-author-profile.html">Logout</a>
                             </div>
-                            <!-- End Mega Menu -->
+
                         </li>
 
 
                         <button data-bs-toggle="modal" data-bs-target="#signupModal" data-hs-show-animation-options='{
                             "targetSelector": "#signupModalFormLogin",
                             "groupName": "idForm"
-                          }' type="button" class="btn btn-primary"><i class="bi bi-geo-alt"></i> Kunal Niwas, New
+                          }' type="button" class="btn btn-soft-light location-btn-nav"><i class="bi bi-geo-alt"></i>
+                            Kunal Niwas, New
                             Adarsh Colony, Purna</button>
 
 
 
-                        <!-- <button data-bs-toggle="modal" data-bs-target="#signupModal" data-hs-show-animation-options='{
-                            "targetSelector": "#signupModalFormLogin",
-                            "groupName": "idForm"
-                          }' type="button" class="btn btn-soft-primary"><i class="bi bi-geo-alt"></i> Kunal Niwas,
-                            Adarsh colony,
-                            431511</button> -->
+
 
                         <!-- Log in -->
                         <!-- <li class="nav-item">
-                            <a class="js-animation-link btn btn-ghost-secondary btn-no-focus me-2 me-lg-0"
+                            <a class="js-animation-link btn btn-ghost-light btn-no-focus me-2 me-lg-0"
                                 href="javascript:;" role="button" data-bs-toggle="modal" data-bs-target="#signupModal"
                                 data-hs-show-animation-options='{
                            "targetSelector": "#signupModalFormLogin",
@@ -478,7 +416,7 @@
 
                         <!-- Sign up -->
                         <!-- <li class="nav-item">
-                            <a class="js-animation-link d-none d-lg-inline-block btn btn-primary" href="javascript:;"
+                            <a class="js-animation-link d-none d-lg-inline-block btn btn-soft-light" href="javascript:;"
                                 role="button" data-bs-toggle="modal" data-bs-target="#signupModal"
                                 data-hs-show-animation-options='{
                            "targetSelector": "#signupModalFormSignup",
@@ -498,53 +436,50 @@
 
     <!-- Offcanvas -->
     <div class="offcanvas offcanvas-start mobile-sidebar" tabindex="-1" id="offcanvasExample"
-        aria-labelledby="offcanvasExampleLabel" style="width: 75%;">
+        aria-labelledby="offcanvasExampleLabel" style="width: 19rem">
         <div class="offcanvas-header">
             <h5 class="offcanvas-title" id="offcanvasExampleLabel">Welcome, Kunal Pandharkar</h5>
             <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body p-0">
-            <!-- Sidebar Navigation -->
-            <nav class="nav flex-column sidebar-nav border-top ">
-
-                <!-- Your Account Section -->
-                <a href="#account" class="nav-link px-4 py-3 sidebar-link btn-ghost-secondary btn-no-focus">
-                    <i class="bi bi-person-circle me-2"></i> Your Account
+            <!-- List Group -->
+            <div class="list-group">
+                <a class="list-group-item list-group-item-action active d-flex align-items-center" href="#">
+                    <i class="bi-house list-group-icon"></i> Home
+                </a>
+                <a class="list-group-item list-group-item-action d-flex align-items-center" href="#">
+                    <i class="bi-person list-group-icon"></i> User Profile
+                </a>
+                <a class="list-group-item list-group-item-action d-flex align-items-center" href="#">
+                    <i class="bi-floppy list-group-icon"></i> Saved Shops
+                    <span class="badge bg-primary rounded-pill ms-auto">14</span>
+                </a>
+                <a class="list-group-item list-group-item-action d-flex align-items-center" href="#">
+                    <i class="bi-shop list-group-icon"></i> Shop Profile
+                </a>
+                <a class="list-group-item list-group-item-action d-flex align-items-center" href="#">
+                    <i class="bi-shop-window list-group-icon"></i> Nearby Shops
+                </a>
+                <a class="list-group-item list-group-item-action d-flex align-items-center" href="#">
+                    <i class="bi-plus-circle-dotted list-group-icon"></i> Register Shop
+                </a>
+                <a class="list-group-item list-group-item-action d-flex align-items-center" href="#">
+                    <i class=" bi-buildings list-group-icon"></i> About us
+                </a>
+                <a class="list-group-item list-group-item-action d-flex align-items-center" href="#">
+                    <i class="bi-telephone list-group-icon"></i> Contact us
+                </a>
+                <a class="list-group-item list-group-item-action d-flex align-items-center" href="#">
+                    <i class=" bi-box-arrow-right list-group-icon"></i> Logout
+                </a>
+                <a class="list-group-item list-group-item-action d-flex align-items-center" href="#">
+                    <i class="bi-box-arrow-in-left list-group-icon"></i> Login/Sign Up
                 </a>
 
-                <!-- Your Account Section -->
-                <a href="#account" class="nav-link px-4 py-3 sidebar-link btn-ghost-secondary btn-no-focus">
-                    <i class="bi bi-person-circle me-2"></i> Shop Account
-                </a>
+            </div>
+            <!-- End List Group -->
 
-                <!-- All Shops Section -->
-                <a href="#shops" class="nav-link px-4 py-3 sidebar-link btn-ghost-secondary btn-no-focus">
-                    <i class="bi bi-shop me-2"></i> Nearby Shops
-                </a>
 
-                <!-- Add Your Shop Section -->
-                <a href="#addShop" class="nav-link px-4 py-3 sidebar-link btn-ghost-secondary btn-no-focus">
-                    <i class="bi bi-plus-circle-dotted me-2"></i> Add Your Shop
-                </a>
-
-                <!-- About Us Section -->
-                <a href="#aboutUs" class="nav-link px-4 py-3 sidebar-link btn-ghost-secondary btn-no-focus">
-                    <i class="bi bi-info-circle me-2"></i> About Us
-                </a>
-
-                <!-- Contact Us Section -->
-                <a href="#contactUs" class="nav-link px-4 py-3 sidebar-link btn-ghost-secondary btn-no-focus">
-                    <i class="bi bi-envelope me-2"></i> Contact Us
-                </a>
-
-                <hr>
-
-                <!-- Contact Us Section -->
-                <a href="#contactUs" class="nav-link px-4 py-3 sidebar-link ">
-                    <i class="bi bi-box-arrow-right me-2"></i> Logout
-                </a>
-
-            </nav>
         </div>
     </div>
     <!-- End Offcanvas -->
@@ -580,7 +515,7 @@
 
             <!-- Hero -->
             <div class="bg-primary-dark overflow-hidden">
-                <div class="container position-relative content-space-1">
+                <div class="container position-relative hero-container">
                     <div class="w-lg-65 text-center mx-lg-auto">
                         <h1 class="h2 text-white mb-3 heading-hero">How can we help ?
                         </h1>
@@ -598,16 +533,16 @@
                         <!-- End Input Card -->
 
                         <!-- Links -->
-                        <div class="d-none d-sm-flex justify-content-center align-items-center">
-                            <span class="text-white-70 me-2">Common troubleshooting topics:</span>
+                        <div class="d-none d-lg-flex justify-content-center align-items-center">
+                            <span class="text-white-70 me-2">Common search topics:</span>
 
-                            <a class="link-bordered link-light" href="#">gulp</a>
+                            <a class="link-bordered link-light" href="#">garages</a>
                             <span class="text-white me-1">,</span>
-                            <a class="link-bordered link-light" href="#">customization</a>
+                            <a class="link-bordered link-light" href="#">service centers</a>
                             <span class="text-white me-1">,</span>
-                            <a class="link-bordered link-light" href="#">refund</a>
+                            <a class="link-bordered link-light" href="#">showrooms</a>
                             <span class="text-white me-1">,</span>
-                            <a class="link-bordered link-light" href="#">license</a>
+                            <a class="link-bordered link-light" href="#">spare parts</a>
                         </div>
                         <!-- End Links -->
                     </div>
@@ -618,58 +553,75 @@
         </div>
 
 
-        <div class="service-icons bg-soft-secondary">
+        <div class="service-icons section-padding">
             <!-- Icons Grid Container -->
-            <div class="container pt-4 pb-4">
-                <span class="text-cap">CATEGORIES</span>
-                <div class="row row-cols-3 row-cols-md-3 row-cols-lg-6 g-4">
+            <div class="container">
+
+                <div class="row row-cols-3  row-cols-md-4 row-cols-lg-4  g-2">
                     <!-- Icon Card Example -->
                     <div class="col">
                         <div class="icon-card text-center">
-                            <i class="bi bi-tools icon"></i>
-                            <!-- <img src="assets/images/png/service-center.png" alt="" class="img-fluid service-img"> -->
+                            <!-- <i class="bi bi-tools icon"></i> -->
+                            <img src="https://cdn-icons-png.flaticon.com/128/1995/1995470.png" alt=""
+                                class="img-fluid service-img">
+
                             <h6 class="mt-2">Garages</h6>
                         </div>
                     </div>
                     <div class="col">
                         <div class="icon-card text-center">
-                            <i class="bi bi-car-front icon"></i>
+                            <!-- <i class="bi bi-car-front icon"></i> -->
+                            <img src="https://cdn-icons-png.flaticon.com/512/3627/3627886.png" alt="" class="img-fluid service-img">
+
                             <h6 class="mt-2">Service Centers</h6>
                         </div>
                     </div>
                     <div class="col">
                         <div class="icon-card text-center">
-                            <i class="bi bi-house-door icon"></i>
+                            <img src="https://cdn-icons-png.flaticon.com/512/3361/3361506.png" alt="" class="img-fluid service-img">
+
+                            <!-- <i class="bi bi-house-door icon"></i> -->
                             <h6 class="mt-2">Showrooms</h6>
                         </div>
                     </div>
                     <div class="col">
                         <div class="icon-card text-center">
-                            <i class="bi bi-water icon"></i>
+                            <img src="https://cdn-icons-png.flaticon.com/128/1743/1743609.png" alt="" class="img-fluid service-img">
+
+                            <!-- <i class="bi bi-water icon"></i> -->
                             <h6 class="mt-2">Washing Centers</h6>
                         </div>
                     </div>
                     <div class="col">
                         <div class="icon-card text-center">
-                            <i class="bi bi-shop icon"></i>
+                            <img src="https://cdn-icons-png.flaticon.com/512/814/814406.png" alt="" class="img-fluid service-img">
+
+                            <!-- <i class="bi bi-shop icon"></i> -->
                             <h6 class="mt-2">Automobile Shops</h6>
                         </div>
                     </div>
                     <div class="col">
                         <div class="icon-card text-center">
-                            <i class="bi bi-gear icon"></i>
+                            <img src="https://cdn-icons-png.flaticon.com/128/12622/12622092.png" alt="" class="img-fluid service-img">
+
+                            <!-- <i class="bi bi-gear icon"></i> -->
                             <h6 class="mt-2">Find Spare Parts</h6>
                         </div>
                     </div>
                     <div class="col">
                         <div class="icon-card text-center">
-                            <i class="bi bi-bicycle icon"></i>
+                            
+                            <img src="https://cdn-icons-png.flaticon.com/512/10203/10203882.png" alt="" class="img-fluid service-img">
+
+                            <!-- <i class="bi bi-bicycle icon"></i> -->
                             <h6 class="mt-2">Second-Hand Dealers</h6>
                         </div>
                     </div>
                     <div class="col">
                         <div class="icon-card text-center">
-                            <i class="bi bi-ev-front icon"></i>
+                            <img src="https://cdn-icons-png.flaticon.com/128/8121/8121384.png" alt="" class="img-fluid service-img">
+
+                            <!-- <i class="bi bi-ev-front icon"></i> -->
                             <h6 class="mt-2">Workshops</h6>
                         </div>
                     </div>
@@ -677,12 +629,15 @@
             </div>
 
         </div>
+        
 
 
-        <div class="top-garages">
+
+        <div class="top-garages bg-soft-warning">
             <!-- Icons Grid Container -->
-            <div class="container pt-4">
-                <span class="text-cap">TOP GARAGES IN ADARSH COLONY, PURNA</span>
+            <div class="container site-headings">
+                <span class="text-cap">Best Garages</span>
+                <p class="heading-bottom-address">Kunal Niwas, Adarsh Colony, Purna, Parbhani 431511</p>
             </div>
 
             <div class="container">
@@ -1552,6 +1507,18 @@
                 }
             })
 
+            const searchInput = document.getElementById('search-input');
+
+            new Typed(searchInput, {
+                strings: ["Search for garages.", "Search for service centers.", "Search for showrooms."],
+                typeSpeed: 90,
+                backSpeed: 30,
+                backDelay: 2500,
+                loop: true,
+                attr: 'placeholder', // This targets the placeholder attribute
+                bindInputFocusEvents: true // Resets animation on focus/blur
+            });
+
 
             // INITIALIZATION OF SHOW ANIMATIONS
             // =======================================================
@@ -1582,18 +1549,12 @@
             // INITIALIZATION OF TEXT ANIMATION (TYPING)
             // =======================================================
 
+            // INITIALIZATION OF HEADER
+            // =======================================================
+            new HSHeader('#header').init()
 
-            const searchInput = document.getElementById('search-input');
 
-            new Typed(searchInput, {
-                strings: ["Search for garages.", "Search for service centers.", "Search for showrooms."],
-                typeSpeed: 90,
-                backSpeed: 30,
-                backDelay: 2500,
-                loop: true,
-                attr: 'placeholder', // This targets the placeholder attribute
-                bindInputFocusEvents: true // Resets animation on focus/blur
-            });
+
 
 
         })()

@@ -50,12 +50,12 @@
     --bs-black-rgb: 0, 0, 0;
     --bs-body-color-rgb: 81, 89, 108;
     --bs-body-bg-rgb: 255, 255, 255;
-    --bs-font-sans-serif: "Nunito Sans", serif;
+    --bs-font-sans-serif: "Poppins", serif;
     ;
-    --bs-font-monospace: "Nunito Sans", serif;
+    --bs-font-monospace: "Poppins", serif;
     ;
     --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
-    --bs-body-font-family: "Nunito Sans", serif;
+    --bs-body-font-family: "Poppins", serif;
     ;
     --bs-body-font-size: 1rem;
     --bs-body-font-weight: 400;
@@ -1657,6 +1657,12 @@ progress {
         -ms-flex: 0 0 auto;
         flex: 0 0 auto;
         width: 16.6666666667%
+    }
+
+    .row-cols-lg-8 > * {
+        -ms-flex: 0 0 auto;
+        flex: 0 0 auto;
+        width: 12.5%;
     }
 
     .col-lg-auto {
@@ -5960,7 +5966,7 @@ fieldset:disabled .btn {
     --bs-list-group-border-width: 0.0625rem;
     --bs-list-group-border-radius: 0.3125rem;
     --bs-list-group-item-padding-x: 1rem;
-    --bs-list-group-item-padding-y: 0.5rem;
+    --bs-list-group-item-padding-y: 1rem;
     --bs-list-group-action-color: #677788;
     --bs-list-group-action-hover-color: #677788;
     --bs-list-group-action-hover-bg: #F9FAFC;
@@ -5969,8 +5975,8 @@ fieldset:disabled .btn {
     --bs-list-group-disabled-color: #8C98A4;
     --bs-list-group-disabled-bg: #fff;
     --bs-list-group-active-color: #fff;
-    --bs-list-group-active-bg: #e3324a;
-    --bs-list-group-active-border-color: #e3324a;
+    --bs-list-group-active-bg: #005c45;
+    --bs-list-group-active-border-color: #005c45;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
@@ -6860,7 +6866,7 @@ fieldset:disabled .btn {
     display: block;
     padding: var(--bs-tooltip-arrow-height);
     margin: var(--bs-tooltip-margin);
-    font-family: Roboto, sans-serif;
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 400;
     line-height: 1.5;
@@ -6981,7 +6987,7 @@ fieldset:disabled .btn {
     z-index: var(--bs-popover-zindex);
     display: block;
     max-width: var(--bs-popover-max-width);
-    font-family: Roboto, sans-serif;
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 400;
     line-height: 1.5;
@@ -17224,7 +17230,7 @@ input[type=number] {
 }
 
 .avatar:not(img) {
-    background-color: #fff
+    background-color: #fff;
 }
 
 .avatar-img {
@@ -18717,6 +18723,10 @@ input[type=number] {
     color: #f9fafc;
     background-color: rgba(249, 250, 252, .1);
     border-color: transparent
+}
+
+.location-btn-nav{
+    color: rgba(255, 255, 255, 0.55);
 }
 
 .btn-check:focus+.btn-soft-light,
@@ -21504,7 +21514,8 @@ input[type=number] {
 .list-group-icon {
     width: 1.25rem;
     text-align: center;
-    margin-right: .25rem
+    margin-right: .25rem;
+    font-size: 1rem;
 }
 
 .list-group-flush>.list-group-item {
@@ -21894,13 +21905,15 @@ input[type=number] {
 
 .navbar-dropdown-menu-media-title {
     color: #223b41;
-    font-weight: 500
+    font-weight: 500;
+    font-size: 1rem
 }
 
 .navbar-dropdown-menu-media-desc {
     color: #1C1C1C;
     font-size: .875rem;
-    margin-bottom: 0
+  
+    margin-bottom: 0;
 }
 
 .navbar-dropdown-menu-promo:not(:first-child) .navbar-dropdown-menu-promo-item {
@@ -25522,13 +25535,11 @@ input[type=number] {
 
 .text-cap {
     display: block;
-    color: #00221c;
-    font-size: 0.9rem;
-    font-weight: 700;
+    color: #1C1C1C;
+    font-size: 1rem;
+    font-weight: 500;
     letter-spacing: .03125rem;
-    text-transform: uppercase;
-    margin-bottom: 1.5rem;
-   
+    line-height: 1.75rem;
 }
 
 .text-dark {
