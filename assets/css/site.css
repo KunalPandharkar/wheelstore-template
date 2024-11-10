@@ -248,7 +248,7 @@ blockquote {
 
 b,
 strong {
-    font-weight: bolder
+    font-weight: 600
 }
 
 .small,
@@ -24036,8 +24036,12 @@ input[type=number] {
     max-width: 100%;
     padding-right: .75rem;
     padding-left: .75rem;
-    margin-bottom: 2.25rem
+    margin-bottom: 2.25rem;
+    cursor: pointer;
 }
+
+
+
 
 .step-item-between .step-item:last-child {
     -ms-flex: 0 0 auto;
@@ -25537,7 +25541,7 @@ input[type=number] {
     display: block;
     color: #1C1C1C;
     font-size: 1rem;
-    font-weight: 500;
+    font-weight: 600;
     letter-spacing: .03125rem;
     line-height: 1.75rem;
 }
