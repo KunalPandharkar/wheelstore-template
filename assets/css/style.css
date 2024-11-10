@@ -8,7 +8,7 @@
     padding-bottom: 1rem;
 }
 
-.section-seperator{
+.section-seperator {
     padding-top: 1rem;
     padding-bottom: 2rem;
 }
@@ -193,17 +193,17 @@
 }
 
 .register-your-shop li {
-    font-size: 0.8rem
+    font-size: 0.85rem
 }
 
-.register-your-shop .register-shop-btn{
+.register-your-shop .register-shop-btn {
     font-size: 0.9rem;
 }
 
 
 .frequently-asked-questions .accordion-button,
 .frequently-asked-questions .accordion-body {
-    font-size: 0.8rem;
+    font-size: 0.85rem;
 }
 
 
@@ -219,22 +219,27 @@
 
 .step-title {
     font-size: 0.9rem;
-    transition: color 0.2s; /* Smooth transition for color change */
+    transition: color 0.2s;
+    /* Smooth transition for color change */
 }
+
 .step-text {
     font-size: 0.8rem;
     transition: color 0.2s;
 }
 
 /* Hover effect */
-.step-item:hover .step-title{
+.step-item:hover .step-title {
     color: #008060;
 }
 
-.step-item:hover .step-text{
+.step-item:hover .step-text {
     color: #008060;
 }
 
+.link-sm {
+    font-size: 0.8rem;
+}
 
 
 
@@ -297,6 +302,9 @@
         font-size: 0.9rem;
     }
 
+    .link-sm {
+        font-size: 0.9rem;
+    }
 }
 
 /* // Large devices (desktops, 992px and up) */
@@ -352,14 +360,20 @@
     .hero-container {
         padding-bottom: 2rem;
     }
+
     .step-title {
         font-size: 1rem;
     }
+
     .step-text {
         font-size: 0.9rem;
     }
-    
-    .register-your-shop .register-shop-btn{
+
+    .register-your-shop .register-shop-btn {
+        font-size: 1rem;
+    }
+
+    .link-sm {
         font-size: 1rem;
     }
 
@@ -370,5 +384,3 @@
 
 /* // XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) {}
-
-

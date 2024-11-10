@@ -5975,7 +5975,7 @@ fieldset:disabled .btn {
     --bs-list-group-disabled-color: #8C98A4;
     --bs-list-group-disabled-bg: #fff;
     --bs-list-group-active-color: #fff;
-    --bs-list-group-active-bg: #005c45;
+    --bs-list-group-active-bg: #008060;
     --bs-list-group-active-border-color: #005c45;
     display: -ms-flexbox;
     display: flex;
