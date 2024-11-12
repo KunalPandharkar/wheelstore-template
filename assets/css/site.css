@@ -253,7 +253,7 @@ strong {
 
 .small,
 small {
-    font-size: .875em
+    font-size: .8rem
 }
 
 .mark,
@@ -2748,7 +2748,8 @@ progress {
     color: #1C1C1C;
     background-color: #fff;
     background-clip: padding-box;
-    border: .0625rem solid rgba(0, 34, 28, .1);
+    /* border: .0625rem solid rgba(0, 34, 28, .1); */
+    border: 0.1rem solid rgb(207, 207, 207);
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -2890,7 +2891,7 @@ progress {
 .form-control-sm {
     min-height: calc(1.5em + 1.125rem);
     padding: .5rem .875rem;
-    font-size: .8125rem;
+    font-size: 0.85rem;
     border-radius: .3125rem
 }
 
@@ -3068,7 +3069,8 @@ textarea.form-control-lg {
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    border: 1px solid rgba(0, 34, 28, .1);
+    border: 0.1rem solid rgb(207, 207, 207);
+    /* border: 1px solid rgba(0, 34, 28, .1); */
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -3097,21 +3099,23 @@ textarea.form-control-lg {
 }
 
 .form-check-input:checked {
-    background-color: #e3324a;
-    border-color: #e3324a
+    background-color: #008060;
+    border-color: #008060
 }
 
 .form-check-input:checked[type=checkbox] {
+    background-color: #008060; /* Green */
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m6 10 3 3 6-6'/%3e%3c/svg%3e")
 }
 
 .form-check-input:checked[type=radio] {
+    background-color: #008060; /* Green */
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='2' fill='%23fff'/%3e%3c/svg%3e")
 }
 
 .form-check-input[type=checkbox]:indeterminate {
-    background-color: #e3324a;
-    border-color: #e3324a;
+    background-color: #008060;
+    border-color: #008060;
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10h8'/%3e%3c/svg%3e")
 }
 
@@ -3463,14 +3467,15 @@ textarea.form-control-lg {
     -ms-flex-align: center;
     align-items: center;
     padding: .6125rem 1rem;
-    font-size: 1rem;
+    font-size: 0.85rem;
     font-weight: 400;
     line-height: 1.5;
     color: #8c98a4;
     text-align: center;
     white-space: nowrap;
     background-color: #fff;
-    border: .0625rem solid rgba(0, 34, 28, .1);
+    /* border: .0625rem solid rgba(0, 34, 28, .1); */
+    border: 0.1rem solid rgb(207, 207, 207);
     border-radius: .3125rem
 }
 
@@ -21212,7 +21217,7 @@ input[type=number] {
 
 .form-label-link {
     font-weight: 500;
-    font-size: .875rem;
+    font-size: .85rem;
     margin-bottom: .5rem
 }
 
@@ -26339,3 +26344,5 @@ a:hover .text-inherit {
 .swiper-vertical>.swiper-pagination-bullets .swiper-pagination-bullet {
     margin: .25rem 0
 }
+
+
