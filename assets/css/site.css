@@ -5618,7 +5618,7 @@ fieldset:disabled .btn {
     --bs-breadcrumb-margin-bottom: 1rem;
     --bs-breadcrumb-bg: transparent;
     --bs-breadcrumb-divider-color: #97A4AF;
-    --bs-breadcrumb-item-padding-x: 0.5rem;
+    --bs-breadcrumb-item-padding-x: 0.2rem;
     --bs-breadcrumb-item-active-color: #8C98A4;
     display: -ms-flexbox;
     display: flex;
@@ -5640,7 +5640,7 @@ fieldset:disabled .btn {
     float: left;
     padding-right: var(--bs-breadcrumb-item-padding-x);
     color: var(--bs-breadcrumb-divider-color);
-    content: var(--bs-breadcrumb-divider, "https://htmlstream.com/")
+    content: var(--bs-breadcrumb-divider, "/")
 }
 
 .breadcrumb-item.active {
@@ -8846,7 +8846,7 @@ fieldset:disabled .btn {
     border-color: rgba(var(--bs-secondary-rgb), var(--bs-border-opacity)) !important
 }
 
-.border-success {
+.c {
     --bs-border-opacity: 1;
     border-color: rgba(var(--bs-success-rgb), var(--bs-border-opacity)) !important
 }

@@ -1,5 +1,15 @@
 /* Index.html page */
 
+/* Style the anchor tag */
+a.clickable-link {
+    display: block;
+    /* Make it behave like a block-level element */
+    text-decoration: none;
+    /* Remove underline */
+    color: inherit;
+    /* Inherit color from the parent (no default link color) */
+}
+
 .hero-container {
     padding-top: 3rem;
     padding-bottom: 1rem;
@@ -36,18 +46,29 @@
 }
 
 
+.location-box .address {
+    font-size: 0.8rem;
+}
 
+.location-box .offcanvas {
+    height: 80vh;
+}
+
+
+.location-box .recent-searches h6 {
+    font-size: 0.9rem;
+    margin-top: 1rem
+}
 
 
 /* Detect Location Link Styling */
-.detect-location-link {
+.location-box .detect-location-link {
     display: inline-block;
-  
+
     color: #007bff;
     /* Bootstrap primary color */
     text-decoration: none;
     font-weight: 500;
-    font-size: 0.9rem;
     transition: color 0.3s ease;
 }
 
@@ -265,7 +286,16 @@
 }
 
 
+/* Category-shops Page */
 
+.shop-lists .breadcrumb-item{
+    font-size: 0.8rem;
+}
+
+
+.shop-lists .search-button{
+    font-size: 0.9rem;
+}
 
 
 /* // Small devices (landscape phones, 576px and up) */
@@ -355,8 +385,18 @@
     .form-control-sm {
         font-size: 0.95rem;
     }
-    .input-group-text{
+
+    .input-group-text {
         font-size: 0.95rem;
+    }
+
+    .location-box .address {
+        font-size: 0.9rem;
+    }
+
+    .location-box .recent-searches h6 {
+        font-size: 1rem;
+        margin-top: 1.2rem
     }
 }
 
@@ -456,8 +496,21 @@
         font-size: 1rem;
     }
 
-    .input-group-text{
+    .input-group-text {
         font-size: 1rem;
+    }
+
+    .location-box .address {
+        font-size: 0.9rem;
+    }
+
+    .location-box .recent-searches h6 {
+        font-size: 1.1rem;
+        margin-top: 1.5rem
+    }
+
+    .location-box .offcanvas {
+        height: 85vh;
     }
 
 }
