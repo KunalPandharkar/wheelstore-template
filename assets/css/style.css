@@ -288,15 +288,56 @@ a.clickable-link {
 
 /* Category-shops Page */
 
-.shop-lists .breadcrumb-item{
-    font-size: 0.8rem;
+.shop-lists .breadcrumb-item {
+    font-size: 0.7rem;
 }
 
 
-.shop-lists .search-button{
-    font-size: 0.9rem;
+.shop-lists .search-button {
+    font-size: 0.85rem;
+    font-weight: 500;
 }
 
+.search-bar {
+    position: relative;
+    width: 100%;
+}
+
+.search-input {
+    width: 100%;
+    padding-left: 40px;
+    /* Space for search icon */
+}
+
+.search-icon {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgba(0, 0, 0, 0.5);
+    /* Transparent icon color */
+}
+
+.filters-dropdown-menu {
+    min-width: 15rem
+}
+
+.selected-filters {
+    background-color: rgba(243, 244, 246, 1);
+    scrollbar-width: thin;
+    /* Optional: makes the scrollbar thinner */
+    scrollbar-color: transparent transparent;
+    /* Hide the scrollbar (Firefox) */
+}
+
+.selected-filters::-webkit-scrollbar {
+    display: none;
+    /* Hide the scrollbar in WebKit-based browsers (Chrome, Safari) */
+}
+
+.filter-items .badge {
+    font-size: 0.75rem;
+}
 
 /* // Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {}
@@ -397,6 +438,20 @@ a.clickable-link {
     .location-box .recent-searches h6 {
         font-size: 1rem;
         margin-top: 1.2rem
+    }
+
+    /* Category-shops page */
+    .shop-lists .breadcrumb-item {
+        font-size: 0.8rem;
+    }
+
+    .shop-lists .search-button {
+        font-size: 0.95rem;
+
+    }
+
+    .filter-items .badge {
+        font-size: 0.8rem;
     }
 }
 
@@ -511,6 +566,20 @@ a.clickable-link {
 
     .location-box .offcanvas {
         height: 85vh;
+    }
+
+    /* Category-shops page */
+    .shop-lists .breadcrumb-item {
+        font-size: 0.95rem;
+    }
+
+    .shop-lists .search-button {
+        font-size: 1rem;
+
+    }
+
+    .filter-items .badge {
+        font-size: 0.9rem;
     }
 
 }

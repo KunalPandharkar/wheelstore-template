@@ -762,34 +762,36 @@
 
             <div class="container">
 
-                <span class="text-cap"> Best Garages in <a href="" class="link-info"><i
-                            class="bi bi-geo-alt-fill"></i>Adarsh Colony, Purna 431511 </a> </span>
 
-                <nav aria-label="breadcrumb">
-                    <ol class="breadcrumb">
+
+                <nav aria-label="breadcrumb ">
+                    <ol class="breadcrumb mt-4">
                         <li class="breadcrumb-item"><a href="#">Home</a></li>
-                        <li class="breadcrumb-item"><a href="#">Pune</a></li>
-                        <li class="breadcrumb-item"><a href="#">Adarsh Colony</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Garages</li>
+                        <li class="breadcrumb-item"><a href="#">India</a></li>
+                        <li class="breadcrumb-item"><a href="#">Maharashtra</a></li>
+                        <li class="breadcrumb-item"><a href="#">Purna</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">New Adarsh Colony</li>
                     </ol>
                 </nav>
+
+                <!-- <span class="text-cap pt-0"> Best Garages, Service Centers & workshops</span> -->
             </div>
+
+
+
 
 
             <div class="container search-bar">
                 <!-- Search Bar Container -->
                 <div class="search-bar-container">
                     <div class="search-bar">
-                        <div class="input-group">
-                            <!-- Search Icon -->
-
-                            <!-- Search Input Field -->
-                            <input type="text" class="form-control form-control-sm search-input"
-                                placeholder="Search for shops, items, services..." aria-label="Search">
-                            <!-- Search Button -->
-                            <button class="btn btn-primary search-button d-lg-block" type="button"><i
-                                    class="bi-search"></i></button>
-                        </div>
+                        <!-- Search Icon -->
+                        <span class="search-icon">
+                            <i class="bi bi-search"></i>
+                        </span>
+                        <!-- Search Input Field -->
+                        <input type="text" class="form-control form-control-sm search-input"
+                            placeholder="Search for shops" aria-label="Search">
                     </div>
                 </div>
 
@@ -809,15 +811,170 @@
                             </div>
                             <!-- End Dropdown -->
                         </div>
-                        <div class="filter">
+                        <div class="filter d-lg-none">
                             <!-- Dropdown -->
                             <div class="btn-group">
-                                <a class="search-button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasFilters"
+                                <a class="search-button " data-bs-toggle="offcanvas" data-bs-target="#offcanvasFilters"
                                     aria-controls="offcanvasFilters">
-
                                     Filters
                                 </a>
 
+                            </div>
+                        </div>
+
+                        <div class="filter d-none d-lg-block">
+
+
+                            <!-- Dropdown -->
+                            <div class="btn-group">
+                                <a class="dropdown-toggle search-button" type="button"
+                                    id="dropdownMenuButtonGhostPrimary" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Shop Type
+                                </a>
+                                <div class="dropdown-menu filters-dropdown-menu" aria-labelledby="dropdownMenuButton">
+
+                                    <!-- Checkbox Switch -->
+                                    <div class="form-check  form-switch mb-4 mt-4">
+                                        <input type="checkbox" class="form-check-input" id="formSwitch2" checked>
+                                        <label class="form-check-label" for="formSwitch2">Garages</label>
+                                    </div>
+                                    <!-- End Checkbox Switch -->
+                                    <!-- Checkbox Switch -->
+                                    <div class="form-check form-switch mb-4">
+                                        <input type="checkbox" class="form-check-input" id="formSwitch2" checked>
+                                        <label class="form-check-label" for="formSwitch2">Service Centers</label>
+                                    </div>
+                                    <!-- End Checkbox Switch -->
+                                    <!-- Checkbox Switch -->
+                                    <div class="form-check form-switch mb-4">
+                                        <input type="checkbox" class="form-check-input" id="formSwitch2" checked>
+                                        <label class="form-check-label" for="formSwitch2">Showrooms</label>
+                                    </div>
+                                    <!-- End Checkbox Switch -->
+
+                                    <!-- Checkbox Switch -->
+                                    <div class="form-check form-switch mb-4">
+                                        <input type="checkbox" class="form-check-input" id="formSwitch2" checked>
+                                        <label class="form-check-label" for="formSwitch2">Washing Centers</label>
+                                    </div>
+                                    <!-- End Checkbox Switch -->
+                                    <!-- Checkbox Switch -->
+                                    <div class="form-check form-switch mb-4">
+                                        <input type="checkbox" class="form-check-input" id="formSwitch2" checked>
+                                        <label class="form-check-label" for="formSwitch2">Service Centers</label>
+                                    </div>
+                                    <!-- End Checkbox Switch -->
+                                    <!-- Checkbox Switch -->
+                                    <div class="form-check form-switch mb-4">
+                                        <input type="checkbox" class="form-check-input" id="formSwitch2" checked>
+                                        <label class="form-check-label" for="formSwitch2">Showrooms</label>
+                                    </div>
+                                    <!-- End Checkbox Switch -->
+
+                                    <!-- Checkbox Switch -->
+                                    <div class="form-check form-switch mb-4">
+                                        <input type="checkbox" class="form-check-input" id="formSwitch2" checked>
+                                        <label class="form-check-label" for="formSwitch2">Washing Centers</label>
+                                    </div>
+                                    <!-- End Checkbox Switch -->
+                                </div>
+                            </div>
+                            <!-- End Dropdown -->
+
+                            <!-- Dropdown -->
+                            <div class="btn-group">
+                                <a class="dropdown-toggle search-button" type="button"
+                                    id="dropdownMenuButtonGhostPrimary" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Vehicle Types
+                                </a>
+                                <div class="dropdown-menu filters-dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <!-- Checkbox Switch -->
+                                    <div class="form-check form-switch mb-4 mt-4">
+                                        <input type="checkbox" class="form-check-input" id="formSwitch2" checked>
+                                        <label class="form-check-label" for="formSwitch2">2 Wheeler</label>
+                                    </div>
+                                    <!-- End Checkbox Switch -->
+                                    <!-- Checkbox Switch -->
+                                    <div class="form-check form-switch mb-4">
+                                        <input type="checkbox" class="form-check-input" id="formSwitch2" checked>
+                                        <label class="form-check-label" for="formSwitch2">3 Wheeler</label>
+                                    </div>
+                                    <!-- End Checkbox Switch -->
+                                    <!-- Checkbox Switch -->
+                                    <div class="form-check form-switch mb-4">
+                                        <input type="checkbox" class="form-check-input" id="formSwitch2" checked>
+                                        <label class="form-check-label" for="formSwitch2">4 Wheeler</label>
+                                    </div>
+                                    <!-- End Checkbox Switch -->
+
+                                    <!-- Checkbox Switch -->
+                                    <div class="form-check form-switch mb-4">
+                                        <input type="checkbox" class="form-check-input" id="formSwitch2" checked>
+                                        <label class="form-check-label" for="formSwitch2">4+ Wheeler</label>
+                                    </div>
+                                    <!-- End Checkbox Switch -->
+                                </div>
+                            </div>
+                            <!-- End Dropdown -->
+
+                            <!-- Dropdown -->
+                            <div class="btn-group">
+                                <a class="dropdown-toggle search-button" type="button"
+                                    id="dropdownMenuButtonGhostPrimary" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Authorized
+                                </a>
+                                <div class="dropdown-menu filters-dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <!-- Checkbox Switch -->
+                                    <div class="form-check form-switch mb-4 mt-4">
+                                        <input type="checkbox" class="form-check-input" id="formSwitch2" checked>
+                                        <label class="form-check-label" for="formSwitch2">Authorized</label>
+                                    </div>
+                                    <!-- End Checkbox Switch -->
+                                    <!-- Checkbox Switch -->
+                                    <div class="form-check form-switch mb-4">
+                                        <input type="checkbox" class="form-check-input" id="formSwitch2" checked>
+                                        <label class="form-check-label" for="formSwitch2">Wheelstore
+                                            Verified</label>
+                                    </div>
+                                    <!-- End Checkbox Switch -->
+                                </div>
+                            </div>
+                            <!-- End Dropdown -->
+
+                            <!-- Dropdown -->
+                            <div class="btn-group">
+                                <a class="dropdown-toggle search-button" type="button"
+                                    id="dropdownMenuButtonGhostPrimary" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Ratings
+                                </a>
+                                <div class="dropdown-menu filters-dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <!-- Checkbox Switch -->
+                                    <div class="form-check form-switch mb-4 mt-4">
+                                        <input type="checkbox" class="form-check-input" id="formSwitch2" checked>
+                                        <label class="form-check-label" for="formSwitch2">2+ Stars</label>
+                                    </div>
+                                    <!-- End Checkbox Switch -->
+                                    <!-- Checkbox Switch -->
+                                    <div class="form-check form-switch mb-4">
+                                        <input type="checkbox" class="form-check-input" id="formSwitch2" checked>
+                                        <label class="form-check-label" for="formSwitch2">3+ Stars</label>
+                                    </div>
+                                    <!-- End Checkbox Switch -->
+
+                                    <!-- Checkbox Switch -->
+                                    <div class="form-check form-switch mb-4">
+                                        <input type="checkbox" class="form-check-input" id="formSwitch2" checked>
+                                        <label class="form-check-label" for="formSwitch2">4+ Stars</label>
+                                    </div>
+                                    <!-- End Checkbox Switch -->
+
+                                    <!-- Checkbox Switch -->
+                                    <div class="form-check form-switch mb-4">
+                                        <input type="checkbox" class="form-check-input" id="formSwitch2" checked>
+                                        <label class="form-check-label" for="formSwitch2">5 Stars</label>
+                                    </div>
+                                    <!-- End Checkbox Switch -->
+                                </div>
                             </div>
                             <!-- End Dropdown -->
                         </div>
@@ -827,32 +984,39 @@
                     <!-- location-box -->
                     <div class="location-box">
 
-                        <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasFilters"
+                        <div class="offcanvas offcanvas-bottom  d-flex flex-column" tabindex="-1" id="offcanvasFilters"
                             aria-labelledby="offcanvasBottomLabel">
                             <div class="offcanvas-header container pt-0">
                                 <h5 class="text-cap" id="offcanvasBottomLabel">Filters</h5>
                                 <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
                                     aria-label="Close"></button>
                             </div>
-                            <div class="offcanvas-body container pt-0">
+                            <div class="offcanvas-body container pt-0 flex-grow-1 overflow-auto">
 
                                 <!-- Nav -->
                                 <div class="text-center">
-                                    <ul class="nav nav-segment nav-pills mb-7" role="tablist">
+                                    <ul class="nav nav-segment  mb-7" role="tablist">
                                         <li class="nav-item">
-                                            <a class="nav-link active" id="nav-one-eg1-tab" href="#nav-one-eg1"
+                                            <a class="nav-link active search-button" id="nav-shop-eg1-tab"
+                                                href="#nav-shop-eg1" data-bs-toggle="pill"
+                                                data-bs-target="#nav-shop-eg1" role="tab" aria-controls="nav-shop-eg1"
+                                                aria-selected="true">Shop Type</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link search-button" id="nav-one-eg1-tab" href="#nav-one-eg1"
                                                 data-bs-toggle="pill" data-bs-target="#nav-one-eg1" role="tab"
-                                                aria-controls="nav-one-eg1" aria-selected="true">Tab One</a>
+                                                aria-controls="nav-one-eg1" aria-selected="true">Vehicle Types</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" id="nav-two-eg1-tab" href="#nav-two-eg1"
+                                            <a class="nav-link search-button" id="nav-two-eg1-tab" href="#nav-two-eg1"
                                                 data-bs-toggle="pill" data-bs-target="#nav-two-eg1" role="tab"
-                                                aria-controls="nav-two-eg1" aria-selected="false">Tab two</a>
+                                                aria-controls="nav-two-eg1" aria-selected="false">Authorized</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" id="nav-three-eg1-tab" href="#nav-three-eg1"
-                                                data-bs-toggle="pill" data-bs-target="#nav-three-eg1" role="tab"
-                                                aria-controls="nav-three-eg1" aria-selected="false">Tab Three</a>
+                                            <a class="nav-link search-button" id="nav-three-eg1-tab"
+                                                href="#nav-three-eg1" data-bs-toggle="pill"
+                                                data-bs-target="#nav-three-eg1" role="tab" aria-controls="nav-three-eg1"
+                                                aria-selected="false">Ratings</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -860,32 +1024,171 @@
 
                                 <!-- Tab Content -->
                                 <div class="tab-content">
-                                    <div class="tab-pane fade show active" id="nav-one-eg1" role="tabpanel"
+                                    <div class="tab-pane fade show active" id="nav-shop-eg1" role="tabpanel"
+                                        aria-labelledby="nav-shop-eg1-tab">
+                                        <!-- Checkbox Switch -->
+
+                                        <!-- Checkbox Switch -->
+                                        <div class="form-check form-switch mb-4">
+                                            <input type="checkbox" class="form-check-input" id="formSwitch2" checked>
+                                            <label class="form-check-label search-button "
+                                                for="formSwitch2">Garages</label>
+                                        </div>
+                                        <!-- End Checkbox Switch -->
+                                        <!-- Checkbox Switch -->
+                                        <div class="form-check form-switch mb-4">
+                                            <input type="checkbox" class="form-check-input" id="formSwitch2" checked>
+                                            <label class="form-check-label search-button " for="formSwitch2">Service
+                                                Centers</label>
+                                        </div>
+                                        <!-- End Checkbox Switch -->
+                                        <!-- Checkbox Switch -->
+                                        <div class="form-check form-switch mb-4">
+                                            <input type="checkbox" class="form-check-input" id="formSwitch2" checked>
+                                            <label class="form-check-label search-button "
+                                                for="formSwitch2">Showrooms</label>
+                                        </div>
+                                        <!-- End Checkbox Switch -->
+
+                                        <!-- Checkbox Switch -->
+                                        <div class="form-check form-switch mb-4">
+                                            <input type="checkbox" class="form-check-input" id="formSwitch2" checked>
+                                            <label class="form-check-label search-button " for="formSwitch2">Washing
+                                                Centers</label>
+                                        </div>
+                                        <!-- End Checkbox Switch -->
+
+                                        <!-- Checkbox Switch -->
+                                        <div class="form-check form-switch mb-4">
+                                            <input type="checkbox" class="form-check-input" id="formSwitch2" checked>
+                                            <label class="form-check-label search-button "
+                                                for="formSwitch2">Workshops</label>
+                                        </div>
+                                        <!-- End Checkbox Switch -->
+
+                                        <!-- Checkbox Switch -->
+                                        <div class="form-check form-switch mb-4">
+                                            <input type="checkbox" class="form-check-input" id="formSwitch2" checked>
+                                            <label class="form-check-label search-button " for="formSwitch2">Automobile
+                                                Shops</label>
+                                        </div>
+                                        <!-- End Checkbox Switch -->
+
+
+                                    </div>
+
+                                    <div class="tab-pane fade show " id="nav-one-eg1" role="tabpanel"
                                         aria-labelledby="nav-one-eg1-tab">
-                                        <p>First tab content...</p>
+                                        <!-- Checkbox Switch -->
+                                        <div class="form-check form-switch mb-4">
+                                            <input type="checkbox" class="form-check-input" id="formSwitch2" checked>
+                                            <label class="form-check-label search-button" for="formSwitch2">2
+                                                Wheeler</label>
+                                        </div>
+                                        <!-- End Checkbox Switch -->
+                                        <!-- Checkbox Switch -->
+                                        <div class="form-check form-switch mb-4">
+                                            <input type="checkbox" class="form-check-input" id="formSwitch2" checked>
+                                            <label class="form-check-label search-button" for="formSwitch2">3
+                                                Wheeler</label>
+                                        </div>
+                                        <!-- End Checkbox Switch -->
+                                        <!-- Checkbox Switch -->
+                                        <div class="form-check form-switch mb-4">
+                                            <input type="checkbox" class="form-check-input" id="formSwitch2" checked>
+                                            <label class="form-check-label search-button" for="formSwitch2">4
+                                                Wheeler</label>
+                                        </div>
+                                        <!-- End Checkbox Switch -->
+
+                                        <!-- Checkbox Switch -->
+                                        <div class="form-check form-switch mb-4">
+                                            <input type="checkbox" class="form-check-input" id="formSwitch2" checked>
+                                            <label class="form-check-label search-button" for="formSwitch2">4+
+                                                Wheeler</label>
+                                        </div>
+                                        <!-- End Checkbox Switch -->
                                     </div>
 
                                     <div class="tab-pane fade" id="nav-two-eg1" role="tabpanel"
                                         aria-labelledby="nav-two-eg1-tab">
-                                        <p>Second tab content...</p>
+                                        <!-- Checkbox Switch -->
+                                        <div class="form-check form-switch mb-4">
+                                            <input type="checkbox" class="form-check-input" id="formSwitch2" checked>
+                                            <label class="form-check-label search-button"
+                                                for="formSwitch2">Authorized</label>
+                                        </div>
+                                        <!-- End Checkbox Switch -->
+                                        <!-- Checkbox Switch -->
+                                        <div class="form-check form-switch mb-4">
+                                            <input type="checkbox" class="form-check-input" id="formSwitch2" checked>
+                                            <label class="form-check-label search-button" for="formSwitch2">Wheelstore
+                                                Verified</label>
+                                        </div>
+                                        <!-- End Checkbox Switch -->
                                     </div>
 
                                     <div class="tab-pane fade" id="nav-three-eg1" role="tabpanel"
                                         aria-labelledby="nav-three-eg1-tab">
-                                        <p>Third tab content...</p>
+                                        <!-- Checkbox Switch -->
+                                        <div class="form-check form-switch mb-4">
+                                            <input type="checkbox" class="form-check-input" id="formSwitch2" checked>
+                                            <label class="form-check-label search-button" for="formSwitch2">2+
+                                                Stars</label>
+                                        </div>
+                                        <!-- End Checkbox Switch -->
+                                        <!-- Checkbox Switch -->
+                                        <div class="form-check form-switch mb-4">
+                                            <input type="checkbox" class="form-check-input" id="formSwitch2" checked>
+                                            <label class="form-check-label search-button" for="formSwitch2">3+
+                                                Stars</label>
+                                        </div>
+                                        <!-- End Checkbox Switch -->
+
+                                        <!-- Checkbox Switch -->
+                                        <div class="form-check form-switch mb-4">
+                                            <input type="checkbox" class="form-check-input" id="formSwitch2" checked>
+                                            <label class="form-check-label search-button" for="formSwitch2">4+
+                                                Stars</label>
+                                        </div>
+                                        <!-- End Checkbox Switch -->
+
+                                        <!-- Checkbox Switch -->
+                                        <div class="form-check form-switch mb-4">
+                                            <input type="checkbox" class="form-check-input" id="formSwitch2" checked>
+                                            <label class="form-check-label search-button" for="formSwitch2">5
+                                                Stars</label>
+                                        </div>
+                                        <!-- End Checkbox Switch -->
                                     </div>
                                 </div>
                                 <!-- End Tab Content -->
 
-
-
-
+                            </div>
+                            <div class="modal-footer p-3 border-top bg-white">
+                                <button type="button" class="btn btn-white search-button border-0">Clear all</button>
+                                <button type="button" class="btn btn-primary search-button">Apply</button>
                             </div>
                         </div>
                     </div>
                     <!-- end location-box -->
 
 
+
+                </div>
+
+                <div class="selected-filters p-3 mt-2">
+
+
+
+                    <div class="filter-items d-flex overflow-auto">
+                        <span class="badge bg-primary rounded-pill m-1">Garages <i class="bi bi-x-lg"></i></span>
+                        <span class="badge bg-primary rounded-pill  m-1">Service Centers <i
+                                class="bi bi-x-lg"></i></span>
+                        <span class="badge bg-primary rounded-pill  m-1">2 Wheelers <i class="bi bi-x-lg"></i></span>
+                        <span class="badge bg-primary rounded-pill  m-1">2 Wheelers <i class="bi bi-x-lg"></i></span>
+                        <span class="badge bg-primary rounded-pill  m-1">2 Wheelers <i class="bi bi-x-lg"></i></span>
+                    </div>
 
                 </div>
             </div>

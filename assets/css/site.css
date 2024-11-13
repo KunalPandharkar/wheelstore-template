@@ -5640,7 +5640,7 @@ fieldset:disabled .btn {
     float: left;
     padding-right: var(--bs-breadcrumb-item-padding-x);
     color: var(--bs-breadcrumb-divider-color);
-    content: var(--bs-breadcrumb-divider, "/")
+    content: var(--bs-breadcrumb-divider, ">")
 }
 
 .breadcrumb-item.active {
@@ -20995,11 +20995,11 @@ input[type=number] {
 }
 
 .form-switch .form-check-input {
-    width: 3em;
-    height: 2em;
+    width: 2.5em;
+    height: 1.5em;
     border-width: 0;
     background-color: #e7eaf3;
-    margin-top: -.25em;
+    margin-top: 0.1em;
     margin-right: .5rem
 }
 
