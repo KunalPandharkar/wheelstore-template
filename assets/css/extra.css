@@ -1,5 +1,17 @@
-/* Custom size for the navbar logo */
+.red-color {
+    background-color: var(--ws-text-red);
+}
 
+.red-text {
+    color: var(--ws-text-red);
+}
+
+.black-text {
+    color: var(--bs-body-color);
+}
+
+
+/* _________NAVBAR___________ */
 
 /* Show the dropdown menu when hovering over the dropdown item */
 .nav-item.dropdown:hover .dropdown-menu {
@@ -14,18 +26,27 @@
     /* Necessary for absolute positioning of the dropdown */
 }
 
-.red-color {
-    background-color: var(--ws-text-red);
+.navbar-toggler svg {
+    height: 1.25rem;
+    width: 1.25rem;
 }
 
-.red-text {
-    color: var(--ws-text-red);
+.nav-divider {
+    border-color: rgba(255, 255, 255, .2);
+    height: 2rem;
+    border-left: .1rem solid rgba(0, 34, 28, .1);
+    margin: 0 .5rem;
 }
 
-.black-text {
-    color: var(--bs-body-color);
+/* ______CIRCLE_AVATAR____ */
+.avatar {
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
 }
 
+
+/* _________MOBILE_SIDEBAR_________ */
 #MobileSidebar ul li a {
     font-size: 0.875rem;
 }
@@ -35,19 +56,65 @@
     width: 1.1rem;
 }
 
-.navbar-toggler svg {
-    height: 1.25rem;
-    width: 1.25rem;
+
+
+
+
+/* ______LOGIN_SIGNUP_OTP_MODAL__________ */
+
+.modal-content {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.otp-input {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.otp-input input {
+    width: 3rem;
+    height: 3rem;
+    text-align: center;
+    font-size: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: border-color 0.3s;
+}
+
+.otp-input input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+
+.resend-link {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
+
+.resend-link a {
+    font-weight: 500;
+}
+
+.resend-link a:hover {
+    text-decoration: underline;
 }
 
 
 
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-    #MobileSidebar ul li a {
-        font-size: 0.95rem;
+    .badge {
+        --bs-badge-font-size: 0.9rem;
     }
 
+    .btn {
+        --bs-btn-font-size: 1rem;
+    }
+
+    /* _________NAVBAR___________ */
     .navbar {
         --bs-nav-link-font-size: 0.95rem;
     }
@@ -57,10 +124,36 @@
         width: 1.5rem;
     }
 
+    .dropdown-menu {
+        --bs-dropdown-font-size: 0.95rem;
+    }
+
+    /* _________MOBILE_SIDEBAR_________ */
+    #MobileSidebar ul li a {
+        font-size: 0.95rem;
+    }
+
+
+
+
+
+
 }
 
 /* // Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {}
+@media (min-width: 992px) {
+
+    .badge {
+        --bs-badge-font-size: 0.9rem;
+    }
+
+    /* _________NAVBAR___________ */
+    .navbar {
+        --bs-nav-link-font-size: 1rem;
+    }
+
+
+}
 
 /* // X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {}

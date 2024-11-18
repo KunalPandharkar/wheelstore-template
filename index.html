@@ -23,7 +23,8 @@
 
 
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light shadow">
+        <!-- Mobile Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light shadow d-lg-none">
             <div class="container">
 
                 <!-- Navbar Toggle for Mobile -->
@@ -40,47 +41,35 @@
                         class="me-2">
                 </a>
 
-                <!-- Dropdown -->
-                <div class="dropdown d-lg-none" style="margin-left: auto;" id="selectlanguage">
-                    <a class="nav-link dropdown-toggle red-text" href="#" id="dropdownMenuLink"
-                        data-bs-toggle="dropdown" aria-expanded="false">EN</a>
-                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
-                        <li><a class="dropdown-item" href="#"> हिंदी - Hi</a></li>
-                        <li> <a class="dropdown-item" href="#">English - En</a></li>
-                    </ul>
-                </div>
 
-                <div class="indian-flag ms-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="40" viewBox="-45 -30 90 60" fill="#07038D">
-                        <title>Flag of India</title>
-                        <path fill="#FFF" d="m-45-30h90v60h-90z"/>
-                        <path fill="#FF6820" d="m-45-30h90v20h-90z"/>
-                        <path fill="#046A38" d="m-45 10h90v20h-90z"/>
-                        <circle r="9.25"/>
-                        <circle fill="#FFF" r="8"/>
-                        <circle r="1.6"/>
-                        <g id="d">
-                            <g id="c">
-                                <g id="b">
-                                    <g id="a">
-                                        <path d="m0-8 .3 4.81409L0-.80235-.3-3.18591z"/>
-                                        <circle transform="rotate(7.5)" r="0.35" cy="-8"/>
-                                    </g>
-                                    <use xlink:href="#a" transform="scale(-1)"/>
-                                </g>
-                                <use xlink:href="#b" transform="rotate(15)"/>
-                            </g>
-                            <use xlink:href="#c" transform="rotate(30)"/>
-                        </g>
-                        <use xlink:href="#d" transform="rotate(60)"/>
-                        <use xlink:href="#d" transform="rotate(120)"/>
+
+                <span class="badge red-color rounded-0 p-2 ms-auto d-lg-none">Advertise</span>
+
+
+            </div>
+        </nav>
+
+        <!-- Desktop Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light shadow d-none d-lg-block">
+            <div class="container">
+
+                <!-- Navbar Toggle for Mobile -->
+                <a class="navbar-toggler" data-bs-toggle="offcanvas" href="#MobileSidebar" role="button"
+                    aria-controls="MobileSidebar">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="#1C1C1C">
+                        <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
                     </svg>
-                </div>
+                </a>
+
+                <!-- Logo -->
+                <a class="navbar-brand" href="#">
+                    <img src="assets/images/png/logo-no-background (1).png" alt="Wheelstore Logo" height="40"
+                        class="me-2">
+                </a>
 
 
 
-
-              
+                <span class="badge red-color rounded-0 p-2 ms-auto d-lg-none">Advertise</span>
 
 
                 <!-- Navbar Links -->
@@ -95,23 +84,29 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
-                                Services
+                                Find Nearby
                             </a>
+
                             <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
                                 <li><a class="dropdown-item" href="#">Garages</a></li>
                                 <li><a class="dropdown-item" href="#">Service Centers</a></li>
                                 <li><a class="dropdown-item" href="#">Showrooms</a></li>
                                 <li><a class="dropdown-item" href="#">Washing Centers</a></li>
                                 <li><a class="dropdown-item" href="#">Workshops</a></li>
+                                <li><a class="dropdown-item" href="#">Automobile Shops</a></li>
+                                <li><a class="dropdown-item" href="#">2nd-Hand Dealers</a></li>
+                                <li><a class="dropdown-item" href="#">Find Spare Parts</a></li>
                             </ul>
                         </li>
 
+
+                        <li class="nav-divider"></li>
+
                         <!-- User Avatar -->
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="userDropdown"
+                        <!-- <li class="nav-item dropdown">
+                            <a class="nav-link  d-flex align-items-center" href="#" id="userDropdown"
                                 role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <div class="rounded-circle bg-primary text-white text-center"
-                                    style="width: 35px; height: 35px; line-height: 35px;">
+                                <div class="rounded-circle red-color text-white text-center avatar">
                                     KP
                                 </div>
                             </a>
@@ -120,35 +115,39 @@
                                 <li><a class="dropdown-item" href="#">Settings</a></li>
                                 <li><a class="dropdown-item" href="#">Logout</a></li>
                             </ul>
+                        </li> -->
+
+                        <li class="nav-item">
+                            <div class="nav-link">
+                                <!-- Login Button -->
+                                <button class="btn btn-danger red-color btn-lg px-4" data-bs-toggle="modal"
+                                    data-bs-target="#signupModal">
+                                    Login / Sign Up
+                                </button>
+
+
+                            </div>
+
                         </li>
+
 
                         <!-- Location Button -->
                         <li class="nav-item">
-                            <button class="btn btn-outline-secondary me-2" type="button">
-                                <i class="bi bi-geo-alt"></i> Adarsh Colony, Purna 431511
+                            <button class="btn btn-success me-2 d-flex align-items-center gap-1" type="button">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                    <path
+                                        d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10" />
+                                    <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+                                </svg>New Adarsh Colony, Purna 431511
                             </button>
                         </li>
 
-                        <!-- Login and Signup Buttons -->
-                        <li class="nav-item">
-                            <a href="#" class="btn btn-primary me-2">Login</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="btn btn-outline-primary">Sign Up</a>
-                        </li>
 
-                        <!-- Language Change Dropdown -->
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Language
-                            </a>
-                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
-                                <li><a class="dropdown-item" href="#">English</a></li>
-                                <li><a class="dropdown-item" href="#">Hindi</a></li>
-                                <li><a class="dropdown-item" href="#">Marathi</a></li>
-                            </ul>
-                        </li>
+
+
+
+
                     </ul>
                 </div>
             </div>
@@ -243,7 +242,7 @@
                         </svg>
                         <a class="black-text ms-2 text-decoration-none" href="">Logout</a>
                     </li>
-                    <li class="list-group-item  d-flex list-group-item-action align-items-center" href="#">
+                    <li class="list-group-item  d-flex list-group-item-action align-items-center"  data-bs-toggle="modal" data-bs-target="#signupModal">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-box-arrow-in-left"
                             viewBox="0 0 16 16">
                             <path fill-rule="evenodd"
@@ -251,7 +250,7 @@
                             <path fill-rule="evenodd"
                                 d="M4.146 8.354a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H14.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708z" />
                         </svg>
-                        <a class="black-text text-decoration-none ms-2" href="">Login/Sign Up</a>
+                        <a class="black-text text-decoration-none ms-2">Login/Sign Up</a>
                     </li>
 
 
@@ -259,6 +258,259 @@
                 <!-- End List Group -->
             </div>
         </div>
+
+
+
+
+        <!-- OTP Modal -->
+        <div class="modal fade" id="otpModal" tabindex="-1" aria-labelledby="otpModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="otpModalLabel">Verify OTP</h5>
+                        <button type="button" class="btn-close btn-light" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="text-center mb-4">We’ve sent a 6-digit OTP to your mobile number. Please enter it
+                            below.</p>
+                        <form id="otpForm">
+                            <div class="otp-input">
+                                <input type="text" maxlength="1" class="form-control" required>
+                                <input type="text" maxlength="1" class="form-control" required>
+                                <input type="text" maxlength="1" class="form-control" required>
+                                <input type="text" maxlength="1" class="form-control" required>
+                                <input type="text" maxlength="1" class="form-control" required>
+                                <input type="text" maxlength="1" class="form-control" required>
+                            </div>
+                            <div class="d-grid mt-4">
+                                <button data-bs-dismiss="modal" type="button" data-bs-toggle="modal"
+                                    data-bs-target="#signupModalInfo" class="btn btn-success">Verify OTP</button>
+                            </div>
+                        </form>
+                        <div class="resend-link">
+                            Didn’t receive the code? <a href="#">Resend OTP</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sign Up Modal -->
+        <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="signupModalLabel">Sign Up</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control rounded-3" id="floatingInput"
+                                    placeholder="Mobile Number">
+                                <label for="floatingInput">Mobile Number</label>
+                            </div>
+
+                            <button class="w-100 mb-2 btn btn-success" data-bs-dismiss="modal" type="button"
+                                data-bs-toggle="modal" data-bs-target="#otpModal">Send OTP</button>
+                            <!-- <small class="text-body-secondary">By clicking Send OTP, you agree to the <a href="">terms and
+                                conditions.</a> </small> -->
+
+                        </form>
+
+
+                    </div>
+                    <div class="modal-footer">
+                        <p class="mb-0">
+                            Already have an account? <a href="#" data-bs-dismiss="modal" data-bs-toggle="modal"
+                                data-bs-target="#loginModal">Login</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sign Up Info Modal -->
+        <div class="modal fade" id="signupModalInfo" tabindex="-1" aria-labelledby="signupModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="signupModalLabel">Sign Up</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control rounded-3" id="floatingInput"
+                                    placeholder="Enter Name">
+                                <label for="floatingInput">Enter Name</label>
+                            </div>
+
+                            <div class="form-floating mb-3">
+                                <input type="password" class="form-control rounded-3" id="floatingInput"
+                                    placeholder="Enter Password">
+                                <label for="floatingInput">Enter Password</label>
+                            </div>
+
+
+                            <div class="form-floating mb-3">
+                                <input type="password" class="form-control rounded-3" id="floatingInput"
+                                    placeholder="Confirm Password">
+                                <label for="floatingInput">Confirm Password</label>
+                            </div>
+
+                            <button class="w-100 mb-2 btn btn-success" data-bs-dismiss="modal" type="button"
+                                data-bs-toggle="modal" data-bs-target="#otpModal">Create Account</button>
+                            <small class="text-body-secondary">By clicking Create Account, you agree to the <a
+                                    href="">terms and
+                                    conditions.</a> </small>
+
+                        </form>
+
+
+                    </div>
+                    <div class="modal-footer">
+                        <p class="mb-0">
+                            Already have an account? <a href="#" data-bs-dismiss="modal" data-bs-toggle="modal"
+                                data-bs-target="#loginModal">Login</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- LoginModal -->
+        <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="signupModalLabel">Login</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control rounded-3" id="floatingInput"
+                                    placeholder="Mobile Number">
+                                <label for="floatingInput">Mobile Number</label>
+                            </div>
+
+                            <div class="form-floating mb-3">
+                                <input type="password" class="form-control rounded-3" id="floatingInput"
+                                    placeholder="Password">
+                                <label for="floatingInput">Password</label>
+                            </div>
+                            <div class="form-floating mb-3 d-flex justify-content-end">
+                                <!-- Forgot Password Link -->
+                                <a href="#" class="" data-bs-toggle="modal" data-bs-target="#forgotpasswordModal">Forgot
+                                    Password?</a>
+                            </div>
+
+                            <button class="w-100 mb-2  btn btn-success" data-bs-dismiss="modal" type="button"
+                                data-bs-toggle="modal" data-bs-target="#otpModal">Login</button>
+                            <!-- <small class="text-body-secondary">By clicking Send OTP, you agree to the <a href="">terms and
+                                conditions.</a> </small> -->
+
+                        </form>
+
+
+                    </div>
+                    <div class="modal-footer">
+                        <p class="mb-0">
+
+                            New to Wheelstore? <a href="#" data-bs-dismiss="modal" data-bs-toggle="modal"
+                                data-bs-target="#signupModal">Create account</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- forgotpsw -->
+        <div class="modal fade" id="forgotpasswordModal" tabindex="-1" aria-labelledby="signupModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="signupModalLabel">Forgot Password</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control rounded-3" id="floatingInput"
+                                    placeholder="Mobile Number">
+                                <label for="floatingInput">Mobile Number</label>
+                            </div>
+
+                            <button class="w-100 mb-2  btn btn-success" data-bs-dismiss="modal" type="button"
+                                data-bs-toggle="modal" data-bs-target="#resetpswModal">Send OTP</button>
+                            <!-- <small class="text-body-secondary">By clicking Send OTP, you agree to the <a href="">terms and
+                                conditions.</a> </small> -->
+
+                        </form>
+
+
+                    </div>
+                    <div class="modal-footer">
+                        <p class="mb-0">
+
+                            New to Wheelstore? <a href="#" data-bs-dismiss="modal" data-bs-toggle="modal"
+                                data-bs-target="#signupModal">Create account</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Reset Password -->
+        <div class="modal fade" id="resetpswModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="signupModalLabel">Reset Password</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="">
+
+                            <div class="form-floating mb-3">
+                                <input type="password" class="form-control rounded-3" id="floatingInput"
+                                    placeholder="New Password">
+                                <label for="floatingInput">New Password</label>
+                            </div>
+
+
+                            <div class="form-floating mb-3">
+                                <input type="password" class="form-control rounded-3" id="floatingInput"
+                                    placeholder="Confirm Password">
+                                <label for="floatingInput">Confirm Password</label>
+                            </div>
+
+                            <button class="w-100 mb-2  btn btn-success" data-bs-dismiss="modal" type="button"
+                                data-bs-toggle="modal" data-bs-target="#otpModal">Set New Password</button>
+                            <!-- <small class="text-body-secondary">By clicking Send OTP, you agree to the <a href="">terms and
+                                conditions.</a> </small> -->
+
+                        </form>
+
+
+                    </div>
+                    <div class="modal-footer">
+                        <p class="mb-0">
+
+                            New to Wheelstore? <a href="#" data-bs-dismiss="modal" data-bs-toggle="modal"
+                                data-bs-target="#signupModal">Create account</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
 
     </header>
 
@@ -268,6 +520,29 @@
 
 
     <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Auto-focus next input on keypress
+        const otpInputs = document.querySelectorAll('.otp-input input');
+        otpInputs.forEach((input, index) => {
+            input.addEventListener('input', () => {
+                if (input.value.length === 1 && index < otpInputs.length - 1) {
+                    otpInputs[index + 1].focus();
+                }
+            });
+
+            input.addEventListener('keydown', (e) => {
+                if (e.key === 'Backspace' && !input.value && index > 0) {
+                    otpInputs[index - 1].focus();
+                }
+            });
+        });
+
+        // Handle form submission
+        document.getElementById('otpForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('OTP Verified Successfully!');
+        });
+    </script>
 </body>
 
 </html>
