@@ -1,0 +1,403 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Stylesheeet -->
+    <link rel="stylesheet" href="assets/style.css">
+
+    <!-- material icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <title>Vego - Aapka Apna Garage !</title>
+
+</head>
+
+<body>
+
+    <!-- header - navigation bar start-->
+    <section>
+        <nav class="navbar navbar-expand-xl navbar-dark redbg" aria-label="Main navigation">
+            <div class="container-fluid">
+
+                <button class="navbar-toggler p-0 border-0 homenavtoggle" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#mob-sidebar" aria-controls="mob-sidebar">
+                    <span id="sb-toggle" class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- logo -->
+                <a id="vego-logo" class="navbar-brand " href="#">
+                    <img src="assets/images/logo.png" alt="logo" class=" align-text-top">
+                </a>
+                <!-- logo end -->
+
+                <!-- lang mobile-->
+                <div id="langchange" class="dropdown langmob">
+                    <a class="text-light dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        En
+                    </a>
+                    <ul id="langchangeitems" class="dropdown-menu  dropdown-menu-end dropdown-menu-lg-start"
+                        aria-labelledby="dropdownMenu2">
+                        <li><button class="dropdown-item" type="button">Marathi</button></li>
+                        <li><button class="dropdown-item" type="button">Japanese</button></li>
+                        <li><button class="dropdown-item" type="button">German</button></li>
+                    </ul>
+                </div>
+                <!-- lang end -->
+
+
+                <!-- searchbar -->
+                <div class="input-group searchbargrp">
+                    <input type="text" class="form-control" placeholder="Search For Garages and Service Centers"
+                        aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <button id="sbarbtn" class="btn" type="button" id="button-addon2">
+                        <span class="material-icons">
+                            search
+                        </span>
+                    </button>
+                </div>
+                <!-- searchbar end -->
+
+                <!-- navbar items in desktop -->
+                <div id="desknavitems" class="navbar-collapse offcanvas-collapse">
+                    <!-- lang -->
+                    <div id="langchange" class="dropdown">
+                        <a class="text-light dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            En
+                        </a>
+                        <ul id="langchangeitems" class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                            <li><button class="dropdown-item" type="button">Marathi</button></li>
+                            <li><button class="dropdown-item" type="button">Japanese</button></li>
+                            <li><button class="dropdown-item" type="button">German</button></li>
+                        </ul>
+                    </div>
+                    <!-- lang end -->
+                    <li>
+                        <a href="#" class="navlinks text-white">
+
+                            <span class="material-icons homelink-active">
+                                home
+                            </span>
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="navlinks text-white">
+
+                            <span class="material-icons">
+                                miscellaneous_services
+                            </span>
+
+                            Services
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="navlinks text-white">
+
+                            <span class="material-icons">
+                                engineering
+                            </span>
+
+                            Work With Us
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="navlinks text-white">
+
+                            <span class="material-icons">
+                                call
+                            </span>
+
+                            Contact Us
+                        </a>
+                    </li>
+
+                    <li data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                        <a href="#" class="navlinks text-white">
+
+                            <span class="material-icons">
+                                account_circle
+                            </span>
+
+                            Profile
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="navlinks text-white" data-bs-toggle="offcanvas"
+                            data-bs-target="#locationoffcanvas" aria-controls="locationoffcanvas">
+
+                            <span class="material-icons">
+                                my_location
+                            </span>
+
+                            Purna - 431512
+                        </a>
+                    </li>
+                </div>
+        </nav>
+
+
+
+        <!-- sidebar in mobile start -->
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="mob-sidebar" aria-labelledby="mob-sidebarLabel">
+
+            <!-- sidebar header -->
+            <div id="mobsidebarheader">
+                <a class="float-end" data-bs-dismiss="offcanvas" aria-label="Close">
+                    <span class="material-icons text-white-50">
+                        close
+                    </span>
+                </a>
+                <div id="mobsidebarusername" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                    aria-controls="offcanvasRight">
+                    <p><em>Hello, Kunal Pandharkar</em> <span class="material-icons text-white-50">edit_note</span></p>
+                    <p class="mobno">7774843561</p>
+                </div>
+            </div>
+            <!-- sidebar header end -->
+
+
+            <!-- sidebar links start -->
+            <div id="mobsidebaritems">
+
+                <div onclick="location.href=''" class="mobsidebaritem">
+                    <a href="">Home</a>
+                    <span class="material-icons">
+                        navigate_next
+                    </span>
+                </div>
+
+                <div onclick="location.href=''" class="mobsidebaritem">
+                    <a href="">Emergency Service</a>
+                    <span class="material-icons">
+                        navigate_next
+                    </span>
+                </div>
+
+                <div onclick="location.href=''" class="mobsidebaritem">
+                    <a href="">Nearby Garages</a>
+                    <span class="material-icons">
+                        navigate_next
+                    </span>
+                </div>
+
+                <div onclick="location.href=''" class="mobsidebaritem">
+                    <a href="">Nearby Service Centers</a>
+                    <span class="material-icons">
+                        navigate_next
+                    </span>
+                </div>
+
+                <div onclick="location.href=''" class="mobsidebaritem">
+                    <a href="">Work With Us</a>
+                    <span class="material-icons">
+                        navigate_next
+                    </span>
+                </div>
+
+                <div onclick="location.href=''" class="mobsidebaritem">
+                    <a href="">Contact Us</a>
+                    <span class="material-icons">
+                        navigate_next
+                    </span>
+                </div>
+
+                <div onclick="location.href=''" class="mobsidebaritem">
+                    <a href="">Login/SignUp</a>
+                    <span class="material-icons">
+                        navigate_next
+                    </span>
+                </div>
+
+
+                <div onclick="location.href=''" class="mobsidebaritem">
+                    <a href="">Switch Account</a>
+                    <span class="material-icons">
+                        navigate_next
+                    </span>
+                </div>
+
+            </div>
+            <!-- sidebar links end -->
+
+        </div>
+        <!-- sidebar in mobile end -->
+
+        <!-- location offcanvas -->
+        <div class="offcanvas offcanvas-bottom" tabindex="-1" id="locationoffcanvas"
+            aria-labelledby="locationoffcanvasLabel">
+
+            <div class="offcanvas-body small">
+                <h6><strong>Choose Your Location</strong></h6>
+                <span class="text-secondary">Select a delivery location to see product availability and delivery
+                    options</span>
+
+                <div id="defaultaddress">
+                    <span id="defname"><strong> Samruddhi Vaidya -</strong></span>
+                    <span id="defcity"><strong>AURANGABAD -</strong> </span>
+                    <span id="defpin">431009</span>
+                    <p class="text-secondary mb-0">
+                        <strong>
+                            Current Address
+                        </strong>
+                    </p>
+                </div>
+
+                <a href="" class="text-primary"><small>Change or edit address</small></a>
+                <hr>
+
+                <div class="input-group mt-3 mb-3">
+                    <input type="text" class="form-control" placeholder="Enter Your Pincode"
+                        aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <button class="btn btn-secondary" type="button" id="button-addon2">
+                        Check
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- location offcanvas end-->
+
+
+    </section>
+    <!-- header - navigation bar end -->
+
+
+
+
+    <!-- user profile -->
+    <section class="sectioncolor">
+
+
+        <!-- breadcrumb start -->
+        <nav id="breadcrumbproductinfo" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Your Account</li>
+
+            </ol>
+        </nav>
+        <!-- breadcrumb ends -->
+
+
+        <!-- user profile canvas -->
+        <div class=" pt-0 pb-0">
+            <div class="userprofile">
+                <div class="card">
+                    <div class="card-body usernamepedit">
+                        <h5 class="card-title">Kunal Pandharkar</h5>
+                        <p class="card-text">7774843561</p>
+                        <p class="card-text text-secondary">Cidco N-6 , Adarsh Colony, Purna, Parbhani - 431512</p>
+                    </div>
+                    <div class="card-footer text-muted editedtime">
+                        <small>Edited 2 days ago</small>
+                    </div>
+                </div>
+
+
+
+                <!-- register form start -->
+                <div class="userprofileform youraccountform mt-4 mb-4">
+
+
+                    <form action="">
+
+                        <div class="youraccountformparts">
+                            <div class="youraccountformpartsdiv">
+                                <div class="mb-3">
+                                    <label for="exampleFormControlInput1" class="form-label">User Name<span
+                                            class="mandatoryfield">*</span>
+                                    </label>
+                                    <input type="text" class="form-control" id="exampleFormControlInput1"
+                                        value="NameExample">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleFormControlInput2" class="form-label">Mobile Number 1<span
+                                            class="mandatoryfield">*</span>
+                                    </label>
+                                    <input type="text" class="form-control" id="exampleFormControlInput2"
+                                        value="9988776655">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleFormControlInput3" class="form-label">Mobile Number 2
+                                    </label>
+                                    <input type="text" class="form-control" id="exampleFormControlInput3" value="">
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="exampleFormControlInput5" class="form-label">Password</label>
+                                    <div class="mb-3 d-flex justify-content-between passwordfieldaccount">
+                                        <input type="password" class="form-control" id="exampleFormControlInput5"
+                                            value="example123">
+                                        <button class="btn col-3 btn-secondary btn-sm">Reset</button>
+                                    </div>
+                                </div>
+
+                                <div class="mb-4">
+                                    <label for="exampleFormControlInput4" class="form-label">Email Address</label>
+                                    <input type="email" class="form-control" id="exampleFormControlInput4"
+                                        value="name@example.com">
+                                </div>
+
+                            </div>
+
+                            <div class="youraccountformpartsdiv">
+                                <div class="mb-3">
+                                    <label for="exampleFormControlInput6" class="form-label">Address</label>
+                                    <input type="text" class="form-control mb-2 mb-lg-3" id="exampleFormControlInput4"
+                                        placeholder="Pincode">
+
+                                    <input type="text" class="form-control mb-2 mb-lg-3" id="exampleFormControlInput4"
+                                        placeholder="Town/City">
+
+                                    <input type="text" class="form-control mb-2 mb-lg-3" id="exampleFormControlInput4"
+                                        placeholder="Area, Colony, Street, Sector, Village">
+
+                                    <input type="text" class="form-control mb-2 mb-lg-3" id="exampleFormControlInput4"
+                                        placeholder="Flat, House no, Building, Company, Apartment">
+
+                                    <input type="text" class="form-control mb-2 mb-lg-3" id="exampleFormControlInput4"
+                                        placeholder="Landmark eg. near Max Hospital">
+
+
+                                </div>
+
+
+
+                            </div>
+                        </div>
+
+                        <div class=" mb-2">
+                            <button class="btn w-100 btn-success btn-sm">Save</button>
+                        </div>
+
+                    </form>
+                </div>
+                <!-- register form ends -->
+            </div>
+        </div>
+        <!-- end user profile canvas -->
+    </section>
+    <!-- end user profile -->
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

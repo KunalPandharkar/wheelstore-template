@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Stylesheeet -->
+    <link rel="stylesheet" href="assets/style.css">
+
+    <!-- material icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <title>Vego - Aapka Apna Garage !</title>
+
+</head>
+
+<body>
+
+    <!-- header - navigation bar start-->
+    <section class="topnavbar">
+        <nav class="navbar navbar-expand-xl navbar-dark redbg" aria-label="Main navigation">
+            <div class="container-fluid">
+
+                <button class="navbar-toggler p-0 border-0 homenavtoggle" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#mob-sidebar" aria-controls="mob-sidebar">
+                    <span id="sb-toggle" class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- logo -->
+                <a id="vego-logo" class="navbar-brand " href="#">
+                    <img src="assets/images/logo.png" alt="logo" class=" align-text-top">
+                </a>
+                <!-- logo end -->
+
+                <!-- sidebar in mobile start -->
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="mob-sidebar"
+                    aria-labelledby="mob-sidebarLabel">
+
+                    <!-- sidebar header -->
+                    <div id="mobsidebarheader" class="">
+                        <a class="float-end" data-bs-dismiss="offcanvas" aria-label="Close">
+                            <span class="material-icons text-white-50">
+                                close
+                            </span>
+                        </a>
+                        <div id="mobsidebarusername" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                            aria-controls="offcanvasRight" onclick='location.href = "userprofile.html"'>
+                            <p><em>Hello, Kunal Pandharkar</em> <span
+                                    class="material-icons text-white-50">edit_note</span></p>
+                            <p class="mobno">7774843561</p>
+                        </div>
+                    </div>
+                    <!-- sidebar header end -->
+
+
+                    <!-- sidebar links start -->
+                    <div id="mobsidebaritems">
+
+                        <div onclick="location.href=''" class="mobsidebaritem">
+                            <a href="">Home</a>
+                            <span class="material-icons">
+                                navigate_next
+                            </span>
+                        </div>
+
+                        <div onclick="location.href=''" class="mobsidebaritem">
+                            <a href="">Emergency Service</a>
+                            <span class="material-icons">
+                                navigate_next
+                            </span>
+                        </div>
+
+                        <div onclick="location.href=''" class="mobsidebaritem">
+                            <a href="">Nearby Garages</a>
+                            <span class="material-icons">
+                                navigate_next
+                            </span>
+                        </div>
+
+                        <div onclick="location.href=''" class="mobsidebaritem">
+                            <a href="">Nearby Service Centers</a>
+                            <span class="material-icons">
+                                navigate_next
+                            </span>
+                        </div>
+
+                        <div onclick="location.href=''" class="mobsidebaritem">
+                            <a href="">Work With Us</a>
+                            <span class="material-icons">
+                                navigate_next
+                            </span>
+                        </div>
+
+                        <div onclick="location.href=''" class="mobsidebaritem">
+                            <a href="">Contact Us</a>
+                            <span class="material-icons">
+                                navigate_next
+                            </span>
+                        </div>
+
+                        <div onclick="location.href=''" class="mobsidebaritem">
+                            <a href="">Login/SignUp</a>
+                            <span class="material-icons">
+                                navigate_next
+                            </span>
+                        </div>
+
+
+                        <div onclick="location.href=''" class="mobsidebaritem">
+                            <a href="">Switch Account</a>
+                            <span class="material-icons">
+                                navigate_next
+                            </span>
+                        </div>
+
+                    </div>
+                    <!-- sidebar links end -->
+
+                </div>
+                <!-- sidebar in mobile end -->
+
+
+
+                <!-- navbar items in desktop -->
+                <div id="desknavitems" class="navbar-collapse offcanvas-collapse">
+                    <!-- lang -->
+                    <div id="langchange" class="dropdown">
+                        <a class="text-light dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            En
+                        </a>
+                        <ul id="langchangeitems" class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                            <li><button class="dropdown-item" type="button">Marathi</button></li>
+                            <li><button class="dropdown-item" type="button">Japanese</button></li>
+                            <li><button class="dropdown-item" type="button">German</button></li>
+                        </ul>
+                    </div>
+                    <!-- lang end -->
+                    <li>
+                        <a href="#" class="navlinks text-white">
+
+                            <span class="material-icons homelink-active">
+                                home
+                            </span>
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="navlinks text-white">
+
+                            <span class="material-icons">
+                                miscellaneous_services
+                            </span>
+
+                            Services
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="navlinks text-white">
+
+                            <span class="material-icons">
+                                engineering
+                            </span>
+
+                            Work With Us
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="navlinks text-white">
+
+                            <span class="material-icons">
+                                call
+                            </span>
+
+                            Contact Us
+                        </a>
+                    </li>
+
+                    <li data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                        <a href="#" class="navlinks text-white">
+
+                            <span class="material-icons">
+                                account_circle
+                            </span>
+
+                            Profile
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="navlinks text-white" data-bs-toggle="offcanvas"
+                            data-bs-target="#locationoffcanvas" aria-controls="locationoffcanvas">
+
+                            <span class="material-icons">
+                                my_location
+                            </span>
+
+                            Purna - 431512
+                        </a>
+                    </li>
+
+
+                </div>
+        </nav>
+
+
+
+
+    </section>
+    <!-- header - navigation bar end -->
+
+
+    <!-- register form -->
+    <section class="sectioncolor pb-2">
+        <!-- breadcrumb start -->
+        <nav id="breadcrumbproductinfo" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Sign In</li>
+
+            </ol>
+        </nav>
+        <!-- breadcrumb ends -->
+
+        <!-- register form start -->
+        <div class="registeruserform mt-0 mb-4 youraccountformpartsdiv">
+         
+
+            <form action="">
+           
+                <div class="mb-3">
+                    <label for="exampleFormControlInput2" class="form-label">Mobile Number<span
+                            class="mandatoryfield">*</span>
+                    </label>
+                    <input type="text" class="form-control" id="exampleFormControlInput2" placeholder="">
+                </div>
+              
+
+
+                <div class="mb-3">
+                    <label for="exampleFormControlInput5" class="form-label">Password<span
+                            class="mandatoryfield">*</span>
+                    </label>
+                    <input type="password" class="form-control" id="exampleFormControlInput5" placeholder="">
+                </div>
+                <div class="forgetpwdlink">
+                    <a href="forgotpassword.html">Forgot Password ?</a>
+                </div>
+                <div class="registerloginbtn mb-2">
+                    <button class="btn w-100 btn-sm">Login</button>
+                </div>
+
+                <div class="signupinlink">
+                    <a href="login.html">Already Have Account? Click To Sign Up</a>
+                </div>
+
+                <div>
+                    <span class="text-secondary small">
+                        By continuing, you agree to Vego's Terms and Conditions and the Privacy Policy.
+                    </span>
+                </div>
+
+            </form>
+        </div>
+        <!-- register form ends -->
+
+    </section>
+    <!--end register form -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

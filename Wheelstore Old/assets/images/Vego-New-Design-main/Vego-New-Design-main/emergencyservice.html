@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Stylesheeet -->
+    <link rel="stylesheet" href="assets/style.css">
+
+    <!-- material icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <title>Vego - Aapka Apna Garage !</title>
+
+</head>
+
+<body>
+
+    <!-- header - navigation bar start-->
+    <section class="topnavbar">
+        <nav class="navbar navbar-expand-xl navbar-dark redbg" aria-label="Main navigation">
+            <div class="container-fluid">
+
+                <button class="navbar-toggler p-0 border-0 homenavtoggle" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#mob-sidebar" aria-controls="mob-sidebar">
+                    <span id="sb-toggle" class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- logo -->
+                <a id="vego-logo" class="navbar-brand " href="#">
+                    <img src="assets/images/logo.png" alt="logo" class=" align-text-top">
+                </a>
+                <!-- logo end -->
+
+
+
+
+                <!-- navbar items in desktop -->
+                <div id="desknavitems" class="navbar-collapse offcanvas-collapse">
+                    <!-- lang -->
+                    <div id="langchange" class="dropdown">
+                        <a class="text-light dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            En
+                        </a>
+                        <ul id="langchangeitems" class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                            <li><button class="dropdown-item" type="button">Marathi</button></li>
+                            <li><button class="dropdown-item" type="button">Japanese</button></li>
+                            <li><button class="dropdown-item" type="button">German</button></li>
+                        </ul>
+                    </div>
+                    <!-- lang end -->
+                    <li>
+                        <a href="#" class="navlinks text-white">
+
+                            <span class="material-icons homelink-active">
+                                home
+                            </span>
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="navlinks text-white">
+
+                            <span class="material-icons">
+                                miscellaneous_services
+                            </span>
+
+                            Services
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="navlinks text-white">
+
+                            <span class="material-icons">
+                                engineering
+                            </span>
+
+                            Work With Us
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="navlinks text-white">
+
+                            <span class="material-icons">
+                                call
+                            </span>
+
+                            Contact Us
+                        </a>
+                    </li>
+
+                    <li data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                        <a href="#" class="navlinks text-white">
+
+                            <span class="material-icons">
+                                account_circle
+                            </span>
+
+                            Profile
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="navlinks text-white" data-bs-toggle="offcanvas"
+                            data-bs-target="#locationoffcanvas" aria-controls="locationoffcanvas">
+
+                            <span class="material-icons">
+                                my_location
+                            </span>
+
+                            Purna - 431512
+                        </a>
+                    </li>
+
+
+                </div>
+        </nav>
+
+
+
+        <!-- sidebar in mobile start -->
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="mob-sidebar" aria-labelledby="mob-sidebarLabel">
+
+            <!-- sidebar header -->
+            <div id="mobsidebarheader" class="">
+                <a class="float-end" data-bs-dismiss="offcanvas" aria-label="Close">
+                    <span class="material-icons text-white-50">
+                        close
+                    </span>
+                </a>
+                <div id="mobsidebarusername" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                    aria-controls="offcanvasRight" onclick='location.href = "userprofile.html"'>
+                    <p><em>Hello, Kunal Pandharkar</em> <span class="material-icons text-white-50">edit_note</span></p>
+                    <p class="mobno">7774843561</p>
+                </div>
+            </div>
+            <!-- sidebar header end -->
+
+
+            <!-- sidebar links start -->
+            <div id="mobsidebaritems">
+
+                <div onclick="location.href=''" class="mobsidebaritem">
+                    <a href="">Home</a>
+                    <span class="material-icons">
+                        navigate_next
+                    </span>
+                </div>
+
+                <div onclick="location.href=''" class="mobsidebaritem">
+                    <a href="">Emergency Service</a>
+                    <span class="material-icons">
+                        navigate_next
+                    </span>
+                </div>
+
+                <div onclick="location.href=''" class="mobsidebaritem">
+                    <a href="">Nearby Garages</a>
+                    <span class="material-icons">
+                        navigate_next
+                    </span>
+                </div>
+
+                <div onclick="location.href=''" class="mobsidebaritem">
+                    <a href="">Nearby Service Centers</a>
+                    <span class="material-icons">
+                        navigate_next
+                    </span>
+                </div>
+
+                <div onclick="location.href=''" class="mobsidebaritem">
+                    <a href="">Work With Us</a>
+                    <span class="material-icons">
+                        navigate_next
+                    </span>
+                </div>
+
+                <div onclick="location.href=''" class="mobsidebaritem">
+                    <a href="">Contact Us</a>
+                    <span class="material-icons">
+                        navigate_next
+                    </span>
+                </div>
+
+                <div onclick="location.href=''" class="mobsidebaritem">
+                    <a href="">Login/SignUp</a>
+                    <span class="material-icons">
+                        navigate_next
+                    </span>
+                </div>
+
+            </div>
+            <!-- sidebar links end -->
+
+        </div>
+        <!-- sidebar in mobile end -->
+
+
+
+    </section>
+    <!-- header - navigation bar end -->
+
+
+
+    <section class="sectioncolor pb-2">
+        <div class="siteheading">
+            <h6>
+                Choose Type Of Vehicle
+            </h6>
+        </div>
+        <div class="headingunderline"></div>
+
+        <div class="typeofvehicles text-center">
+            <input type="radio" name="payment" id="2wh">
+            <label for="2wh">
+                <img src="assets/images/motorbike.png" alt="">
+                <span>2-Wheeler</span>
+            </label>
+            <input type="radio" name="payment" id="3wh">
+            <label for="3wh">
+                <img src="assets/images/rickshaw.png" alt="">
+                <span>3-Wheeler</span>
+            </label>
+            <input type="radio" name="payment" id="4wh">
+            <label for="4wh">
+                <img src="assets/images/car.png" alt="">
+                <span>4-Wheeler</span>
+            </label>
+            <input type="radio" name="payment" id="morewh">
+            <label for="morewh">
+                <img src="assets/images/truck.png" alt="">
+                <span>More-Wheeler</span>
+            </label>
+        </div>
+
+        <div class="siteheading">
+            <h6>
+                Select Location
+            </h6>
+        </div>
+        <div class="headingunderline"></div>
+        <!-- register form start -->
+        <div class="userprofileform youraccountform mt-2 mb-4">
+
+
+            <form action="">
+
+                <div class="youraccountformparts">
+
+                    <div class="youraccountformpartsdiv">
+                        <div class="mb-3">
+
+                            <input type="text" class="form-control mb-2 mb-lg-3" id="exampleFormControlInput4"
+                                placeholder="Pincode" disabled>
+
+                            <input type="text" class="form-control mb-2 mb-lg-3" id="exampleFormControlInput4"
+                                placeholder="Town/City" disabled>
+
+                            <input type="text" class="form-control mb-2 mb-lg-3" id="exampleFormControlInput4"
+                                placeholder="Area, Colony, Street, Sector, Village" disabled>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class=" mb-2 detectlocbtn">
+                    <button class="btn w-90 btn-sm">Detect My Location</button>
+                </div>
+                <div class="mt-4 mb-2 getservice">
+                    <button class="btn w-100 btn-sm">Get Service</button>
+                </div>
+            </form>
+
+        </div>
+        <!-- register form ends -->
+
+
+    </section>
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

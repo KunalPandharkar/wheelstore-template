@@ -1,0 +1,921 @@
+/* css common for all */
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a, a:hover {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+:root {
+    --teal: #209586;
+    --white: #FFFFFF;
+    --navyblue: #06192d;
+    --red: #e3324a;
+    --fontsmall: 0.7rem;
+    --fontmedium: 0.8rem;
+    --fontlarge: 0.9rem;
+    --fontextrasmall: 0.6rem;
+}
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    background-color: rgba(0, 0, 0, .1);
+}
+
+p {
+    margin: 0;
+}
+
+input::placeholder {
+    font-size: var(--fontmedium);
+}
+
+input[type="text"] {
+    font-size: var(--fontlarge);
+}
+
+#breadcrumbproductinfo {
+    padding: 1rem;
+    padding-bottom: 0;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+/* all section color */
+
+.sectioncolor {
+    background-color: var(--white);
+}
+
+/* all site heading */
+
+.siteheading {
+    padding: 1.2rem 0rem 0rem 0.8rem;
+}
+
+.siteheading h6 {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #2a2c39;
+    margin-bottom: 7px;
+    font-size: var(--fontmedium);
+}
+
+.headingunderline {
+    border-top: 2px solid var(--red);
+    width: 3rem;
+    margin-left: 0.94rem;
+    margin-bottom: 0.5rem;
+}
+
+.b-example-divider {
+    height: 0.3rem;
+    border-width: 1px 0;
+    box-shadow: 0 2px 10px rgb(0 0 0 / 11%);
+}
+
+/* header start */
+
+/* cutom header */
+
+.redbg {
+    background-color: var(--red);
+    color: white;
+}
+
+#sb-toggle {
+    font-size: var(--fontmedium);
+}
+
+#vego-logo {
+    margin-right: auto;
+    margin-left: 0.6rem;
+}
+
+#vego-logo img {
+    height: 1.8rem;
+}
+
+/* searchbar */
+
+.searchbargrp {
+    width: 100%;
+    background-color: var(--blue);
+    padding: 0.8rem 0.1rem 0rem 0.1rem;
+}
+
+.searchbargrp input {
+    border: none;
+}
+
+#sbarbtn {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* language change */
+
+#langchange {
+    font-size: var(--fontmedium);
+}
+
+/* all nav items to be in a flex box */
+
+#desknavitems {
+    display: flex;
+    padding-left: 0.8rem;
+    justify-content: space-around;
+}
+
+#desknavitems li {
+    list-style: none;
+}
+
+.homelink-active {
+    text-decoration: underline;
+}
+
+#desknavitems .navlinks {
+    display: flex;
+    align-items: center;
+    font-size: var(--fontlarge);
+}
+
+.navlinks .material-icons {
+    margin-right: 0.4rem;
+}
+
+/* header end */
+
+/* location bottom */
+
+#locationoffcanvas input::placeholder {
+    font-size: var(--fontmedium);
+}
+
+#locationoffcanvas button {
+    font-size: var(--fontmedium);
+}
+
+#defaultaddress {
+    padding: 0.5rem;
+    margin-top: 0.7rem;
+    margin-bottom: 0.7rem;
+    border: 1px solid var(--teal);
+    background-color: var(--teal);
+    color: white;
+}
+
+/* mobile sidebar */
+
+/* sidebar in mobile and ipad */
+
+#mob-sidebar {
+    width: 75%;
+    overflow-y: scroll;
+}
+
+#mobsidebarheader {
+    padding: 0.8rem;
+    padding-top: 0.9rem;
+    background-color: var(--teal);
+}
+
+#mobsidebarusername em {
+    margin-bottom: 0px;
+    color: white;
+    font-size: var(--fontlarge);
+}
+
+#mobsidebarusername span {
+    font-size: var(--fontmedium);
+}
+
+#mobsidebarusername {
+    margin-top: 4rem;
+}
+
+.mobno {
+    color: var(--white);
+    font-size: var(--fontmedium);
+    opacity: 0.5;
+}
+
+/* location cities */
+
+.nav-scroller {
+    position: relative;
+    z-index: 2;
+    height: 4.6rem;
+    overflow-y: hidden;
+}
+
+.nav-scroller .nav {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    color: rgba(255, 255, 255, .75);
+    text-align: center;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+}
+
+.nav-underline .nav-link {
+    color: #6c757d;
+    padding: 0.7rem 0.6rem;
+}
+
+.nav-underline .nav-link:hover {
+    color: #007bff;
+}
+
+.locationicon {
+    height: 2.5rem;
+    width: 4rem;
+    background-color: var(--teal);
+    border-radius: 5px;
+}
+
+.locationicon span {
+    color: white;
+    padding: 0.5rem 0rem 0rem 0rem;
+}
+
+.cityimage img {
+    height: 2.5rem;
+    width: 4rem;
+    border-radius: 5px;
+}
+
+.cityname {
+    margin-top: 0.25rem;
+    font-size: var(--fontextrasmall);
+    text-transform: uppercase;
+}
+
+/* sidebar link items */
+
+#mobsidebaritems {
+    font-size: var(--fontmedium);
+    background-color: #f3f3f3;
+}
+
+.mobsidebaritem {
+    padding: 0.6rem;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    background-color: #fff;
+    margin-bottom: 3px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    color: rgb(88, 88, 88);
+    padding-bottom: 0;
+}
+
+.mobsidebaritem span {
+    margin-top: 0.2rem;
+    font-size: var(--fontmedium);
+}
+
+.mobsidebaritem a {
+    margin-bottom: 1.1rem;
+    font-weight: 500;
+}
+
+/* langauge option in mobile */
+
+.langmob {
+    display: none;
+}
+
+/* Home Carousel */
+
+/* user profile edit sidebar */
+
+.usernamepedit h5 {
+    font-size: var(--fontlarge);
+    font-weight: 550;
+}
+
+.usernamepedit p {
+    font-size: var(--fontmedium);
+}
+
+.editedtime {
+    font-size: var(--fontsmall);
+}
+
+/* vego services */
+
+.vegoservices {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0;
+}
+
+.service {
+    padding: 1rem 0rem 0rem 0rem;
+    color: black;
+    height: 6rem;
+    width: 7.2rem;
+    margin-top: 0.6rem;
+    border-radius: 8px;
+}
+
+.service img {
+    height: 2.5rem;
+}
+
+.service p {
+    font-size: var(--fontsmall);
+    margin-top: 0.3rem;
+}
+
+/* Nearby Garages */
+
+.scroll {
+    margin: auto;
+}
+
+.horizontal-scroll {
+    display: block;
+    width: 100%;
+    overflow-x: scroll;
+    box-sizing: border-box;
+}
+
+.scroll-container {
+    display: block;
+    white-space: nowrap;
+    width: 90%;
+    margin-left: 5px;
+}
+
+.shopcard {
+    display: inline-block;
+    width: 9rem;
+    height: 9rem;
+    margin: 1rem 0rem 2rem 0.8rem;
+    background-color: var(--blue);
+}
+
+.shopcard img {
+    height: 6rem;
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.shopcard h5 {
+    white-space: pre-line;
+    font-size: var(--fontsmall);
+    padding: 0.4rem 0rem 0rem 0.2rem;
+    font-weight: 550;
+    margin: 0;
+}
+
+.shopcard small {
+    padding: 0.4rem 0rem 0rem 0.2rem;
+    font-size: var(--fontsmall);
+}
+
+.servicebrand {
+    padding: 0.4rem 0rem 0rem 0.2rem;
+    font-size: var(--fontsmall);
+    color: var(--teal);
+}
+
+.shopinfocard {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 0rem 0.1rem 0.5rem 0.2rem;
+    box-shadow: 0 2px 10px rgb(0 0 0 / 11%);
+}
+
+/* find service center */
+
+.findserviceform {
+    padding: 1.5rem;
+}
+
+.findserviceform label {
+    font-size: var(--fontlarge);
+}
+
+.findserviceform .form-text {
+    font-size: var(--fontsmall);
+}
+
+.findserviceform button {
+    color: var(--white);
+    background-color: var(--teal);
+}
+
+/* searchbar garagelist */
+
+#garagenavbar {
+    padding-top: 0;
+}
+
+.searchbargaragelist span {
+    font-size: var(--fontlarge);
+}
+
+.sortfilter {
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+}
+
+.sort {
+    display: flex;
+    align-items: center;
+}
+
+.sort span {
+    font-size: var(--fontlarge);
+}
+
+.sort p {
+    font-size: var(--fontlarge);
+}
+
+/* garages card garagelist */
+
+.shopcardgaragelist {
+    background-color: var(--white);
+}
+
+.shoprow1 {
+    display: flex;
+    padding: 1rem 1rem 1rem 1rem;
+}
+
+.shoprow2 {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 0.4rem;
+}
+
+.shopimg img {
+    height: 6rem;
+}
+
+.shopinfo {
+    margin-left: 1rem;
+}
+
+.shopname h5 {
+    font-size: var(--fontmedium);
+    margin-bottom: 0.1rem;
+    font-weight: 600
+}
+
+.shopratings span {
+    font-size: var(--fontsmall);
+    color: var(--teal);
+}
+
+.shopadress p {
+    font-size: var(--fontsmall);
+}
+
+.shopadress span {
+    font-size: var(--fontmedium);
+}
+
+.openorclose p {
+    font-size: var(--fontmedium);
+    color: var(--teal);
+}
+
+.distance p {
+    font-size: var(--fontmedium);
+}
+
+.deliverycharge p {
+    font-size: var(--fontmedium);
+    font-weight: 500;
+}
+
+.typewheeler {
+    font-size: var(--fontmedium);
+}
+
+/* sort and filter canvas */
+
+#sortcanvas {
+    height: 37%;
+}
+
+.sortinput {
+    margin-top: 2rem;
+}
+
+#sortcanvas select {
+    margin-top: 1rem;
+    font-size: var(--fontmedium);
+    border-radius: 0;
+    border: 1px solid var(--teal);
+}
+
+#sortcanvas button {
+    background-color: var(--teal);
+    color: white;
+}
+
+/* user profile  */
+
+.youraccountformpartsdiv label {
+    font-size: var(--fontmedium);
+}
+
+.mandatoryfield {
+    color: rgb(199, 6, 6);
+}
+
+.userprofileform {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.userprofile .card {
+    box-shadow: 2px 2px 10px lightgrey;
+}
+
+/* register user form */
+
+.registeruserform {
+    width: 92%;
+    margin-left: 4%;
+    padding: 1.2rem;
+    box-shadow: 2px 2px 10px lightgrey;
+    border-radius: 5px;
+}
+
+.inputforgetotpip {
+    width: 66%;
+}
+
+.inputforgetotpbtn {
+    width: 34%;
+    font-size: 12.5px;
+    padding-left: 0.6rem;
+}
+
+.registerloginbtn button {
+    background-color: var(--teal);
+    color: white;
+}
+
+.signupinlink {
+    text-align: center;
+    margin-bottom: 0.8rem;
+    font-size: var(--fontmedium);
+    color: var(--navyblue);
+}
+
+.forgetpwdlink {
+    margin-bottom: 0.8rem;
+    font-size: var(--fontsmall);
+    color: var(--navyblue);
+}
+
+/* emergency service page */
+
+.typeofvehicles {
+    margin-top: 1rem;
+}
+
+.typeofvehicles input[type="radio"] {
+    -webkit-appearance: none;
+}
+
+.typeofvehicles label {
+    height: 3.2rem;
+    width: 10rem;
+    box-shadow: 2px 2px 10px lightgrey;
+    position: relative;
+    margin: 0.5rem 0rem 0.5rem 0rem;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.typeofvehicles img {
+    height: 2.5rem;
+    top: 74%;
+    left: 18%;
+    transform: translate(-50%, -80%);
+    position: absolute;
+}
+
+.typeofvehicles span {
+    font-size: var(--fontmedium);
+    top: 32%;
+    left: 33%;
+    position: absolute;
+}
+
+.typeofvehicles input[type="radio"]:checked+label {
+    background-color: #20958596;
+    border-color: var(--teal);
+    opacity: 0.8;
+    color: white;
+}
+
+.getservice button {
+    background-color: var(--teal);
+    color: white;
+    margin-top: 2rem;
+}
+
+.detectlocbtn button {
+    background-color: var(--red);
+    color: white
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+
+#footer {
+    padding: 0 0 0px 0;
+    font-size: var(--fontmedium);
+    background: #fff;
+}
+
+#footer #feedbackform {
+    color: white;
+}
+
+#footer .footer-top {
+    padding: 3rem 0 1.875rem 0;
+}
+
+#footer .footer-top .footer-info {
+    margin-bottom: 30px;
+}
+
+#footer .footer-top .footer-info img {
+    margin: 0 0 10px -5px;
+    padding: 2px 0 2px 0;
+    height: 3rem;
+}
+
+#footer .footer-top .footer-info p {
+    font-size: var(--fontmedium);
+    line-height: 24px;
+    margin-bottom: 0;
+    color: white;
+}
+
+.footer-info img {
+    height: 27px;
+}
+
+#footer .footer-top .social-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    margin-right: 4px;
+    border-radius: 50%;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+}
+
+#footer .footer-top .social-links a i {
+    line-height: 0;
+    font-size: var(--fontlarge);
+}
+
+#footer .footer-top .social-links a:hover {
+    background: var(--red);
+    color: #fff;
+}
+
+@media (max-width: 574px) {
+    #footer .footer-top .social-links a {
+        margin-bottom: 25px;
+    }
+}
+
+#footer .footer-top h4 {
+    font-size: var(--fontmedium);
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+#footer .footer-top .footer-links {
+    margin-bottom: 30px;
+    color: white;
+}
+
+#footer .footer-top .footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#footer .footer-top .footer-links ul li {
+    padding: 9px 0;
+    display: flex;
+    align-items: center;
+}
+
+#footer .footer-top .footer-links ul li:first-child {
+    padding-top: 0;
+}
+
+#footer .footer-top .footer-links ul a {
+    color: white;
+    padding-top: 2px;
+}
+
+#footer .footer-top .footer-links ul a:hover {
+    color: #0494fc;
+}
+
+#footer .footer-top .footer-contact {
+    margin-bottom: 30px;
+}
+
+#footer .footer-top .footer-contact p {
+    line-height: 26px;
+}
+
+#footer .php-email-form .sent-message {
+    display: none;
+    color: #fff;
+    background: #18d26e;
+    text-align: center;
+    padding: 15px;
+    font-weight: 600;
+}
+
+#footer .php-email-form input:focus, #footer .php-email-form textarea:focus {
+    border-color: var(--navyblue);
+}
+
+#footer .php-email-form input {
+    padding: 10px 15px;
+}
+
+#footer .php-email-form textarea {
+    padding: 12px 15px;
+}
+
+#footer .php-email-form button[type="submit"] {
+    background: var(--teal);
+    border: 0;
+    border-radius: 3px;
+    padding: 8px 30px;
+    color: #ffff;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#footer #copyright {
+    text-align: center;
+    padding-top: 30px;
+    color: white;
+}
+
+#footer .footer-top .footer-newsletter {
+    margin-bottom: 30px;
+    color: white;
+    font-size: var(--fontmedium);
+}
+
+#footer .footer-top .footer-newsletter input[type="email"] {
+    padding: 6px 8px;
+    width: 65%;
+}
+
+#footer .footer-top .footer-newsletter input[type="submit"] {
+    background: var(--teal);
+    border: 1px solid var(--teal);
+    width: 35%;
+    padding: 6px 0;
+    text-align: center;
+    color: #fff;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+/* Smartphones ----------- */
+
+@media only screen and (min-device-width: 200px) and (max-device-width: 689px) {
+    /* navbar */
+    .offcanvas-collapse {
+        position: fixed;
+        visibility: hidden;
+    }
+    /* location bottom model */
+    #locationoffcanvas {
+        height: 47%;
+    }
+    /* langauge option in mobile */
+    .langmob {
+        display: block;
+        margin-right: 0.4rem;
+    }
+    /* home carousel */
+    .carousel-item {
+        height: 9rem;
+    }
+    .carousel-control-prev {
+        display: none;
+    }
+    .carousel-control-next {
+        display: none;
+    }
+    /* user profile page */
+    .userprofile {
+        padding: 1rem;
+    }
+}
+
+/* iPads ----------- */
+
+@media only screen and (min-device-width: 690px) and (max-device-width: 1211px) {
+    /* navbar */
+    .searchbargrp {
+        width: 60%;
+    }
+    .homenavtoggle {
+        display: none;
+    }
+    #desknavitems {
+        margin-top: 1rem;
+    }
+    /* location sidebar bottom */
+    #locationoffcanvas {
+        height: 41%;
+    }
+    /* home carousel */
+    .carousel-item {
+        height: 15rem;
+    }
+    /* user profile page */
+    .userprofile {
+        padding: 6rem;
+    }
+}
+
+/* Desktops and laptops ----------- */
+
+@media only screen and (min-device-width: 1212px) {
+    /* navbar */
+    .searchbargrp {
+        width: 30%;
+        margin-top: -4px;
+        margin-left: 1rem;
+    }
+    #langchange:hover>.dropdown-menu {
+        display: block;
+    }
+    /* language change in desktop */
+    #langchangeitems {
+        font-size: 13px;
+    }
+    /* location sidebar bottom */
+    #locationoffcanvas {
+        height: 41%;
+    }
+    /* Declare heights because of positioning of img element */
+    .carousel-item {
+        height: 19rem;
+    }
+    /* user profile page */
+    .userprofile {
+        padding: 9rem;
+    }
+    /* all site heading */
+    .siteheading {
+        padding: 1.5rem 0rem 0rem 1rem;
+    }
+    .siteheading h6 {
+        font-size: 1.3rem;
+        font-weight: 550;
+    }
+}
