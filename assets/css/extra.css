@@ -1,3 +1,23 @@
+.fs-exsmall {
+    font-size: 0.75rem;
+}
+
+.fs-small {
+    font-size: 0.8rem;
+}
+
+.fs-medium {
+    font-size: 0.85rem;
+}
+
+.fs-average {
+    font-size: 0.9rem;
+}
+
+.fs-big {
+    font-size: 1rem;
+}
+
 .red-color {
     background-color: var(--ws-text-red);
 }
@@ -9,6 +29,18 @@
 .black-text {
     color: var(--bs-body-color);
 }
+
+svg {
+    height: 1.1rem;
+    width: 1.1rem;
+}
+
+.section {
+    margin-top: 1rem;
+}
+
+
+
 
 
 /* _________NAVBAR___________ */
@@ -47,16 +79,25 @@
 
 
 /* _________MOBILE_SIDEBAR_________ */
-#MobileSidebar ul li a {
-    font-size: 0.875rem;
+
+
+/* ________SEARCH_BAR________ */
+.search-bar {
+    position: relative;
+    width: 100%;
 }
 
-#MobileSidebar svg {
-    height: 1.1rem;
-    width: 1.1rem;
+.search-icon {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgba(0, 0, 0, 0.5);
 }
 
-
+.search-input {
+    padding-left: 40px;
+}
 
 
 
@@ -91,7 +132,6 @@
 .resend-link {
     text-align: center;
     margin-top: 1rem;
-    font-size: 0.9rem;
 }
 
 .resend-link a {
@@ -103,6 +143,109 @@
 }
 
 
+/* ______LOCATION_STRIP_____ */
+.location-strip {
+    padding: 0.8rem 1rem;
+}
+
+.location-strip svg {
+    width: 1.3rem;
+}
+
+
+.location-text {
+    /* Prevent text wrapping */
+    scrollbar-width: none;
+    /* Hide scrollbar in Firefox */
+    -ms-overflow-style: none;
+    /* Hide scrollbar in IE/Edge */
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    /* Smooth scrolling */
+}
+
+/* Hide scrollbar in WebKit browsers (Chrome, Safari, etc.) */
+.location-text::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+/* __________SERVICE_CARDS_______ */
+
+.icon-card {
+    background-color: #f8f9fa;
+    padding: 0.5rem;
+    transition: box-shadow 0.3s ease;
+    cursor: pointer;
+    height: 6.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border: 0.1rem solid rgb(232, 232, 232)
+}
+
+.service-img {
+    max-width: 2.5rem;
+    height: auto;
+    object-fit: contain;
+    /* Avoid image distortion */
+}
+
+
+.icon-card:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    /* Shadow on hover */
+    transform: translateY(-2px);
+    /* Slight lift on hover */
+}
+
+.icon-card:active {
+    transform: scale(0.98) translateY(0);
+    /* Scale down slightly on click */
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+    /* Shadow changes on click */
+}
+
+
+.icon-card h6 {
+    color: #1C1C1C;
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+#advertisement-carousel img {
+    cursor: pointer;
+
+}
+
+.image-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Smooth transition */
+}
+
+/* Lift-Up Effect on Hover */
+.image-hover:hover {
+    transform: translateY(-10px);
+    /* Lifts image up */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    /* Adds shadow for depth */
+}
+
+.heading {
+    display: block;
+    color: #1C1C1C;
+    font-size: 1rem;
+    letter-spacing: .03125rem;
+}
+
+.heading-bottom-address {
+    font-size: 0.8rem;
+    color: #51596C;
+}
+
 
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
@@ -113,6 +256,13 @@
     .btn {
         --bs-btn-font-size: 1rem;
     }
+
+    .form-control,
+    .form-control-sm {
+        font-size: 0.95rem;
+    }
+
+
 
     /* _________NAVBAR___________ */
     .navbar {
@@ -128,12 +278,20 @@
         --bs-dropdown-font-size: 0.95rem;
     }
 
+
+
+
     /* _________MOBILE_SIDEBAR_________ */
     #MobileSidebar ul li a {
         font-size: 0.95rem;
     }
 
 
+    /* _____SERVICE_CARDS_____ */
+
+    .icon-card h6 {
+        font-size: 0.9rem;
+    }
 
 
 
@@ -147,9 +305,21 @@
         --bs-badge-font-size: 0.9rem;
     }
 
+    .form-control,
+    .form-control-sm {
+        font-size: 1rem;
+    }
+
     /* _________NAVBAR___________ */
     .navbar {
         --bs-nav-link-font-size: 1rem;
+    }
+
+
+    /* _____SERVICE_CARDS_____ */
+
+    .icon-card h6 {
+        font-size: 1rem;
     }
 
 

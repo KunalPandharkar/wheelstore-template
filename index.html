@@ -24,7 +24,7 @@
 
     <header>
         <!-- Mobile Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light shadow d-lg-none">
+        <nav class="navbar navbar-expand-lg navbar-success bg-light  d-lg-none">
             <div class="container">
 
                 <!-- Navbar Toggle for Mobile -->
@@ -37,8 +37,8 @@
 
                 <!-- Logo -->
                 <a class="navbar-brand" href="#">
-                    <img src="assets/images/png/logo-no-background (1).png" alt="Wheelstore Logo" height="40"
-                        class="me-2">
+                    <img src="assets/images/png/logo-no-background (1).png" loading="lazy" height="40"
+                        alt="Wheelstore Logo" class="me-2">
                 </a>
 
 
@@ -88,7 +88,7 @@
                             </a>
 
                             <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
-                                <li><a class="dropdown-item" href="#">Garages</a></li>
+                                <li><a class="dropdown-item " href="#">Garages</a></li>
                                 <li><a class="dropdown-item" href="#">Service Centers</a></li>
                                 <li><a class="dropdown-item" href="#">Showrooms</a></li>
                                 <li><a class="dropdown-item" href="#">Washing Centers</a></li>
@@ -242,7 +242,8 @@
                         </svg>
                         <a class="black-text ms-2 text-decoration-none" href="">Logout</a>
                     </li>
-                    <li class="list-group-item  d-flex list-group-item-action align-items-center"  data-bs-toggle="modal" data-bs-target="#signupModal">
+                    <li class="list-group-item  d-flex list-group-item-action align-items-center" data-bs-toggle="modal"
+                        data-bs-target="#signupModal">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-box-arrow-in-left"
                             viewBox="0 0 16 16">
                             <path fill-rule="evenodd"
@@ -258,6 +259,185 @@
                 <!-- End List Group -->
             </div>
         </div>
+
+
+    </header>
+
+    <main>
+
+
+
+        <!-- Location Strip -->
+        <div class="bg-success d-lg-none">
+            <div class="container location-strip text-white d-flex align-items-center">
+                <!-- Location Icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-geo-alt-fill"
+                    viewBox="0 0 16 16">
+                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6" />
+                </svg>
+                <!-- Address with Overflow -->
+                <div class="overflow-auto location-text ms-1 fs-medium" style="white-space: nowrap;">
+                    Kunal Niwas, Adarsh Colony, Purna, Parbhani, Maharashtra 431511
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Search Bar -->
+        <div class="search-section section">
+            <div class="container">
+                <div class="search-bar">
+                    <!-- Search Icon -->
+                    <span class="search-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-search"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                        </svg>
+                    </span>
+                    <!-- Search Input Field -->
+                    <input type="text" class="form-control form-control-sm  search-input"
+                        placeholder="Search for shops, service or location" aria-label="Search">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="service-icons section">
+            <!-- Icons Grid Container -->
+            <div class="container">
+
+                <div class="row g-2">
+                    <!-- Icon Card Example -->
+                    <div class="col-4 col-md-3 col-lg-2 ">
+                        <a href="category-shops.html" class="text-decoration-none ">
+                            <div class="icon-card text-center rounded-1">
+                                <!-- <i class="bi bi-tools icon"></i> -->
+                                <img src="https://cdn-icons-png.flaticon.com/128/1995/1995470.png" alt=""
+                                    class="img-fluid service-img">
+
+                                <h6 class="mt-2">Garages</h6>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-4 col-md-3 col-lg-2">
+                        <a href="" class="text-decoration-none">
+                            <div class="icon-card text-center rounded-1">
+                                <!-- <i class="bi bi-car-front icon"></i> -->
+                                <img src="https://cdn-icons-png.flaticon.com/512/3627/3627886.png" alt=""
+                                    class="img-fluid service-img">
+
+                                <h6 class="mt-2">Service Centers</h6>
+                            </div>
+                        </a>
+
+                    </div>
+                    <div class="col-4 col-md-3 col-lg-2">
+                        <a href="" class="text-decoration-none">
+                            <div class="icon-card text-center rounded-1">
+                                <img src="https://cdn-icons-png.flaticon.com/512/3361/3361506.png" alt=""
+                                    class="img-fluid service-img">
+
+                                <!-- <i class="bi bi-house-door icon"></i> -->
+                                <h6 class="mt-2">Showrooms</h6>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-4 col-md-3 col-lg-2">
+                        <a href="" class="text-decoration-none">
+                            <div class="icon-card text-center rounded-1">
+                                <img src="https://cdn-icons-png.flaticon.com/128/1743/1743609.png" alt=""
+                                    class="img-fluid service-img">
+
+                                <!-- <i class="bi bi-water icon"></i> -->
+                                <h6 class="mt-2">Washing Centers</h6>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-4 col-md-3 col-lg-2">
+                        <a href="" class="text-decoration-none">
+                            <div class="icon-card text-center rounded-1">
+                                <img src="https://cdn-icons-png.flaticon.com/512/814/814406.png" alt=""
+                                    class="img-fluid service-img">
+
+                                <!-- <i class="bi bi-shop icon"></i> -->
+                                <h6 class="mt-2">Automobile Shops</h6>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-4 col-md-3 col-lg-2">
+                        <a href="" class="text-decoration-none">
+                            <div class="icon-card text-center rounded-1">
+                                <img src="https://cdn-icons-png.flaticon.com/128/12622/12622092.png" alt=""
+                                    class="img-fluid service-img">
+
+                                <!-- <i class="bi bi-gear icon"></i> -->
+                                <h6 class="mt-2">Find Spare Parts</h6>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-4 col-md-3 col-lg-2">
+                        <a href="" class="text-decoration-none">
+                            <div class="icon-card text-center rounded-1">
+
+                                <img src="https://cdn-icons-png.flaticon.com/512/10203/10203882.png" alt=""
+                                    class="img-fluid service-img">
+
+                                <!-- <i class="bi bi-bicycle icon"></i> -->
+                                <h6 class="mt-2">2nd-Hand Dealers</h6>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-4 col-md-3 col-lg-2">
+                        <a href="" class="text-decoration-none">
+                            <div class="icon-card text-center rounded-1">
+                                <img src="https://cdn-icons-png.flaticon.com/128/8121/8121384.png" alt=""
+                                    class="img-fluid service-img">
+
+                                <!-- <i class="bi bi-ev-front icon"></i> -->
+                                <h6 class="mt-2">Workshops</h6>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <div class="advertisement-section section">
+            <div class="container">
+                <div class="row g-2 align-items-center">
+                    <div class="col-12 col-md-6">
+                        <img src="assets/images/png/offer1.jpg" class="img-fluid rounded-1 image-hover" alt=""
+                            loading="lazy">
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <img src="assets/images/png/offer2.jpg" class="img-fluid rounded-1 image-hover" alt=""
+                            loading="lazy">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="nearby-garages section">
+
+            <div class="container">
+
+
+                <h5 class="heading mb-0">Best Garages</h5>
+                <p class="heading-bottom-address">Kunal Niwas, Adarsh Colony, Purna, Parbhani 431511</p>
+
+            </div>
+
+        </div>
+
+
 
 
 
@@ -288,7 +468,7 @@
                                     data-bs-target="#signupModalInfo" class="btn btn-success">Verify OTP</button>
                             </div>
                         </form>
-                        <div class="resend-link">
+                        <div class="resend-link fs-average">
                             Didn’t receive the code? <a href="#">Resend OTP</a>
                         </div>
                     </div>
@@ -508,13 +688,7 @@
                 </div>
             </div>
         </div>
-
-
-
-
-    </header>
-
-    <main></main>
+    </main>
 
     <footer></footer>
 
