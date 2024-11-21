@@ -24,7 +24,7 @@
 
     <header>
         <!-- Mobile Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-success bg-light  d-lg-none">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light  d-lg-none">
             <div class="container">
 
                 <!-- Navbar Toggle for Mobile -->
@@ -37,16 +37,23 @@
 
                 <!-- Logo -->
                 <a class="navbar-brand" href="#">
-                    <img src="assets/images/png/logo-no-background (1).png" loading="lazy" height="40"
+                    <img src="assets/images/png/logo-no-background (1).png" loading="lazy" height="38"
                         alt="Wheelstore Logo" class="me-2">
                 </a>
 
+                <button class="btn btn-outline-primary rounded-circle p-2 lh-1 ms-auto" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-geo-alt-fill"
+                        viewBox="0 0 16 16">
+                        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6" />
+                    </svg>
+                </button>
 
 
-                <span class="badge red-color rounded-0 p-2 ms-auto d-lg-none">Advertise</span>
+                <span class="badge red-color rounded-0 p-2  d-lg-none fs-exsmall advertise">Advertise</span>
 
 
             </div>
+
         </nav>
 
         <!-- Desktop Navbar -->
@@ -265,26 +272,24 @@
 
     <main>
 
+        <!-- Desktop Hero -->
+        <div class="hero-section text-center text-white d-flex align-items-center justify-content-center py-5">
+            <!-- Background -->
+            <div class="hero-bg top-0 "></div>
+            <!-- Content -->
+            <div class="container position-relative z-1 d-flex flex-column align-items-center">
+                <!-- Heading -->
+                <h1 class="">Wheelstore</h1>
+                <!-- Subheading -->
+                <p class="fs-small mb-0">Find the best automobile shops and services near you</p>
 
-
-        <!-- Location Strip -->
-        <div class="bg-success d-lg-none">
-            <div class="container location-strip text-white d-flex align-items-center">
-                <!-- Location Icon -->
-                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-geo-alt-fill"
-                    viewBox="0 0 16 16">
-                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6" />
-                </svg>
-                <!-- Address with Overflow -->
-                <div class="overflow-auto location-text ms-1 fs-medium" style="white-space: nowrap;">
-                    Kunal Niwas, Adarsh Colony, Purna, Parbhani, Maharashtra 431511
-                </div>
             </div>
         </div>
 
 
+
         <!-- Search Bar -->
-        <div class="search-section section">
+        <div class="search-section section pb-0" style="padding-left: 0.3rem;">
             <div class="container">
                 <div class="search-bar">
                     <!-- Search Icon -->
@@ -296,11 +301,31 @@
                         </svg>
                     </span>
                     <!-- Search Input Field -->
-                    <input type="text" class="form-control form-control-sm  search-input"
+                    <input type="text" class="form-control form-control-sm  search-input fs-medium "
                         placeholder="Search for shops, service or location" aria-label="Search">
                 </div>
             </div>
         </div>
+
+
+
+        <!-- Location Strip -->
+        <!-- <div class="red-color">
+            <div class="container location-strip d-flex text-white align-items-center">
+   
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-geo-alt-fill"
+                    viewBox="0 0 16 16">
+                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6" />
+                </svg>
+    
+                <div class="overflow-auto location-text ms-1 fs-medium" style="white-space: nowrap;">
+                    Kunal Niwas, Adarsh Colony, Purna, Parbhani, Maharashtra 431511
+                </div>
+            </div>
+        </div> -->
+
+
+
 
 
         <div class="service-icons section">
@@ -312,11 +337,14 @@
                     <div class="col-4 col-md-3 col-lg-2 ">
                         <a href="category-shops.html" class="text-decoration-none ">
                             <div class="icon-card text-center rounded-1">
-                                <!-- <i class="bi bi-tools icon"></i> -->
-                                <img src="https://cdn-icons-png.flaticon.com/128/1995/1995470.png" alt=""
-                                    class="img-fluid service-img">
+                                <div class="img-icon">
+                                    <img src="https://cdn-icons-png.flaticon.com/128/1995/1995470.png" alt=""
+                                        class="img-fluid service-img">
 
-                                <h6 class="mt-2">Garages</h6>
+                                </div>
+                                <!-- <i class="bi bi-tools icon"></i> -->
+
+                                <h6 class="mt-2 fs-exsmall ">Garages</h6>
                             </div>
                         </a>
                     </div>
@@ -324,10 +352,13 @@
                         <a href="" class="text-decoration-none">
                             <div class="icon-card text-center rounded-1">
                                 <!-- <i class="bi bi-car-front icon"></i> -->
-                                <img src="https://cdn-icons-png.flaticon.com/512/3627/3627886.png" alt=""
-                                    class="img-fluid service-img">
+                                <div class="img-icon">
+                                    <img src="https://cdn-icons-png.flaticon.com/512/3627/3627886.png" alt=""
+                                        class="img-fluid service-img">
+                                </div>
 
-                                <h6 class="mt-2">Service Centers</h6>
+
+                                <h6 class="mt-2 fs-exsmall ">Service Centers</h6>
                             </div>
                         </a>
 
@@ -335,56 +366,72 @@
                     <div class="col-4 col-md-3 col-lg-2">
                         <a href="" class="text-decoration-none">
                             <div class="icon-card text-center rounded-1">
-                                <img src="https://cdn-icons-png.flaticon.com/512/3361/3361506.png" alt=""
-                                    class="img-fluid service-img">
+
+                                <div class="img-icon">
+
+                                    <img src="https://cdn-icons-png.flaticon.com/512/3361/3361506.png" alt=""
+                                        class="img-fluid service-img">
+                                </div>
+
 
                                 <!-- <i class="bi bi-house-door icon"></i> -->
-                                <h6 class="mt-2">Showrooms</h6>
+                                <h6 class="mt-2 fs-exsmall ">Showrooms</h6>
                             </div>
                         </a>
                     </div>
                     <div class="col-4 col-md-3 col-lg-2">
                         <a href="" class="text-decoration-none">
                             <div class="icon-card text-center rounded-1">
-                                <img src="https://cdn-icons-png.flaticon.com/128/1743/1743609.png" alt=""
-                                    class="img-fluid service-img">
+                                <div class="img-icon">
+
+                                    <img src="https://cdn-icons-png.flaticon.com/128/1743/1743609.png" alt=""
+                                        class="img-fluid service-img">
+                                </div>
 
                                 <!-- <i class="bi bi-water icon"></i> -->
-                                <h6 class="mt-2">Washing Centers</h6>
+                                <h6 class="mt-2 fs-exsmall ">Washing Centers</h6>
                             </div>
                         </a>
                     </div>
                     <div class="col-4 col-md-3 col-lg-2">
                         <a href="" class="text-decoration-none">
                             <div class="icon-card text-center rounded-1">
-                                <img src="https://cdn-icons-png.flaticon.com/512/814/814406.png" alt=""
-                                    class="img-fluid service-img">
+                                <div class="img-icon">
+
+                                    <img src="https://cdn-icons-png.flaticon.com/512/814/814406.png" alt=""
+                                        class="img-fluid service-img">
+                                </div>
 
                                 <!-- <i class="bi bi-shop icon"></i> -->
-                                <h6 class="mt-2">Automobile Shops</h6>
+                                <h6 class="mt-2 fs-exsmall ">Automobile Shops</h6>
                             </div>
                         </a>
                     </div>
                     <div class="col-4 col-md-3 col-lg-2">
                         <a href="" class="text-decoration-none">
                             <div class="icon-card text-center rounded-1">
-                                <img src="https://cdn-icons-png.flaticon.com/128/12622/12622092.png" alt=""
-                                    class="img-fluid service-img">
+                                <div class="img-icon">
+
+                                    <img src="https://cdn-icons-png.flaticon.com/128/12622/12622092.png" alt=""
+                                        class="img-fluid service-img">
+                                </div>
 
                                 <!-- <i class="bi bi-gear icon"></i> -->
-                                <h6 class="mt-2">Find Spare Parts</h6>
+                                <h6 class="mt-2 fs-exsmall ">Find Spare Parts</h6>
                             </div>
                         </a>
                     </div>
                     <div class="col-4 col-md-3 col-lg-2">
                         <a href="" class="text-decoration-none">
                             <div class="icon-card text-center rounded-1">
+                                <div class="img-icon">
 
-                                <img src="https://cdn-icons-png.flaticon.com/512/10203/10203882.png" alt=""
-                                    class="img-fluid service-img">
+                                    <img src="https://cdn-icons-png.flaticon.com/512/10203/10203882.png" alt=""
+                                        class="img-fluid service-img">
+                                </div>
 
                                 <!-- <i class="bi bi-bicycle icon"></i> -->
-                                <h6 class="mt-2">2nd-Hand Dealers</h6>
+                                <h6 class="mt-2 fs-exsmall ">2nd-Hand Dealers</h6>
                             </div>
                         </a>
                     </div>
@@ -392,11 +439,14 @@
                     <div class="col-4 col-md-3 col-lg-2">
                         <a href="" class="text-decoration-none">
                             <div class="icon-card text-center rounded-1">
-                                <img src="https://cdn-icons-png.flaticon.com/128/8121/8121384.png" alt=""
-                                    class="img-fluid service-img">
+                                <div class="img-icon">
+
+                                    <img src="https://cdn-icons-png.flaticon.com/128/8121/8121384.png" alt=""
+                                        class="img-fluid service-img">
+                                </div>
 
                                 <!-- <i class="bi bi-ev-front icon"></i> -->
-                                <h6 class="mt-2">Workshops</h6>
+                                <h6 class="mt-2 fs-exsmall ">Workshops</h6>
                             </div>
                         </a>
 
@@ -405,6 +455,10 @@
             </div>
 
         </div>
+
+
+
+
 
 
 
@@ -427,11 +481,249 @@
 
         <div class="nearby-garages section">
 
+            <div class="container text-lg-center">
+                <h5 class="heading mb-0 fs-big fw-semibold">Best Garages</h5>
+                <p class="heading-bottom-address fs-small mb-0">Kunal Niwas, Adarsh Colony, Purna, Parbhani 431511</p>
+
+            </div>
+
             <div class="container">
 
 
-                <h5 class="heading mb-0">Best Garages</h5>
-                <p class="heading-bottom-address">Kunal Niwas, Adarsh Colony, Purna, Parbhani 431511</p>
+                <div class="best-garages d-flex overflow-auto gap-4">
+                    <!-- Card -->
+                    <div class="card shop-card">
+
+                        <img class="card-img-top shop-card-image" src="assets/images/png/garage1.jpg"
+                            alt="Image Description">
+
+                        <div class="card-body p-2">
+                            <h3 class="card-title shop-card-title fs-small"><a class="text-dark text-decoration-none"
+                                    href="#">Krishna Narayan Two
+                                    Wheeler Bajaj Service Center and Automobile Shop <svg
+                                        xmlns="http://www.w3.org/2000/svg" fill="rgba(0, 128, 96, 1)"
+                                        class="bi bi-patch-check-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708" />
+                                    </svg> </a></h3>
+                            <p class="card-text shop-card-description mb-1 fs-small">
+                                <span
+                                    class="badge shop-badge border border-danger red-color  fw-medium  rounded-1">Garage</span>
+                                <span class="badge shop-badge border border-danger red-color fw-medium  rounded-1">2
+                                    Wheeler</span>
+                                <span class="badge shop-badge border border-danger red-color fw-medium  rounded-1">3
+                                    Wheeler</span>
+                            </p>
+                            <p class="card-text shop-card-description mb-1 fs-small ratings">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                    class="bi bi-star-fill  text-warning" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                    class="bi bi-star-fill text-warning" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                    class="bi bi-star-fill  text-warning" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                    class="bi bi-star-fill  text-warning" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                    class="bi bi-star-fill  text-warning" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg> 134k ratings
+                            </p>
+                            <p class="card-text shop-card-description mb-0 fs-small">Kunal Niwas, New Adarsh Colony,
+                                Purna,
+                                Dist.
+                                Parbhani 431511 Maharashtra, India</p>
+                        </div>
+
+                        <div class="card-footer p-2 pt-0">
+                            <a class="card-link  text-decoration-none shop-card-description text-primary fs-small text-success fw-medium"
+                                href="#">Open till 6 PM</a>
+                        </div>
+                    </div>
+                    <!-- End Card -->
+                    <!-- Card -->
+                    <div class="card shop-card">
+
+                        <img class="card-img-top shop-card-image" src="assets/images/png/garage1.jpg"
+                            alt="Image Description">
+
+                        <div class="card-body p-2">
+                            <h3 class="card-title shop-card-title fs-small"><a class="text-dark text-decoration-none"
+                                    href="#">Krishna Narayan Two
+                                    Wheeler Bajaj Service Center and Automobile Shop <svg
+                                        xmlns="http://www.w3.org/2000/svg" fill="rgba(0, 128, 96, 1)"
+                                        class="bi bi-patch-check-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708" />
+                                    </svg> </a></h3>
+                            <p class="card-text shop-card-description mb-1 fs-small">
+                                <span
+                                    class="badge shop-badge border border-danger red-color  fw-medium  rounded-1">Garage</span>
+                                <span class="badge shop-badge border border-danger red-color fw-medium  rounded-1">2
+                                    Wheeler</span>
+                                <span class="badge shop-badge border border-danger red-color fw-medium  rounded-1">3
+                                    Wheeler</span>
+                            </p>
+                            <p class="card-text shop-card-description mb-1 fs-small ratings">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                    class="bi bi-star-fill  text-warning" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                    class="bi bi-star-fill text-warning" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                    class="bi bi-star-fill  text-warning" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                    class="bi bi-star-fill  text-warning" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                    class="bi bi-star-fill  text-warning" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg> 134k ratings
+                            </p>
+                            <p class="card-text shop-card-description mb-0 fs-small">Kunal Niwas, New Adarsh Colony,
+                                Purna,
+                                Dist.
+                                Parbhani 431511 Maharashtra, India</p>
+                        </div>
+
+                        <div class="card-footer p-2 pt-0">
+                            <a class="card-link  text-decoration-none shop-card-description text-primary fs-small text-success fw-medium"
+                                href="#">Open till 6 PM</a>
+                        </div>
+                    </div>
+                    <!-- End Card -->
+                    <!-- Card -->
+                    <div class="card shop-card">
+
+                        <img class="card-img-top shop-card-image" src="assets/images/png/garage1.jpg"
+                            alt="Image Description">
+
+                        <div class="card-body p-2">
+                            <h3 class="card-title shop-card-title fs-small"><a class="text-dark text-decoration-none"
+                                    href="#">Krishna Narayan Two
+                                    Wheeler Bajaj Service Center and Automobile Shop <svg
+                                        xmlns="http://www.w3.org/2000/svg" fill="rgba(0, 128, 96, 1)"
+                                        class="bi bi-patch-check-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708" />
+                                    </svg> </a></h3>
+                            <p class="card-text shop-card-description mb-1 fs-small">
+                                <span
+                                    class="badge shop-badge border border-danger red-color  fw-medium  rounded-1">Garage</span>
+                                <span class="badge shop-badge border border-danger red-color fw-medium  rounded-1">2
+                                    Wheeler</span>
+                                <span class="badge shop-badge border border-danger red-color fw-medium  rounded-1">3
+                                    Wheeler</span>
+                            </p>
+                            <p class="card-text shop-card-description mb-1 fs-small ratings">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                    class="bi bi-star-fill  text-warning" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                    class="bi bi-star-fill text-warning" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                    class="bi bi-star-fill  text-warning" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                    class="bi bi-star-fill  text-warning" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                    class="bi bi-star-fill  text-warning" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg> 134k ratings
+                            </p>
+                            <p class="card-text shop-card-description mb-0 fs-small">Kunal Niwas, New Adarsh Colony,
+                                Purna,
+                                Dist.
+                                Parbhani 431511 Maharashtra, India</p>
+                        </div>
+
+                        <div class="card-footer p-2 pt-0">
+                            <a class="card-link  text-decoration-none shop-card-description text-primary fs-small text-success fw-medium"
+                                href="#">Open till 6 PM</a>
+                        </div>
+                    </div>
+                    <!-- End Card -->
+                    <!-- Card -->
+                    <div class="card shop-card">
+
+                        <img class="card-img-top shop-card-image" src="assets/images/png/garage1.jpg"
+                            alt="Image Description">
+
+                        <div class="card-body p-2">
+                            <h3 class="card-title shop-card-title fs-small"><a class="text-dark text-decoration-none"
+                                    href="#">Krishna Narayan Two
+                                    Wheeler Bajaj Service Center and Automobile Shop <svg
+                                        xmlns="http://www.w3.org/2000/svg" fill="rgba(0, 128, 96, 1)"
+                                        class="bi bi-patch-check-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708" />
+                                    </svg> </a></h3>
+                            <p class="card-text shop-card-description mb-1 fs-small">
+                                <span
+                                    class="badge shop-badge border border-danger red-color  fw-medium  rounded-1">Garage</span>
+                                <span class="badge shop-badge border border-danger red-color fw-medium  rounded-1">2
+                                    Wheeler</span>
+                                <span class="badge shop-badge border border-danger red-color fw-medium  rounded-1">3
+                                    Wheeler</span>
+                            </p>
+                            <p class="card-text shop-card-description mb-1 fs-small ratings">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                    class="bi bi-star-fill  text-warning" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                    class="bi bi-star-fill text-warning" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                    class="bi bi-star-fill  text-warning" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                    class="bi bi-star-fill  text-warning" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                    class="bi bi-star-fill  text-warning" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg> 134k ratings
+                            </p>
+                            <p class="card-text shop-card-description mb-0 fs-small">Kunal Niwas, New Adarsh Colony,
+                                Purna,
+                                Dist.
+                                Parbhani 431511 Maharashtra, India</p>
+                        </div>
+
+                        <div class="card-footer p-2 pt-0">
+                            <a class="card-link  text-decoration-none shop-card-description text-primary fs-small text-success fw-medium"
+                                href="#">Open till 6 PM</a>
+                        </div>
+                    </div>
+                    <!-- End Card -->
+                </div>
 
             </div>
 

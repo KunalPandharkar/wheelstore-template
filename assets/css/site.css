@@ -7,7 +7,6 @@
  */
 :root,
 [data-bs-theme=light] {
-    --ws-theme-red: #e3324a;
     --ws-text-red: #e3324a;
     --bs-blue: #0d6efd;
     --bs-indigo: #6610f2;
@@ -4500,7 +4499,7 @@ fieldset:disabled .btn {
 
 .navbar {
     --bs-navbar-padding-x: 0;
-    --bs-navbar-padding-y: 0.5rem;
+    --bs-navbar-padding-y: 0.2rem;
     --bs-nav-link-font-size: 0.85rem;
     --bs-navbar-color: rgba(var(--bs-emphasis-color-rgb), 0.65);
     --bs-navbar-hover-color: rgba(var(--bs-emphasis-color-rgb), 0.8);
@@ -4601,7 +4600,7 @@ fieldset:disabled .btn {
 
 .navbar-toggler {
     padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
-    padding-left: 0.3rem;
+    padding-left: 0.2rem;
     font-size: var(--bs-navbar-toggler-font-size);
     line-height: 1;
     color: var(--bs-body-color);
@@ -5099,8 +5098,8 @@ fieldset:disabled .btn {
 .card-footer {
     padding: var(--bs-card-cap-padding-y) var(--bs-card-cap-padding-x);
     color: var(--bs-card-cap-color);
-    background-color: var(--bs-card-cap-bg);
-    border-top: var(--bs-card-border-width) solid var(--bs-card-border-color)
+    /* background-color: var(--bs-card-cap-bg); */
+    /* border-top: var(--bs-card-border-width) solid var(--bs-card-border-color) */
 }
 
 .card-footer:last-child {
