@@ -21,7 +21,7 @@ svg {
 }
 
 .b-example-divider {
-    height: 0.3rem;
+    height: 0.8rem;
     border-width: 1px 0;
     /* box-shadow: 0 2px 10px rgb(0 0 0 / 11%); */
     background-color: rgba(0, 0, 0, .1);
@@ -89,7 +89,7 @@ svg {
     padding: 0.6rem .875rem;
     padding-left: 40px;
     border: 1px solid #717171;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     /* box-shadow: 0 1px 2px 0 rgba(48, 48, 48, .30), 0 1px 3px 1px rgba(48, 48, 48, .15); */
 
 }
@@ -100,39 +100,6 @@ svg {
 }
 
 
-/* ___HERO_SECTION____ */
-/* Hero Section Styles */
-.hero-section {
-    position: relative;
-    height: 20vh;
-    overflow: hidden;
-}
-
-.hero-section h1 {
-    font-size: 1.75rem;
-    font-weight: 600;
-}
-
-.hero-section p {
-    font-size: 0.8rem;
-    color: rgba(255, 255, 255, .7) !important
-}
-
-/* Background Image */
-.hero-bg {
-    position: absolute;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    /* background: url('assets/images/png/offer1.jpg') center/cover no-repeat; */
-    background-color: #005c45;
-    z-index: 0;
-    /* filter: brightness(0.6); */
-    object-fit: cover;
-    opacity: 1;
-    transform: scale(1.1)
-        /* Darken background for better text visibility */
-}
 
 
 
@@ -178,38 +145,14 @@ svg {
 }
 
 
-/* ______LOCATION_STRIP_____ */
-.location-strip {
-    padding: 0.8rem 1rem;
-}
 
-.location-strip svg {
-    width: 1.3rem;
-}
-
-
-.location-text {
-    /* Prevent text wrapping */
-    scrollbar-width: none;
-    /* Hide scrollbar in Firefox */
-    -ms-overflow-style: none;
-    /* Hide scrollbar in IE/Edge */
-    overflow-x: auto;
-    scroll-behavior: smooth;
-    /* Smooth scrolling */
-}
-
-/* Hide scrollbar in WebKit browsers (Chrome, Safari, etc.) */
-.location-text::-webkit-scrollbar {
-    display: none;
-}
 
 
 
 /* __________SERVICE_CARDS_______ */
 
 .icon-card {
-    background-color: #f8f9fa;
+    /* background-color: #f8f9fa; */
     padding: 0.5rem;
     transition: box-shadow 0.3s ease;
     cursor: pointer;
@@ -219,8 +162,12 @@ svg {
     align-items: center;
     justify-content: center;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
-    /* border: 0.1rem solid rgb(232, 232, 232) */
+    border: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;
+    box-shadow: var(--bs-box-shadow-sm) !important;
+    border-radius: var(--bs-border-radius) !important
 }
+
+
 
 
 
@@ -306,9 +253,13 @@ svg {
 .shop-card {
     border-radius: 8px;
     transition: transform 0.3s ease;
+   
+    box-shadow: 0 2px 10px rgb(0 0 0 / 11%)
+}
+
+.shop-card.width{
     min-width: 20rem;
     max-width: 20rem;
-    box-shadow: 0 2px 10px rgb(0 0 0 / 11%)
 }
 
 
@@ -420,6 +371,23 @@ button {
     font-size: 1rem;
 }
 
+/* PROMOTIONAL_SECTION */
+
+.wheelstore-services a {
+    font-size: 0.9rem;
+}
+
+.wheelstore-services a:hover {
+    color: #005c45;
+}
+
+
+
+.wheelstore-services p {
+    font-size: 0.85rem;
+    line-height: 1.7;
+}
+
 /* FOOTER */
 
 .language-btn {
@@ -430,7 +398,88 @@ button {
     font-size: 0.85rem;
 }
 
+.footer .nav-link:hover {
+    font-weight: 500;
+}
 
+.homepage .carousel-item {
+    height: 20vh;
+}
+
+
+
+
+
+@media (min-width: 450px) {
+    .homepage .carousel-item {
+        height: 25vh;
+    }
+}
+
+@media (min-width: 550px) {
+   .homepage .carousel-item {
+        height: 28vh;
+    }
+}
+
+@media (min-width: 600px) {
+    .homepage .carousel-item {
+        height: 30vh;
+    }
+}
+
+@media (min-width: 650px) {
+   .homepage .carousel-item {
+        height: 35vh;
+    }
+}
+
+
+/* Category-Shop Page */
+.sortandfilter .nav-link {
+    font-size: 0.85rem;
+}
+
+
+.sort.dropdown:hover .dropdown-menu {
+    display: block;
+    visibility: visible;
+}
+
+.sort.dropdown {
+    position: relative;
+}
+
+.shop-type.dropdown:hover .dropdown-menu {
+    display: block;
+    visibility: visible;
+}
+
+.shop-type.dropdown {
+    position: relative;
+}
+
+.vehicle-type.dropdown:hover .dropdown-menu {
+    display: block;
+    visibility: visible;
+}
+
+.vehicle-type.dropdown {
+    position: relative;
+}
+
+.filter-desktop .dropdown-menu {
+    width: 15rem;
+}
+
+.selected-filters {
+    background-color: rgba(243, 244, 246, 1);
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+}
+.shop-lists .shop-card{
+    margin-bottom: 1rem;
+}
 
 
 /* // Medium devices (tablets, 768px and up) */
@@ -458,7 +507,7 @@ button {
     }
 
     .heading {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
     }
 
 
@@ -489,6 +538,11 @@ button {
         font-size: 0.9rem;
     }
 
+    .homepage .carousel-item {
+        height: 40vh;
+    }
+
+
 
     /* _______SEARCH_BAR___ */
     .search-icon {
@@ -507,18 +561,6 @@ button {
         font-size: 0.95rem;
     }
 
-    /* ___HERO__SECTION___ */
-    .hero-section {
-        height: 30vh;
-    }
-
-    .hero-section h1 {
-        font-size: 2.5rem;
-    }
-
-    .hero-section p {
-        font-size: 1.2rem;
-    }
 
     /* SERVICE_CARDS */
     .icon-card h6 {
@@ -527,7 +569,7 @@ button {
 
     /* __SHOP__CARD__ */
 
-    .shop-card {
+    .shop-card.width {
         min-width: 20rem;
         max-width: 22rem;
     }
@@ -565,8 +607,30 @@ button {
         width: 90%;
     }
 
+    /* PROMOTIONAL_SECTION */
+
+    .wheelstore-services a {
+        font-size: 1rem;
+    }
+
+    .wheelstore-services p {
+        font-size: 0.90rem;
+    }
+
+
     /* FOOTER */
-    .footer .nav-link{
+    .footer .nav-link {
+        font-size: 0.95rem;
+    }
+
+
+    /* All Category Page */
+
+    .breadcrumb {
+        --bs-breadcrumb-font-size: 0.85rem;
+    }
+
+    .sortandfilter .nav-link {
         font-size: 0.95rem;
     }
 
@@ -574,6 +638,13 @@ button {
 
 
 
+}
+
+
+@media (min-width: 850px) {
+   .homepage .carousel-item {
+        height: 45vh;
+    }
 }
 
 /* // Large devices (desktops, 992px and up) */
@@ -594,12 +665,12 @@ button {
     }
 
 
-
-
-
     .heading {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
+
+
+
 
     .heading-bottom-address {
         padding-bottom: 2rem;
@@ -611,19 +682,14 @@ button {
         --bs-nav-link-font-size: 1rem;
     }
 
-    /* __HERO_SECTION__ */
 
-    .hero-section {
-        height: 35vh;
+   .homepage .carousel-item {
+        height: 40vh;
     }
 
-    .hero-section h1 {
-        font-size: 2.7rem;
-    }
 
-    .hero-section p {
-        font-size: 1.4rem;
-    }
+
+
 
     /* SERVICE_CARDS */
     .icon-card h6 {
@@ -633,7 +699,7 @@ button {
 
     /* SHOP_CARDS */
 
-    .shop-card {
+    .shop-card.width {
         min-width: 21rem;
         max-width: 25rem;
     }
@@ -658,6 +724,12 @@ button {
     .accordion-body {
         font-size: 1rem;
     }
+
+    .breadcrumb {
+        --bs-breadcrumb-font-size: 0.9rem;
+    }
+
+    
 
 }
 

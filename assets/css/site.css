@@ -2771,8 +2771,8 @@ textarea.form-control-lg {
 }
 
 .form-check-input:checked {
-    background-color: #0d6efd;
-    border-color: #0d6efd
+    background-color: var(--ws-text-red);
+    border-color: var(--ws-text-red);
 }
 
 .form-check-input:checked[type=checkbox] {
@@ -2801,13 +2801,20 @@ textarea.form-control-lg {
     opacity: .5
 }
 
+.form-check-label {
+    margin-top: 0.1rem;
+    margin-left: 0.5rem;
+}
+
 .form-switch {
+
     padding-left: 2.5em
 }
 
 .form-switch .form-check-input {
     --bs-form-switch-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba%280, 0, 0, 0.25%29'/%3e%3c/svg%3e");
-    width: 2em;
+    width: 2.3em;
+    height: 1.3em;
     margin-left: -2.5em;
     background-image: var(--bs-form-switch-bg);
     background-position: left center;
@@ -3602,8 +3609,8 @@ fieldset:disabled .btn {
 
 .btn-danger {
     --bs-btn-color: #fff;
-    --bs-btn-bg: #dc3545;
-    --bs-btn-border-color: #dc3545;
+    --bs-btn-bg: var(--ws-text-red);
+    --bs-btn-border-color: var(--ws-text-red);
     --bs-btn-hover-color: #fff;
     --bs-btn-hover-bg: #bb2d3b;
     --bs-btn-hover-border-color: #b02a37;
@@ -5317,8 +5324,9 @@ fieldset:disabled .btn {
 .accordion-item:not(:first-of-type) {
     border-top: 0
 }
-.accordion-collapse{
-   background-color:  rgba(0, 189, 142, .1)
+
+.accordion-collapse {
+    background-color: rgba(0, 189, 142, .1)
 }
 
 .accordion-item:last-of-type {
@@ -5373,11 +5381,12 @@ fieldset:disabled .btn {
     --bs-breadcrumb-padding-x: 0;
     --bs-breadcrumb-padding-y: 0;
     --bs-breadcrumb-margin-bottom: 1rem;
+    --bs-breadcrumb-font-size: 0.8rem;
     --bs-breadcrumb-bg: ;
     --bs-breadcrumb-border-radius: ;
     --bs-breadcrumb-divider-color: var(--bs-secondary-color);
-    --bs-breadcrumb-item-padding-x: 0.5rem;
-    --bs-breadcrumb-item-active-color: var(--bs-secondary-color);
+    --bs-breadcrumb-item-padding-x: 0.2rem;
+    --bs-breadcrumb-item-active-color: #000000;
     display: flex;
     flex-wrap: wrap;
     padding: var(--bs-breadcrumb-padding-y) var(--bs-breadcrumb-padding-x);
@@ -5510,7 +5519,7 @@ fieldset:disabled .btn {
     --bs-badge-padding-x: 0.65em;
     --bs-badge-padding-y: 0.35em;
     --bs-badge-font-size: 0.8rem;
-    --bs-badge-font-weight: 600;
+    --bs-badge-font-weight: normal;
     --bs-badge-color: #fff;
     --bs-badge-border-radius: var(--bs-border-radius);
     display: inline-block;
@@ -8541,7 +8550,7 @@ fieldset:disabled .btn {
 
 .border-danger {
     --bs-border-opacity: 1;
-    border-color: rgba(var(--bs-danger-rgb), var(--bs-border-opacity)) !important
+    border-color: var(--ws-text-red) !important
 }
 
 .border-light {
@@ -9049,6 +9058,7 @@ fieldset:disabled .btn {
 .mb-5 {
     margin-bottom: 3rem !important
 }
+
 
 .mb-auto {
     margin-bottom: auto !important
@@ -9778,7 +9788,7 @@ fieldset:disabled .btn {
 
 .bg-danger {
     --bs-bg-opacity: 1;
-    background-color: rgba(var(--bs-danger-rgb), var(--bs-bg-opacity)) !important
+    background-color: var(--ws-text-red) !important
 }
 
 .bg-light {
