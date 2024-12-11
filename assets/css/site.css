@@ -5518,7 +5518,7 @@ fieldset:disabled .btn {
 .badge {
     --bs-badge-padding-x: 0.65em;
     --bs-badge-padding-y: 0.35em;
-    --bs-badge-font-size: 0.8rem;
+    --bs-badge-font-size: 0.7rem;
     --bs-badge-font-weight: normal;
     --bs-badge-color: #fff;
     --bs-badge-border-radius: var(--bs-border-radius);
