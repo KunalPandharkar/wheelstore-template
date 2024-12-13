@@ -366,25 +366,9 @@
             </div>
         </div>
 
-        <style>
-            section {
-                min-height: 100vh;
-                /* Ensures visible sections on smaller devices */
-                padding: 20px;
-                border: 1px solid #ddd;
-            }
 
-
-
-
-            .scrollspy-sections section {
-                min-height: 100vh;
-                /* Adjust based on your content */
-                padding: 20px;
-            }
-        </style>
         <!-- Shop-Info -->
-        <div class="shop-info-section pt-2 pt-md-3" id="shopInfoTabs" style="z-index: 120000;">
+        <div class="shop-info-section pt-2 pt-md-3" style="z-index: 120000;">
             <div class="container">
                 <div class="d-flex align-items-center justify-content-between justify-content-md-start">
                     <div class="d-flex align-items-center me-md-3">
@@ -473,17 +457,21 @@
                 </div>
             </div>
 
-            <div class="container mt-3">
-                <!-- Horizontal Tabs for Shop Info -->
-                <!-- Horizontal Tabs for Shop Info -->
-                <nav class="nav nav-tabs d-flex overflow-auto flex-nowrap"
-                    style="scrollbar-width: thin; scrollbar-color: transparent transparent;" id="tabs">
-                    <a class="nav-link active" id="overview-tab" data-bs-toggle="tab" href="#overview">Overview</a>
-                    <a class="nav-link" id="photos-tab" data-bs-toggle="tab" href="#photos">Photos</a>
-                    <a class="nav-link" id="timings-tab" data-bs-toggle="tab" href="#timings">Timings</a>
-                    <a class="nav-link" id="reviews-tab" data-bs-toggle="tab" href="#reviews">Reviews</a>
-                    <a class="nav-link" id="location-tab" data-bs-toggle="tab" href="#location">Location</a>
-                </nav>
+            <div class="container mt-4 shop-nav-tabs pb-2">
+
+                <div class="tabs-container  border-bottom ">
+                    <div class="d-flex overflow-auto gap-2"
+                        style="  scrollbar-width: thin;scrollbar-color: transparent transparent;">
+                        <a class="btn rounded-0  active" href="#overview">Shop Info</a>
+                        <a class="btn rounded-0  " href="#services">Service
+                            Rates</a>
+                        <a class="btn rounded-0 " href="#products">Products</a>
+                        <a class="btn rounded-0 ">Reviews</a>
+                    </div>
+                </div>
+
+
+
             </div>
         </div>
 
@@ -491,16 +479,395 @@
 
             <div class="container">
 
-
                 <!-- Scrollspy Sections -->
-                <div class="tab-content" id="myTabContent">
-                    <section id="overview" class="tab-pane fade show active bg-primary text-white">Overview Content
-                    </section>
-                    <section id="photos" class="tab-pane fade show  bg-secondary text-white">Photos Content</section>
-                    <section id="timings" class="tab-pane fade show  bg-success text-white">Timings Content</section>
-                    <section id="reviews" class="tab-pane fade show  bg-danger text-white">Reviews Content</section>
-                    <section id="location" class="tab-pane fade show  bg-warning text-white">Location Content</section>
-                </div>
+                <section id="overview">
+
+                    <div class="shop-info-section">
+
+
+
+                        <!-- Table Section -->
+                        <div class="table-container">
+                            <table class="table table-bordered table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Category</th>
+                                        <th>Details</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <!-- Basic Details -->
+                                    <!-- <tr>
+                                        <td>Shop Name</td>
+                                        <td>Krishna Narayan Two Wheeler Bajaj Service Center and Automobile Shop
+                                        </td>
+                                    </tr> -->
+
+                                    <tr>
+                                        <td>Description</td>
+                                        <td> KP Service Center is an authorized and reliable
+                                            two-wheeler service
+                                            center offering expert repairs, routine maintenance, and genuine
+                                            parts
+                                            replacement. Known for quality service and quick turnaround, it's
+                                            the
+                                            go-to choice for keeping your bike in top condition. </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Type</td>
+                                        <td>Authorized Service Center</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Repair</td>
+                                        <td>2-Wheeler, 3-Wheeler</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Brand</td>
+                                        <td>All 2 Wheelers Brands</td>
+                                    </tr>
+
+
+
+                                    <!-- Location Details -->
+                                    <!-- <tr>
+                                        <td>Address</td>
+                                        <td>Kunal Niwas, New Adarsh Colony, Purna, Dist. Parbhani 431511
+                                            Maharashtra, India</td>
+                                    </tr> -->
+
+                                 
+
+                                    <tr>
+                                        <td>Phone</td>
+                                        <td>
+                                            <a class="mb-0 me-2">77774843561</a>
+                                            <a class="mb-0">77774843561</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>WhatsApp</td>
+                                        <td>
+                                            <a href="">+91 98765 43210</a>
+
+                                        </td>
+                                    </tr>
+
+
+                                  
+
+
+
+                                    <!-- Contact Information -->
+
+
+                                   
+                                    <tr>
+                                        <td>Email</td>
+                                        <td>
+                                            <a href="">info@wheelstore.com</a>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Map</td>
+                                        <td><a href="#">View Location</a></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Website</td>
+                                        <td>
+                                            <a href="">wheelstore.in</a>
+                                        </td>
+                                    </tr>
+
+
+                                    <tr>
+                                        <td>Social Media</td>
+                                        <td>
+                                            <button type="button" class="btn border">
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                                    class="bi bi-instagram" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334">
+                                                    </path>
+                                                </svg>
+                                            </button>
+
+                                            <button type="button" class="btn border">
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                                    class="bi bi-facebook" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951">
+                                                    </path>
+                                                </svg>
+                                            </button>
+                                            <button type="button" class="btn border">
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                                    class="bi bi-instagram" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334">
+                                                    </path>
+                                                </svg>
+                                            </button>
+
+                                            <button type="button" class="btn border">
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                                    class="bi bi-facebook" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951">
+                                                    </path>
+                                                </svg>
+                                            </button>
+                                        </td>
+                                    </tr>
+
+
+                                    <tr>
+                                        <td>Timings</td>
+                                        <td>
+                                            <table class="table table-bordered table-sm"
+                                                style="max-width: 100%; margin: 0;">
+                                                <thead class="table-light">
+                                                    <tr>
+                                                        <th>Day</th>
+                                                        <th>Opening Time</th>
+                                                        <th>Closing Time</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Monday</td>
+                                                        <td>9:00 AM</td>
+                                                        <td>7:00 PM</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Tuesday</td>
+                                                        <td>9:00 AM</td>
+                                                        <td>7:00 PM</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Wednesday</td>
+                                                        <td>9:00 AM</td>
+                                                        <td>7:00 PM</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Thursday</td>
+                                                        <td>9:00 AM</td>
+                                                        <td>7:00 PM</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Friday</td>
+                                                        <td>9:00 AM</td>
+                                                        <td>7:00 PM</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Saturday</td>
+                                                        <td>9:00 AM</td>
+                                                        <td>5:00 PM</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Sunday</td>
+                                                        <td>Closed</td>
+                                                        <td>Closed</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+
+
+
+                                    <!-- Services Offered -->
+                                    <!-- <tr>
+                                            <td>Services</td>
+                                            <td>
+                                                <ul class="mb-0">
+                                                    <li>Vehicle Repair</li>
+                                                    <li>Routine Maintenance</li>
+                                                    <li>Tire Replacement</li>
+                                                </ul>
+                                            </td>
+                                        </tr> -->
+
+
+
+
+                                </tbody>
+
+                            </table>
+                        </div>
+
+                    </div>
+
+
+
+
+                </section>
+
+                <section id="services" class="tab-pane fade show active">
+
+                    <div class="shop-info-section">
+
+
+
+                        <!-- Table Section -->
+                        <div class="table-container">
+                            <div class="search-bar mt-3 mb-3" id="search-bar">
+                                <!-- Search Icon -->
+                                <span class="search-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-search"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                                    </svg>
+                                </span>
+                                <!-- Search Input Field -->
+                                <input type="text" class="form-control form-control-sm search-input"
+                                    placeholder="Search for Service" aria-label="Search" />
+                            </div>
+                            <table class="table table-bordered table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Service Name</th>
+                                        <th>Price</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                    <tr>
+                                        <td>Brake Repair</td>
+                                        <td>₹1200</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Tire Replacement</td>
+                                        <td>₹2000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Battery Replacement</td>
+                                        <td>₹1500</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Engine Diagnostics</td>
+                                        <td>₹1000</td>
+                                    </tr>
+
+
+
+
+                                </tbody>
+
+                            </table>
+                        </div>
+
+                    </div>
+
+
+
+
+                </section>
+
+                <section id="products" class="tab-pane fade show active">
+
+                    <div class="shop-info-section">
+
+
+
+                        <!-- Table Section -->
+                        <div class="table-container">
+                            <div class="search-bar mt-3 mb-3" id="search-bar">
+                                <!-- Search Icon -->
+                                <span class="search-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-search"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                                    </svg>
+                                </span>
+                                <!-- Search Input Field -->
+                                <input type="text" class="form-control form-control-sm search-input"
+                                    placeholder="Search for Service" aria-label="Search" />
+                            </div>
+                            <table class="table table-bordered table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Product Image</th>
+                                        <th>Product Name</th>
+                                        <th>Price</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                    <tr>
+                                        <td><img src="assets/images/png/bajaj.png" alt="Brake Repair" class="img-fluid"
+                                                style="height: 2rem;"></td>
+                                        <td>Brake Repair</td>
+                                        <td>
+                                            <p class="mb-1">₹1200</p>
+                                            <span class="badge red-color rounded-0">Get Quote</span>
+
+                                        </td>
+
+                                    </tr>
+
+                                    <tr>
+                                        <td><img src="assets/images/png/bajaj.png" alt="Brake Repair" class="img-fluid"
+                                                style="height: 2rem;"></td>
+                                        <td>Brake Repair</td>
+                                        <td>
+                                            <p class="mb-1">₹1200</p>
+                                            <span class="badge red-color rounded-0">Get Quote</span>
+
+                                        </td>
+
+                                    </tr>
+                                    <tr>
+                                        <td><img src="assets/images/png/bajaj.png" alt="Brake Repair" class="img-fluid"
+                                                style="height: 2rem;"></td>
+                                        <td>Brake Repair</td>
+                                        <td>
+                                            <p class="mb-1">₹1200</p>
+                                            <span class="badge red-color rounded-0">Get Quote</span>
+
+                                        </td>
+
+                                    </tr>
+                                    <tr>
+                                        <td><img src="assets/images/png/bajaj.png" alt="Brake Repair" class="img-fluid"
+                                                style="height: 2rem;"></td>
+                                        <td>Brake Repair</td>
+                                        <td>
+                                            <p class="mb-1">₹1200</p>
+                                            <span class="badge red-color rounded-0">Get Quote</span>
+
+                                        </td>
+
+                                    </tr>
+                                    <tr>
+                                        <td><img src="assets/images/png/bajaj.png" alt="Brake Repair" class="img-fluid"
+                                                style="height: 2rem;"></td>
+                                        <td>Brake Repair</td>
+                                        <td>
+                                            <p class="mb-1">₹1200</p>
+                                            <span class="badge red-color rounded-0">Get Quote</span>
+
+                                        </td>
+
+                                    </tr>
+
+
+
+
+                                </tbody>
+
+                            </table>
+                        </div>
+
+                    </div>
+
+
+
+
+                </section>
             </div>
         </div>
 
@@ -514,6 +881,7 @@
 
 
         <script src="assets/js/bootstrap.bundle.min.js"></script>
+
 
 
 

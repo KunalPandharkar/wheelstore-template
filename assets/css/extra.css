@@ -576,6 +576,20 @@ button {
     font-size: 0.75rem;
 }
 
+.shop-nav-tabs .tabs-container {
+    white-space: nowrap;
+}
+
+.shop-nav-tabs .tabs-container .btn {
+    border: none;
+    font-size: 0.9rem;
+}
+
+.shop-nav-tabs .tabs-container .btn.active {
+    border-bottom: 3px solid #e3324a;
+}
+
+
 
 
 /* // Medium devices (tablets, 768px and up) */
@@ -761,7 +775,7 @@ button {
         font-size: 0.9rem;
     }
 
-
+  
 
 
 
@@ -887,6 +901,11 @@ button {
 
     .shop-info-section .shop-name {
         font-size: 1.3rem;
+    }
+
+    
+    .shop-nav-tabs .tabs-container .btn {
+        font-size: 1rem;
     }
 
 
