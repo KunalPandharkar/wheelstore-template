@@ -7,7 +7,7 @@
  */
 :root,
 [data-bs-theme=light] {
-    --ws-text-red: #e3324a;
+    --ws-text-red: #181c21;
     --bs-blue: #0d6efd;
     --bs-indigo: #6610f2;
     --bs-purple: #6f42c1;
@@ -98,7 +98,7 @@
     --bs-link-color: #0d6efd;
     --bs-link-color-rgb: 13, 110, 253;
     --bs-link-decoration: underline;
-    --bs-link-hover-color: #0a58ca;
+    --bs-link-hover-color: var(--ws-text-red);
     --bs-link-hover-color-rgb: 10, 88, 202;
     --bs-code-color: #d63384;
     --bs-highlight-color: #212529;
@@ -2158,7 +2158,7 @@ progress {
     --bs-table-bg: var(--bs-body-bg);
     --bs-table-border-color: var(--bs-border-color);
     --bs-table-accent-bg: transparent;
-    --bs-table-striped-color: var(--bs-emphasis-color);
+    --bs-table-striped-color: var(--bs-body-color);
     --bs-table-striped-bg: rgba(var(--bs-emphasis-color-rgb), 0.05);
     --bs-table-active-color: var(--bs-emphasis-color);
     --bs-table-active-bg: rgba(var(--bs-emphasis-color-rgb), 0.1);
@@ -2557,7 +2557,7 @@ progress {
 }
 
 .form-control-sm {
-    min-height: calc(1.5em + 1.125rem + calc(var(--bs-border-width) * 2));
+    height: 2.5rem;
     padding: .5rem .875rem;
     font-size: 0.85rem;
     border-radius: var(--bs-border-radius-sm)
@@ -4406,9 +4406,9 @@ fieldset:disabled .btn {
     --bs-nav-tabs-border-color: var(--bs-border-color);
     --bs-nav-tabs-border-radius: var(--bs-border-radius);
     --bs-nav-tabs-link-hover-border-color: var(--bs-secondary-bg) var(--bs-secondary-bg) var(--bs-border-color);
-    --bs-nav-tabs-link-active-color: var(--bs-emphasis-color);
+    --bs-nav-tabs-link-active-color: var(--ws-text-red);
     --bs-nav-tabs-link-active-bg: var(--bs-body-bg);
-    --bs-nav-tabs-link-active-border-color: var(--bs-border-color) var(--bs-border-color) var(--bs-body-bg);
+    --bs-nav-tabs-link-active-border-color: var(--ws-text-red) var(--ws-text-red) var(--bs-body-bg);
     border-bottom: var(--bs-nav-tabs-border-width) solid var(--bs-nav-tabs-border-color)
 }
 
@@ -4457,13 +4457,13 @@ fieldset:disabled .btn {
 .nav-underline {
     --bs-nav-underline-gap: 1rem;
     --bs-nav-underline-border-width: 0.125rem;
-    --bs-nav-underline-link-active-color: var(--bs-emphasis-color);
-    gap: var(--bs-nav-underline-gap)
+    --bs-nav-underline-link-active-color: var(--ws-text-red);
+    gap: var(--bs-nav-underline-gap);
+    font-size: 0.87rem;
+    
 }
 
 .nav-underline .nav-link {
-    padding-right: 0;
-    padding-left: 0;
     border-bottom: var(--bs-nav-underline-border-width) solid transparent
 }
 

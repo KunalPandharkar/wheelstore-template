@@ -282,16 +282,7 @@
 
                 </div>
 
-                <button class="carousel-control-prev" type="button" data-bs-target="#mobile-gallary"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#mobile-gallary"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+
             </div>
         </div>
 
@@ -447,47 +438,349 @@
                     </button>
 
                     <button type="button" class="btn border">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-share-fill red-text"
-                            viewBox="0 0 16 16">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
                             <path
-                                d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.5 2.5 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5" />
+                                d="M307 34.8c-11.5 5.1-19 16.6-19 29.2l0 64-112 0C78.8 128 0 206.8 0 304C0 417.3 81.5 467.9 100.2 478.1c2.5 1.4 5.3 1.9 8.1 1.9c10.9 0 19.7-8.9 19.7-19.7c0-7.5-4.3-14.4-9.8-19.5C108.8 431.9 96 414.4 96 384c0-53 43-96 96-96l96 0 0 64c0 12.6 7.4 24.1 19 29.2s25 3 34.4-5.4l160-144c6.7-6.1 10.6-14.7 10.6-23.8s-3.8-17.7-10.6-23.8l-160-144c-9.4-8.5-22.9-10.6-34.4-5.4z" />
                         </svg>
-
                     </button>
                 </div>
             </div>
 
-            <div class="container mt-4 shop-nav-tabs pb-2">
 
-                <div class="tabs-container  border-bottom ">
-                    <div class="d-flex overflow-auto gap-2"
-                        style="  scrollbar-width: thin;scrollbar-color: transparent transparent;">
-                        <a class="btn rounded-0  active" href="#overview">Shop Info</a>
-                        <a class="btn rounded-0  " href="#services">Service
-                            Rates</a>
-                        <a class="btn rounded-0 " href="#products">Products</a>
-                        <a class="btn rounded-0 ">Reviews</a>
-                    </div>
-                </div>
-
-
-
-            </div>
         </div>
 
-        <div class="shop-meta-info">
 
-            <div class="container">
+        <!-- Shop-Tabs -->
+        <div class="shop-tabs container mt-4 shop-nav-tabs pb-2" id="shop-info-tabs">
 
-                <!-- Scrollspy Sections -->
-                <section id="overview">
+            <ul class="nav nav-underline d-flex overflow-auto flex-nowrap border-bottom" id="myTab" role="tablist"
+                style=" scrollbar-width: thin;
+    scrollbar-color: transparent transparent;">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active text-nowrap" id="home-tab" data-bs-toggle="tab"
+                        data-bs-target="#overiew-tab-pane" type="button" role="tab" aria-controls="overiew-tab-pane"
+                        aria-selected="true">Shop Info</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link text-nowrap" id="profile-tab" data-bs-toggle="tab"
+                        data-bs-target="#services-tab-pane" type="button" role="tab" aria-controls="services-tab-pane"
+                        aria-selected="false">Services & Prices</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link text-nowrap" id="contact-tab" data-bs-toggle="tab"
+                        data-bs-target="#products-tab-pane" type="button" role="tab" aria-controls="products-tab-pane"
+                        aria-selected="false">Products</button>
+                </li>
 
-                    <div class="shop-info-section">
+                <!-- <li class="nav-item" role="presentation">
+                    <button class="nav-link text-nowrap" id="contact-tab" data-bs-toggle="tab"
+                        data-bs-target="#products-tab-pane" type="button" role="tab" aria-controls="products-tab-pane"
+                        aria-selected="false">Reviews</button>
+                </li> -->
+
+            </ul>
+
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="overiew-tab-pane" role="tabpanel" aria-labelledby="home-tab"
+                    tabindex="0">
+
+                    <div class="shop-info-section mt-3">
+
+                        <h5 class="heading ">Description</h5>
+                        <p class="mb-1 shop-address">
+                            KP Service Center is an authorized and reliable
+                            two-wheeler service
+                            center offering expert repairs, routine maintenance, and genuine
+                            parts
+                            replacement. Known for quality service and quick turnaround, it's
+                            the
+                            go-to choice for keeping your bike in top condition.
+                        </p>
+                        <hr>
+
+                        <h5 class="heading ">Type</h5>
+                        <p class="mb-1">
+                            <span
+                                class="badge shop-badge border border-danger red-text fw-medium rounded-1">Garage</span>
+                            <span class="badge shop-badge border border-danger red-text fw-medium rounded-1">Service
+                                Center</span>
+
+                        </p>
+                        <hr>
+
+
+                        <h5 class="heading ">Repair</h5>
+                        <p class="mb-1">
+                            <span class="badge shop-badge border border-danger red-text fw-medium rounded-1">2
+                                Wheeler</span>
+                            <span class="badge shop-badge border border-danger red-text fw-medium rounded-1">3
+                                Wheeler</span>
+                            <span class="badge shop-badge border border-danger red-text fw-medium rounded-1">2
+                                Wheeler</span>
+                            <span class="badge shop-badge border border-danger red-text fw-medium rounded-1">3
+                                Wheeler</span>
+                        </p>
+                        <hr>
+
+                        <h5 class="heading ">Brands</h5>
+                        <p class="mb-1">
+                            <span class="badge bg-black shop-badge border fw-medium rounded-1">Honda</span>
+                            <span class="badge bg-black shop-badge border fw-medium rounded-1">Bajaj</span>
+                            <span class="badge bg-black shop-badge border fw-medium rounded-1">Hero</span>
+
+                        </p>
+                        <hr>
+
+                        <h5 class="heading ">Contact</h5>
+                        <p class="mb-1">
+
+                            <button type="button" class="btn btn-success btn-contact">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z">
+                                    </path>
+                                </svg>
+                                7774843561
+                            </button>
+
+                            <button type="button" class="btn btn-success btn-contact">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z">
+                                    </path>
+                                </svg>
+                                9561601680
+                            </button>
+
+                            <button type="button" class="btn btn-success btn-contact">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-whatsapp" viewBox="0 0 16 16">
+                                    <path
+                                        d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232">
+                                    </path>
+                                </svg>
+                                9561601680
+                            </button>
+
+
+
+                            <button type="button" class="btn btn-primary btn-contact">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-envelope" viewBox="0 0 16 16">
+                                    <path
+                                        d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z">
+                                    </path>
+                                </svg>
+                                kpthebaa@gmail.com
+                            </button>
+
+                            <button type="button" class="btn btn-primary btn-contact">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-envelope" viewBox="0 0 16 16">
+                                    <path
+                                        d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z">
+                                    </path>
+                                </svg>
+                                kpthebaa@gmail.com
+                            </button>
+
+
+
+                        </p>
+                        <hr>
+
+                        <h5 class="heading ">Address</h5>
+                        <p class="mb-1 shop-address">
+                            Kunal Niwas, New Adarsh Colony, Purna, Dist. Parbhani 431511 Maharashtra, India
+                        <p>
+                            <a href="#" class="text-decoration-none d-flex">
+
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-cursor-fill"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M14.082 2.182a.5.5 0 0 1 .103.557L8.528 15.467a.5.5 0 0 1-.917-.007L5.57 10.694.803 8.652a.5.5 0 0 1-.006-.916l12.728-5.657a.5.5 0 0 1 .556.103z">
+                                    </path>
+                                </svg>
+
+                                Direction
+                            </a>
+                        </p>
+                        </p>
+                        <hr>
+                        <h5 class="heading ">Timings</h5>
+                        <table class="table table-bordered table-sm">
+                            <thead class="table-light">
+                                <tr>
+                                    <th class="fw-semibold">Day</th>
+                                    <th class="fw-semibold">Opening Time</th>
+                                    <th class="fw-semibold">Closing Time</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Monday</td>
+                                    <td>9:00 AM</td>
+                                    <td>7:00 PM</td>
+                                </tr>
+                                <tr>
+                                    <td>Tuesday</td>
+                                    <td>9:00 AM</td>
+                                    <td>7:00 PM</td>
+                                </tr>
+                                <tr>
+                                    <td>Wednesday</td>
+                                    <td>9:00 AM</td>
+                                    <td>7:00 PM</td>
+                                </tr>
+                                <tr>
+                                    <td>Thursday</td>
+                                    <td>9:00 AM</td>
+                                    <td>7:00 PM</td>
+                                </tr>
+                                <tr>
+                                    <td>Friday</td>
+                                    <td>9:00 AM</td>
+                                    <td>7:00 PM</td>
+                                </tr>
+                                <tr>
+                                    <td>Saturday</td>
+                                    <td>9:00 AM</td>
+                                    <td>5:00 PM</td>
+                                </tr>
+                                <tr>
+                                    <td>Sunday</td>
+                                    <td>Closed</td>
+                                    <td>Closed</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <hr>
+                        <h5 class="heading ">Social Media</h5>
+                        <button type="button " class="btn btn-outline-danger">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-instagram"
+                                viewBox="0 0 16 16">
+                                <path
+                                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334">
+                                </path>
+                            </svg>
+                            @kp_servicecenter
+                        </button>
+
+                        <button type="button" class="btn btn-outline-primary">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-facebook"
+                                viewBox="0 0 16 16">
+                                <path
+                                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951">
+                                </path>
+                            </svg>
+                            @kp_servicecenter
+                        </button>
+
+
+                        <button type="button" class="btn btn-outline-success">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-facebook"
+                                viewBox="0 0 16 16">
+                                <path
+                                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951">
+                                </path>
+                            </svg>
+                            @kp_servicecenter
+                        </button>
+
+                        <hr>
+
+                        <!-- Ratings and Reviews Section -->
+                       
+                            <h5 class="heading ">Ratings and Reviews</h5>
+
+                            <div class="row align-items-center mt-3">
+                                <!-- Left Side: Overall Rating -->
+                                <div class="col-4 text-center mb-md-0">
+                                    <div class="p-4 bg-light rounded">
+                                        <h2 class="fw-bold text-success mb-0">3.7 <i
+                                                class="bi bi-star-fill star-rating"></i></h2>
+                                        <p class="mb-0 text-muted fw-medium">GOOD</p>
+                                        <p class="text-muted">53 ratings</p>
+                                    </div>
+                                </div>
+
+                                <!-- Right Side: Ratings Breakdown -->
+                                <div class="col-8">
+
+                                    <div class="mb-2 d-flex align-items-center">
+                                        <span class="me-2 text-muted">5 star</span>
+                                        <div class="progress w-75 me-2" style="height: 15px;">
+                                            <div class="progress-bar bg-warning text-dark" role="progressbar"
+                                                style="width: 30%;" aria-valuenow="30" aria-valuemin="0"
+                                                aria-valuemax="100">30%</div>
+                                        </div>
+
+                                    </div>
+                                    <div class="mb-2 d-flex align-items-center">
+                                        <span class="me-2 text-muted">4 star</span>
+                                        <div class="progress w-75 me-2" style="height: 15px;">
+                                            <div class="progress-bar bg-warning text-dark" role="progressbar"
+                                                style="width: 70%;" aria-valuenow="30" aria-valuemin="0"
+                                                aria-valuemax="100">70%</div>
+                                        </div>
+
+                                    </div>
+                                    <div class="mb-2 d-flex align-items-center">
+                                        <span class="me-2 text-muted">3 star</span>
+                                        <div class="progress w-75 me-2" style="height: 15px;">
+                                            <div class="progress-bar bg-warning text-dark" role="progressbar"
+                                                style="width: 90%;" aria-valuenow="30" aria-valuemin="0"
+                                                aria-valuemax="100">90%</div>
+                                        </div>
+
+                                    </div>
+                                    <div class="mb-2 d-flex align-items-center">
+                                        <span class="me-2 text-muted">2 star</span>
+                                        <div class="progress w-75 me-2" style="height: 15px;">
+                                            <div class="progress-bar bg-warning text-dark" role="progressbar"
+                                                style="width: 30%;" aria-valuenow="30" aria-valuemin="0"
+                                                aria-valuemax="100">30%</div>
+                                        </div>
+
+                                    </div>
+                                    <div class="mb-2 d-flex align-items-center">
+                                        <span class="me-2 text-muted pe-1">1 star</span>
+                                        <div class="progress w-75 me-2" style="height: 15px;">
+                                            <div class="progress-bar bg-warning text-dark" role="progressbar"
+                                                style="width: 30%;" aria-valuenow="30" aria-valuemin="0"
+                                                aria-valuemax="100">30%</div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Single Review -->
+                            <hr class="my-4">
+                            <div class="d-flex align-items-start">
+                                <div class="me-3">
+                                    <i class="bi bi-person-circle fs-2 text-secondary"></i>
+                                </div>
+                                <div>
+                                    <h6 class="mb-1 fw-bold">faizanqureshi</h6>
+                                    <small class="text-muted">24 Jul 2024</small>
+                                    <p class="mt-2 mb-1">
+                                        The service was good, and I am satisfied with the overall experience. However,
+                                        some areas could be improved.
+                                    </p>
+                                    <span class="badge bg-success">5 <i class="bi bi-star-fill"></i></span>
+                                </div>
+                            </div>
+                        
+
 
 
 
                         <!-- Table Section -->
-                        <div class="table-container">
+                        <!-- <div class="table-container">
                             <table class="table table-bordered table-striped">
                                 <thead>
                                     <tr>
@@ -496,12 +789,6 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <!-- Basic Details -->
-                                    <!-- <tr>
-                                        <td>Shop Name</td>
-                                        <td>Krishna Narayan Two Wheeler Bajaj Service Center and Automobile Shop
-                                        </td>
-                                    </tr> -->
 
                                     <tr>
                                         <td>Description</td>
@@ -528,14 +815,10 @@
 
 
 
-                                    <!-- Location Details -->
-                                    <!-- <tr>
-                                        <td>Address</td>
-                                        <td>Kunal Niwas, New Adarsh Colony, Purna, Dist. Parbhani 431511
-                                            Maharashtra, India</td>
-                                    </tr> -->
 
-                                 
+
+
+
 
                                     <tr>
                                         <td>Phone</td>
@@ -553,14 +836,11 @@
                                     </tr>
 
 
-                                  
+
+                 
 
 
 
-                                    <!-- Contact Information -->
-
-
-                                   
                                     <tr>
                                         <td>Email</td>
                                         <td>
@@ -677,17 +957,6 @@
 
 
 
-                                    <!-- Services Offered -->
-                                    <!-- <tr>
-                                            <td>Services</td>
-                                            <td>
-                                                <ul class="mb-0">
-                                                    <li>Vehicle Repair</li>
-                                                    <li>Routine Maintenance</li>
-                                                    <li>Tire Replacement</li>
-                                                </ul>
-                                            </td>
-                                        </tr> -->
 
 
 
@@ -695,17 +964,18 @@
                                 </tbody>
 
                             </table>
-                        </div>
+                        </div> -->
+
+
+
+
+
 
                     </div>
 
-
-
-
-                </section>
-
-                <section id="services" class="tab-pane fade show active">
-
+                </div>
+                <div class="tab-pane fade" id="services-tab-pane" role="tabpanel" aria-labelledby="profile-tab"
+                    tabindex="0">
                     <div class="shop-info-section">
 
 
@@ -729,7 +999,9 @@
                                 <thead>
                                     <tr>
                                         <th>Service Name</th>
+
                                         <th>Price</th>
+                                        <th>Description</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -737,19 +1009,52 @@
                                     <tr>
                                         <td>Brake Repair</td>
                                         <td>₹1200</td>
+                                        <td>
+                                            Ensure your Honda bike runs smoothly and reliably with our comprehensive
+                                            Honda Bike Servicing. Our expert technicians specialize in servicing all
+                                            Honda models, delivering top-notch maintenance and care to keep your
+                                            bike performing at its best.
+                                        </td>
+
                                     </tr>
+
                                     <tr>
-                                        <td>Tire Replacement</td>
-                                        <td>₹2000</td>
+                                        <td>Brake Repair</td>
+                                        <td>₹1200</td>
+                                        <td>
+                                            Ensure your Honda bike runs smoothly and reliably with our comprehensive
+                                            Honda Bike Servicing. Our expert technicians specialize in servicing all
+                                            Honda models, delivering top-notch maintenance and care to keep your
+                                            bike performing at its best.
+                                        </td>
+
                                     </tr>
+
                                     <tr>
-                                        <td>Battery Replacement</td>
-                                        <td>₹1500</td>
+                                        <td>Brake Repair</td>
+                                        <td>₹1200</td>
+                                        <td>
+                                            Ensure your Honda bike runs smoothly and reliably with our comprehensive
+                                            Honda Bike Servicing. Our expert technicians specialize in servicing all
+                                            Honda models, delivering top-notch maintenance and care to keep your
+                                            bike performing at its best.
+                                        </td>
+
                                     </tr>
+
                                     <tr>
-                                        <td>Engine Diagnostics</td>
-                                        <td>₹1000</td>
+                                        <td>Brake Repair</td>
+                                        <td>₹1200</td>
+                                        <td>
+                                            Ensure your Honda bike runs smoothly and reliably with our comprehensive
+                                            Honda Bike Servicing. Our expert technicians specialize in servicing all
+                                            Honda models, delivering top-notch maintenance and care to keep your
+                                            bike performing at its best.
+                                        </td>
+
                                     </tr>
+
+
 
 
 
@@ -760,115 +1065,71 @@
                         </div>
 
                     </div>
-
-
-
-
-                </section>
-
-                <section id="products" class="tab-pane fade show active">
-
-                    <div class="shop-info-section">
-
-
-
-                        <!-- Table Section -->
-                        <div class="table-container">
-                            <div class="search-bar mt-3 mb-3" id="search-bar">
-                                <!-- Search Icon -->
-                                <span class="search-icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-search"
-                                        viewBox="0 0 16 16">
-                                        <path
-                                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
-                                    </svg>
-                                </span>
-                                <!-- Search Input Field -->
-                                <input type="text" class="form-control form-control-sm search-input"
-                                    placeholder="Search for Service" aria-label="Search" />
+                </div>
+                <div class="tab-pane fade" id="products-tab-pane" role="tabpanel" aria-labelledby="contact-tab"
+                    tabindex="0">
+                    <div class="search-bar mt-3 mb-3" id="search-bar">
+                        <!-- Search Icon -->
+                        <span class="search-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-search"
+                                viewBox="0 0 16 16">
+                                <path
+                                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                            </svg>
+                        </span>
+                        <!-- Search Input Field -->
+                        <input type="text" class="form-control form-control-sm search-input"
+                            placeholder="Search for Products" aria-label="Search" />
+                    </div>
+                    <div class="row row-cols-1 row-cols-md-2 g-4">
+                        <div class="col">
+                            <div class="card">
+                                <img src="..." class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This is a longer card with supporting text below as a natural
+                                        lead-in to additional content. This content is a little bit longer.</p>
+                                </div>
                             </div>
-                            <table class="table table-bordered table-striped">
-                                <thead>
-                                    <tr>
-                                        <th>Product Image</th>
-                                        <th>Product Name</th>
-                                        <th>Price</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-
-                                    <tr>
-                                        <td><img src="assets/images/png/bajaj.png" alt="Brake Repair" class="img-fluid"
-                                                style="height: 2rem;"></td>
-                                        <td>Brake Repair</td>
-                                        <td>
-                                            <p class="mb-1">₹1200</p>
-                                            <span class="badge red-color rounded-0">Get Quote</span>
-
-                                        </td>
-
-                                    </tr>
-
-                                    <tr>
-                                        <td><img src="assets/images/png/bajaj.png" alt="Brake Repair" class="img-fluid"
-                                                style="height: 2rem;"></td>
-                                        <td>Brake Repair</td>
-                                        <td>
-                                            <p class="mb-1">₹1200</p>
-                                            <span class="badge red-color rounded-0">Get Quote</span>
-
-                                        </td>
-
-                                    </tr>
-                                    <tr>
-                                        <td><img src="assets/images/png/bajaj.png" alt="Brake Repair" class="img-fluid"
-                                                style="height: 2rem;"></td>
-                                        <td>Brake Repair</td>
-                                        <td>
-                                            <p class="mb-1">₹1200</p>
-                                            <span class="badge red-color rounded-0">Get Quote</span>
-
-                                        </td>
-
-                                    </tr>
-                                    <tr>
-                                        <td><img src="assets/images/png/bajaj.png" alt="Brake Repair" class="img-fluid"
-                                                style="height: 2rem;"></td>
-                                        <td>Brake Repair</td>
-                                        <td>
-                                            <p class="mb-1">₹1200</p>
-                                            <span class="badge red-color rounded-0">Get Quote</span>
-
-                                        </td>
-
-                                    </tr>
-                                    <tr>
-                                        <td><img src="assets/images/png/bajaj.png" alt="Brake Repair" class="img-fluid"
-                                                style="height: 2rem;"></td>
-                                        <td>Brake Repair</td>
-                                        <td>
-                                            <p class="mb-1">₹1200</p>
-                                            <span class="badge red-color rounded-0">Get Quote</span>
-
-                                        </td>
-
-                                    </tr>
-
-
-
-
-                                </tbody>
-
-                            </table>
                         </div>
-
+                        <div class="col">
+                            <div class="card">
+                                <img src="..." class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This is a longer card with supporting text below as a natural
+                                        lead-in to additional content. This content is a little bit longer.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <img src="..." class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This is a longer card with supporting text below as a natural
+                                        lead-in to additional content.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <img src="..." class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This is a longer card with supporting text below as a natural
+                                        lead-in to additional content. This content is a little bit longer.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
-
-
-
-                </section>
+                </div>
+                <div class="tab-pane fade" id="disabled-tab-pane" role="tabpanel" aria-labelledby="disabled-tab"
+                    tabindex="0">...</div>
             </div>
+
+
         </div>
 
 
@@ -880,7 +1141,26 @@
 
 
 
+
+
         <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+        <script>
+            // Get the tabs container
+            const tabsContainer = document.getElementById("shop-info-tabs");
+
+            // Get the position of the tabs container relative to the viewport
+            const tabsOffsetTop = tabsContainer.offsetTop;
+
+            // Add scroll event listener
+            window.addEventListener("scroll", () => {
+                if (window.scrollY >= tabsOffsetTop) {
+                    tabsContainer.classList.add("sticky");
+                } else {
+                    tabsContainer.classList.remove("sticky");
+                }
+            });
+        </script>
 
 
 
