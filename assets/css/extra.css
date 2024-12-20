@@ -15,6 +15,8 @@ svg {
     width: 1.06rem;
 }
 
+
+
 .section {
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -35,6 +37,7 @@ svg {
 .nav-item.dropdown:hover .dropdown-menu {
     display: block;
     visibility: visible;
+    z-index: 1050;
     /* Ensure visibility */
 }
 
@@ -594,8 +597,68 @@ button {
     margin-top: 0.2rem;
 }
 
+.shop-description {
+    font-size: 0.85rem;
+}
+
+.total-reviews {
+    font-size: 0.75rem;
+}
+
+.single-review img {
+    height: 3rem;
+    width: 3rem;
+    object-fit: cover;
+}
+
+.single-review h6 {
+    font-size: 0.85rem;
+}
+
+.ratings-reviews .rating-bars {
+    justify-content: center;
+}
+
+.single-review .rating-badge {
+    width: 3rem;
+}
+
+.single-review small {
+    font-size: 0.7rem;
+}
+
+.add-review-btn svg {
+    height: 1.3rem;
+    width: 1.3rem;
+}
+
+.product-card h5 {
+    font-size: 0.9rem;
+}
+
+.product-card button {
+    font-size: 0.75rem;
+}
+
+.product-card {
+    cursor: pointer;
+}
+
+.product-card img {
+    height: 6rem;
+    width: 6rem;
+    object-fit: cover;
+}
 
 
+#modalImage {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin: 0 auto;
+}
 
 
 /* // Medium devices (tablets, 768px and up) */
@@ -765,7 +828,7 @@ button {
 
 
     .rating-badge {
-        font-size: 0.85rem;
+        font-size: 0.8rem;
     }
 
     .shop-info-section .shop-name {
@@ -790,8 +853,64 @@ button {
         font-size: 0.9rem;
     }
 
+    .shop-description {
+        font-size: 0.9rem;
+    }
+
+    .total-reviews {
+        font-size: 0.85rem;
+    }
+
+    .average-rating {
+        font-size: 1rem;
+    }
+
+    .ratings-reviews span {
+        font-size: 0.95rem;
+    }
+
+    .ratings-reviews .progress {
+        font-size: 0.8rem;
+    }
+
+    .single-review img {
+        height: 4rem;
+        width: 4rem;
+    }
 
 
+
+    .ratings-reviews .rating-bars {
+        justify-content: start;
+    }
+
+    .single-review .rating-badge {
+        width: 3.5rem;
+    }
+
+    .single-review small {
+        font-size: 0.8rem;
+    }
+
+    .border-lg-top-none {
+        border-top: 0 !important
+    }
+
+    .product-card {
+        border: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important
+    }
+
+    .product-card h5 {
+        font-size: 0.95rem;
+    }
+
+    .product-card .price {
+        font-size: 0.95rem;
+    }
+
+    .product-card button {
+        font-size: 0.85rem;
+    }
 
 
 
@@ -806,6 +925,11 @@ button {
     .homepage .carousel-item {
         height: 20rem;
     }
+
+    .single-review h6 {
+        font-size: 1.1rem;
+    }
+
 }
 
 /* // Large devices (desktops, 992px and up) */
@@ -922,6 +1046,10 @@ button {
     }
 
     .shop-info-section .table {
+        font-size: 0.95rem;
+    }
+
+    .shop-description {
         font-size: 0.95rem;
     }
 

@@ -4536,6 +4536,7 @@ fieldset:disabled .btn {
     transition: transform 0.3s ease-in-out;
     /* Smooth animation */
     will-change: transform;
+    z-index: 1050;
     /* Optimized for GPU rendering */
 }
 
@@ -5647,8 +5648,8 @@ fieldset:disabled .btn {
 
 .progress,
 .progress-stacked {
-    --bs-progress-height: 1rem;
-    --bs-progress-font-size: 0.75rem;
+    --bs-progress-height: 1.1rem;
+    --bs-progress-font-size: 0.7rem;
     --bs-progress-bg: var(--bs-secondary-bg);
     --bs-progress-border-radius: var(--bs-border-radius);
     --bs-progress-box-shadow: var(--bs-box-shadow-inset);
@@ -6219,7 +6220,7 @@ fieldset:disabled .btn {
 
 .modal {
     --bs-modal-zindex: 1055;
-    --bs-modal-width: 500px;
+    --bs-modal-width: 550px;
     --bs-modal-padding: 1rem;
     --bs-modal-margin: 0.5rem;
     --bs-modal-color: ;
