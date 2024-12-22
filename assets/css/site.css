@@ -40,7 +40,7 @@
     --bs-light: #f8f9fa;
     --bs-dark: #212529;
     --bs-primary-rgb: 13, 110, 253;
-    --bs-secondary-rgb: 108, 117, 125;
+    --bs-secondary-rgb: 81, 89, 108;
     --bs-success-rgb: 25, 135, 84;
     --bs-info-rgb: 13, 202, 240;
     --bs-warning-rgb: 255, 193, 7;
@@ -108,7 +108,7 @@
     --bs-border-color: rgb(207, 207, 207);
     --bs-border-color-translucent: rgba(0, 0, 0, 0.175);
     --bs-border-radius: 0.375rem;
-    --bs-border-radius-sm: 0.25rem;
+    --bs-border-radius-sm: 0.3125rem;
     --bs-border-radius-lg: 0.5rem;
     --bs-border-radius-xl: 1rem;
     --bs-border-radius-xxl: 2rem;
@@ -5527,7 +5527,7 @@ fieldset:disabled .btn {
     padding: var(--bs-badge-padding-y) var(--bs-badge-padding-x);
     font-size: var(--bs-badge-font-size);
     font-weight: var(--bs-badge-font-weight);
-    line-height: 1;
+    line-height: normal;
     color: var(--bs-badge-color);
     text-align: center;
     white-space: nowrap;
@@ -7156,7 +7156,8 @@ fieldset:disabled .btn {
 .offcanvas-sm,
 .offcanvas-xl,
 .offcanvas-xxl {
-    --bs-offcanvas-zindex: 1045;
+    --bs-offcanvas-zindex: 1100;
+    
     --bs-offcanvas-width: 400px;
     --bs-offcanvas-height: 30vh;
     --bs-offcanvas-padding-x: 1.2rem;
@@ -9465,7 +9466,7 @@ fieldset:disabled .btn {
 
 .text-secondary {
     --bs-text-opacity: 1;
-    color: rgba(var(--bs-secondary-rgb), var(--bs-text-opacity)) !important
+    color: rgba(var(--bs-secondary-rgb), var(--bs-text-opacity)) !important;
 }
 
 .text-success {
