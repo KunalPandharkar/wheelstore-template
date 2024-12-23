@@ -2643,7 +2643,7 @@ textarea.form-control-lg {
     display: block;
     width: 100%;
     padding: .375rem 2.25rem .375rem .75rem;
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-weight: 400;
     line-height: 1.5;
     color: var(--bs-body-color);
@@ -5648,8 +5648,8 @@ fieldset:disabled .btn {
 
 .progress,
 .progress-stacked {
-    --bs-progress-height: 1.1rem;
-    --bs-progress-font-size: 0.7rem;
+    --bs-progress-height: 0.9rem;
+    --bs-progress-font-size: 0.6rem;
     --bs-progress-bg: var(--bs-secondary-bg);
     --bs-progress-border-radius: var(--bs-border-radius);
     --bs-progress-box-shadow: var(--bs-box-shadow-inset);

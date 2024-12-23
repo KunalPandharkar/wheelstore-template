@@ -938,33 +938,33 @@
 
 
 
+    </main>
 
 
-
-        <script src="assets/js/bootstrap.bundle.min.js"></script>
-
-
-        <!-- Navbar toggle on scroll upward -->
-        <script>
-            let lastScroll = 0;
-            const navbar = document.getElementById("navbar");
-
-            window.addEventListener("scroll", () => {
-                const currentScroll = window.pageYOffset;
-
-                if (currentScroll > lastScroll && currentScroll > 100) {
-                    // Hide navbar on scroll down
-                    navbar.style.transform = "translateY(-100%)";
-                } else {
-                    // Show navbar on scroll up
-                    navbar.style.transform = "translateY(0)";
-                }
-
-                lastScroll = currentScroll;
-            });
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
 
 
-        </script>
+    <!-- Navbar toggle on scroll upward -->
+    <script>
+        let lastScroll = 0;
+        const navbar = document.getElementById("navbar");
+
+        window.addEventListener("scroll", () => {
+            const currentScroll = window.pageYOffset;
+
+            if (currentScroll > lastScroll && currentScroll > 100) {
+                // Hide navbar on scroll down
+                navbar.style.transform = "translateY(-100%)";
+            } else {
+                // Show navbar on scroll up
+                navbar.style.transform = "translateY(0)";
+            }
+
+            lastScroll = currentScroll;
+        });
+
+
+    </script>
 </body>
 
 </html>

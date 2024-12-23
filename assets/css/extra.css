@@ -100,7 +100,7 @@ svg {
 
 .search-input::placeholder {
     --bs-text-opacity: 1;
-    
+
 }
 
 
@@ -271,11 +271,6 @@ svg {
 
 
 
-.shop-card .bi-patch-check-fill,
-.shop-card .bi-star-fill {
-    height: 0.8rem;
-    width: 0.8rem;
-}
 
 .shop-badge {
     /* background-color: rgba(81, 89, 108, .1) !important; */
@@ -604,6 +599,12 @@ button {
     font-size: 0.85rem;
 }
 
+.bi-patch-check-fill {
+    height: 0.8rem;
+    width: 0.8rem;
+   
+}
+
 .total-reviews {
     font-size: 0.75rem;
 }
@@ -645,11 +646,15 @@ button {
     cursor: pointer;
 }
 
+
+
 .product-card img {
-    height: 6rem;
-    width: 6rem;
+    height: 7rem;
+    width: 7rem;
     object-fit: cover;
 }
+
+
 
 
 #modalImage {
@@ -716,9 +721,20 @@ button {
     left: 1rem;
 }
 
-.filter .offcanvas .nav-link{
+.filter .offcanvas .nav-link {
     font-size: 0.79rem;
 }
+
+.product-description{
+    font-size: 0.8rem;
+}
+
+.service-card button{
+    width: 100%;
+}
+
+
+
 
 /* // Medium devices (tablets, 600px and up) */
 @media (min-width: 600px) {
@@ -905,6 +921,10 @@ button {
         font-size: 0.8rem;
     }
 
+    .user-rating{
+        font-size: 1.2rem;
+    }
+
     .shop-info-section .shop-name {
         font-size: 1.2rem;
     }
@@ -944,6 +964,7 @@ button {
     }
 
     .ratings-reviews .progress {
+        --bs-progress-height: 1.1rem;
         font-size: 0.8rem;
     }
 
@@ -952,6 +973,10 @@ button {
         width: 4rem;
     }
 
+    .bi-patch-check-fill {
+        height: 1rem;
+        width: 1rem;
+    }
 
 
     .ratings-reviews .rating-bars {
@@ -984,7 +1009,13 @@ button {
         font-size: 0.85rem;
     }
 
+    .service-card button{
+         width: 20%;
+    }
 
+    .service-card .price{
+        font-size: 1rem;
+    }
 
 
 
@@ -1001,6 +1032,7 @@ button {
         font-size: 1.1rem;
     }
 
+    
 }
 
 /* // Large devices (desktops, 992px and up) */

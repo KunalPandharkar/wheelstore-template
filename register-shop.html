@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Development | Wheelstore</title>
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/site.css" />
+    <link rel="stylesheet" href="assets/css/extra.css" />
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <!-- Mobile Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top d-lg-none" id="navbar">
+            <div class="container">
+                <!-- Navbar Toggle for Mobile -->
+                <a class="navbar-toggler" data-bs-toggle="offcanvas" href="#MobileSidebar" role="button"
+                    aria-controls="MobileSidebar">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="#1C1C1C">
+                        <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                    </svg>
+                </a>
+
+                <!-- Logo -->
+                <a class="navbar-brand" href="#">
+                    <img src="assets/images/png/logo-no-background (1).png" loading="lazy" height="38"
+                        alt="Wheelstore Logo" class="me-2" />
+                </a>
+
+                <button class="btn btn-outline-primary rounded-circle p-2 lh-1 ms-auto" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-geo-alt-fill"
+                        viewBox="0 0 16 16">
+                        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6" />
+                    </svg>
+                </button>
+
+                <span class="badge red-color rounded-0 p-2 d-lg-none advertise">Advertise</span>
+            </div>
+        </nav>
+
+        <!-- Desktop Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light shadow d-none d-lg-block fixed-top">
+            <div class="container">
+                <!-- Navbar Toggle for Mobile -->
+                <a class="navbar-toggler" data-bs-toggle="offcanvas" href="#MobileSidebar" role="button"
+                    aria-controls="MobileSidebar">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="#1C1C1C">
+                        <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                    </svg>
+                </a>
+
+                <!-- Logo -->
+                <a class="navbar-brand" href="#">
+                    <img src="assets/images/png/logo-no-background (1).png" alt="Wheelstore Logo" height="40"
+                        class="me-2" />
+                </a>
+
+                <!-- Navbar Links -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto align-items-center">
+                        <!-- Home Link -->
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+
+                        <!-- Services Dropdown -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Find Nearby
+                            </a>
+
+                            <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                                <li><a class="dropdown-item" href="#">Garages</a></li>
+                                <li><a class="dropdown-item" href="#">Service Centers</a></li>
+                                <li><a class="dropdown-item" href="#">Showrooms</a></li>
+                                <li><a class="dropdown-item" href="#">Washing Centers</a></li>
+                                <li><a class="dropdown-item" href="#">Workshops</a></li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Automobile Shops</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">2nd-Hand Dealers</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Find Spare Parts</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-divider"></li>
+
+                        <!-- User Avatar -->
+                        <!-- <li class="nav-item dropdown">
+                            <a class="nav-link  d-flex align-items-center" href="#" id="userDropdown"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <div class="rounded-circle red-color text-white text-center avatar">
+                                    KP
+                                </div>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+                                <li><a class="dropdown-item" href="#">Profile</a></li>
+                                <li><a class="dropdown-item" href="#">Settings</a></li>
+                                <li><a class="dropdown-item" href="#">Logout</a></li>
+                            </ul>
+                        </li> -->
+
+                        <li class="nav-item">
+                            <div class="nav-link">
+                                <!-- Login Button -->
+                                <button class="btn btn-danger red-color btn-lg px-4" data-bs-toggle="modal"
+                                    data-bs-target="#signupModal">
+                                    Login / Sign Up
+                                </button>
+                            </div>
+                        </li>
+
+                        <!-- Location Button -->
+                        <li class="nav-item">
+                            <button class="btn btn-success me-2 d-flex align-items-center gap-1" type="button">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                    <path
+                                        d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10" />
+                                    <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+                                </svg>New Adarsh Colony, Purna 431511
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Mobile Sidebar -->
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="MobileSidebar" aria-labelledby="MobileSidebar"
+            style="width: 19rem">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+                    Welcome, Kunal Pandharkar
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body p-0">
+                <!-- List Group -->
+                <ul class="list-group">
+                    <li class="list-group-item active list-group-item-action d-flex align-items-center" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-house"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z" />
+                        </svg>
+                        <a class="text-white ms-2 text-decoration-none d-flex align-items-center justify-content-center"
+                            href="">
+                            Home
+                        </a>
+                    </li>
+                    <li class="list-group-item d-flex list-group-item-action align-items-center" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-person-circle"
+                            viewBox="0 0 16 16">
+                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                            <path fill-rule="evenodd"
+                                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
+                        </svg>
+                        <a class="black-text ms-2 text-decoration-none" href="">User Profile</a>
+                    </li>
+                    <li class="list-group-item d-flex list-group-item-action align-items-center" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                            <path
+                                d="M36.8 192l566.3 0c20.3 0 36.8-16.5 36.8-36.8c0-7.3-2.2-14.4-6.2-20.4L558.2 21.4C549.3 8 534.4 0 518.3 0L121.7 0c-16 0-31 8-39.9 21.4L6.2 134.7c-4 6.1-6.2 13.2-6.2 20.4C0 175.5 16.5 192 36.8 192zM64 224l0 160 0 80c0 26.5 21.5 48 48 48l224 0c26.5 0 48-21.5 48-48l0-80 0-160-64 0 0 160-192 0 0-160-64 0zm448 0l0 256c0 17.7 14.3 32 32 32s32-14.3 32-32l0-256-64 0z" />
+                        </svg>
+                        <a class="black-text ms-2 text-decoration-none" href="">Shop Account</a>
+                    </li>
+                    <li class="list-group-item d-flex list-group-item-action align-items-center" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-bookmark"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z" />
+                        </svg>
+                        <a class="black-text ms-2 text-decoration-none" href="">Saved Shops</a>
+                        <span class="badge bg-primary rounded-pill ms-auto">14</span>
+                    </li>
+
+                    <li class="list-group-item d-flex list-group-item-action align-items-center" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-building-add" viewBox="0 0 16 16">
+                            <path
+                                d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m.5-5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 1 0" />
+                            <path
+                                d="M2 1a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v6.5a.5.5 0 0 1-1 0V1H3v14h3v-2.5a.5.5 0 0 1 .5-.5H8v4H3a1 1 0 0 1-1-1z" />
+                            <path
+                                d="M4.5 2a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm3 0a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm3 0a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm-6 3a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm3 0a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm3 0a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm-6 3a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm3 0a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5z" />
+                        </svg>
+                        <a class="black-text ms-2 text-decoration-none" href="">Register Your Shop
+                        </a>
+                        <span class="badge red-color free-badge ms-auto rounded-0">FREE</span>
+                    </li>
+                    <li class="list-group-item d-flex list-group-item-action align-items-center" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-person-vcard"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M5 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4m4-2.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5M9 8a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4A.5.5 0 0 1 9 8m1 2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5" />
+                            <path
+                                d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2zM1 4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H8.96q.04-.245.04-.5C9 10.567 7.21 9 5 9c-2.086 0-3.8 1.398-3.984 3.181A1 1 0 0 1 1 12z" />
+                        </svg>
+                        <a class="black-text text-decoration-none ms-2" href="">About Us</a>
+                    </li>
+                    <li class="list-group-item d-flex list-group-item-action align-items-center" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-telephone"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
+                        </svg>
+                        <a class="black-text ms-2 text-decoration-none" href="">Contact Us</a>
+                    </li>
+                    <li class="list-group-item d-flex list-group-item-action align-items-center" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-box-arrow-right"
+                            viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0z" />
+                            <path fill-rule="evenodd"
+                                d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708z" />
+                        </svg>
+                        <a class="black-text ms-2 text-decoration-none" href="">Logout</a>
+                    </li>
+                    <li class="list-group-item d-flex list-group-item-action align-items-center" data-bs-toggle="modal"
+                        data-bs-target="#signupModal">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-box-arrow-in-left"
+                            viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M10 3.5a.5.5 0 0 0-.5-.5h-8a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-2a.5.5 0 0 1 1 0v2A1.5 1.5 0 0 1 9.5 14h-8A1.5 1.5 0 0 1 0 12.5v-9A1.5 1.5 0 0 1 1.5 2h8A1.5 1.5 0 0 1 11 3.5v2a.5.5 0 0 1-1 0z" />
+                            <path fill-rule="evenodd"
+                                d="M4.146 8.354a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H14.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708z" />
+                        </svg>
+                        <a class="black-text text-decoration-none ms-2">Login/Sign Up</a>
+                    </li>
+                </ul>
+                <!-- End List Group -->
+            </div>
+        </div>
+    </header>
+
+    <main style="padding-top: 56px">
+
+        <!-- <div class="container">
+            <div class="form-container">
+                <h2>Become a Partner</h2>
+
+                <ul class="nav nav-tabs justify-content-center" id="partnerTab" role="tablist">
+                    <li class="nav-item">
+                        <button class="nav-link active" id="owner-tab" data-bs-toggle="tab" data-bs-target="#owner"
+                            type="button" role="tab" aria-controls="owner" aria-selected="true">Owner Details</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link" id="shop-tab" data-bs-toggle="tab" data-bs-target="#shop" type="button"
+                            role="tab" aria-controls="shop" aria-selected="false">Shop Information</button>
+                    </li>
+                </ul>
+
+                <div class="tab-content" id="partnerTabContent">
+                  
+                    <div class="tab-pane fade show active" id="owner" role="tabpanel" aria-labelledby="owner-tab">
+                        <form id="ownerForm">
+                            <div class="form-group">
+                                <label for="ownerName" class="form-label">Owner Name *</label>
+                                <input type="text" class="form-control" id="ownerName"
+                                    placeholder="Enter owner's full name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="ownerContact" class="form-label">Contact Number *</label>
+                                <input type="tel" class="form-control" id="ownerContact"
+                                    placeholder="Enter contact number" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="ownerEmail" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="ownerEmail" placeholder="Enter email">
+                            </div>
+                            <div class="form-group">
+                                <label for="password" class="form-label">Password *</label>
+                                <input type="password" class="form-control" id="password" placeholder="Enter password"
+                                    required>
+                            </div>
+                            <div class="form-group">
+                                <label for="confirmPassword" class="form-label">Confirm Password *</label>
+                                <input type="password" class="form-control" id="confirmPassword"
+                                    placeholder="Re-enter password" required>
+                            </div>
+                            <div class="text-end">
+                                <button type="button" class="btn btn-primary" data-bs-target="#shop"
+                                    data-bs-toggle="tab">Next</button>
+                            </div>
+                        </form>
+                    </div>
+
+              
+                    <div class="tab-pane fade" id="shop" role="tabpanel" aria-labelledby="shop-tab">
+                        <form id="shopForm">
+                            <div class="form-group">
+                                <label for="shopName" class="form-label">Shop Name *</label>
+                                <input type="text" class="form-control" id="shopName" placeholder="Enter shop name"
+                                    required>
+                            </div>
+                            <div class="form-group">
+                                <label for="shopAddress" class="form-label">Address and Location *</label>
+                                <textarea class="form-control" id="shopAddress" rows="3"
+                                    placeholder="Enter shop address and location" required></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="shopContact" class="form-label">Shop Contact Info *</label>
+                                <input type="tel" class="form-control" id="shopContact"
+                                    placeholder="Enter shop contact info" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="brandName" class="form-label">Brand/Company Name *</label>
+                                <input type="text" class="form-control" id="brandName"
+                                    placeholder="Enter brand or company name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="authorized" class="form-label">Authorized *</label>
+                                <select class="form-control" id="authorized" required>
+                                    <option value="">Select</option>
+                                    <option value="authorized">Authorized</option>
+                                    <option value="not-authorized">Not Authorized</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="shopType" class="form-label">Shop Type *</label>
+                                <select class="form-control" id="shopType" required>
+                                    <option value="">Select shop type</option>
+                                    <option value="2wh">2 Wheeler</option>
+                                    <option value="3wh">3 Wheeler</option>
+                                    <option value="4wh">4 Wheeler</option>
+                                    <option value="4+wh">4+ Wheeler</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="text-end">
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+
+
+        <!-- <div class="container section">
+            <h2 class="heading">Register Your Shop</h2>
+            <p>This information will be displayed publicly once the shop is live.</p>
+
+
+            <ul class="nav nav-underline justify-content-center" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
+                        type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Shop
+                        Information</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane"
+                        type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Owner
+                        Details</button>
+                </li>
+
+
+            </ul>
+
+
+            <div class="tab-content shadow m-auto" id="myTabContent">
+                <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
+                    tabindex="0">
+                    <div class="shop-info-form p-4 ">
+                        <form id="shopForm">
+                            <div class="form-group">
+                                <label for="shopName" class="form-label">Shop Category <span
+                                        class="text-danger fw-bold">*</span></label>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2"
+                                        value="option2">
+                                    <label class="form-check-label" for="inlineCheckbox2">Automobile Shop</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1"
+                                        value="option1">
+                                    <label class="form-check-label" for="inlineCheckbox1">Garage</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2"
+                                        value="option2">
+                                    <label class="form-check-label" for="inlineCheckbox2">Service Center</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2"
+                                        value="option2">
+                                    <label class="form-check-label" for="inlineCheckbox2">Showroom</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2"
+                                        value="option2">
+                                    <label class="form-check-label" for="inlineCheckbox2">Workshops</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2"
+                                        value="option2">
+                                    <label class="form-check-label" for="inlineCheckbox2">Washing Centers</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2"
+                                        value="option2">
+                                    <label class="form-check-label" for="inlineCheckbox2">2nd-Hand Dealer</label>
+                                </div>
+
+
+                            </div>
+                            <div class="form-group">
+                                <label for="shopName" class="form-label">Shop Name <span
+                                        class="text-danger fw-bold">*</span></label>
+                                <input type="text" class="form-control" id="shopName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="shopAddress" class="form-label">Address and Location <span
+                                        class="text-danger fw-bold">*</span></label>
+                                <textarea class="form-control" id="shopAddress" rows="3" required></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="shopContact" class="form-label">Shop Mobile <span
+                                        class="text-danger fw-bold">*</span></label>
+                                <input type="number" class="form-control" id="shopContact" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="shopName" class="form-label">Shop Type <span
+                                        class="text-danger fw-bold">*</span></label>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2"
+                                        value="option2">
+                                    <label class="form-check-label" for="inlineCheckbox2">2 Wheeler</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1"
+                                        value="option1">
+                                    <label class="form-check-label" for="inlineCheckbox1">3 Wheeler</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2"
+                                        value="option2">
+                                    <label class="form-check-label" for="inlineCheckbox2">4 Wheeler</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2"
+                                        value="option2">
+                                    <label class="form-check-label" for="inlineCheckbox2">4+ Wheeler</label>
+                                </div>
+
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2"
+                                        value="option2">
+                                    <label class="form-check-label" for="inlineCheckbox2">Other</label>
+                                </div>
+
+
+
+
+                            </div>
+
+                            <div class="text-center mt-4">
+                                <button type="submit" class="btn w-25 btn-primary">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+                <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab"
+                    tabindex="0">
+                    <div class="owner-info-form p-4 ">
+                        <form id="shopForm">
+
+                            <div class="form-group">
+                                <label for="shopName" class="form-label">Owner Name <span
+                                        class="text-danger fw-bold">*</span></label>
+                                <input type="text" class="form-control" id="shopName" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="shopContact" class="form-label">Owner Mobile <span
+                                        class="text-danger fw-bold">*</span></label>
+                                <input type="number" class="form-control" id="shopContact" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="shopContact" class="form-label">Set Password <span
+                                        class="text-danger fw-bold">*</span></label>
+                                <input type="password" class="form-control" id="shopContact" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="shopContact" class="form-label">Confirm Password <span
+                                        class="text-danger fw-bold">*</span></label>
+                                <input type="password" class="form-control" id="shopContact" required>
+                            </div>
+
+
+
+
+
+                            <div class="text-end">
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div> -->
+
+        <div class="container section">
+            <div class="row g-5">
+                <div class="col-md-5 col-lg-4 order-md-last">
+                    <h4 class="d-flex justify-content-between align-items-center mb-3">
+                        <span class="text-primary">Your cart</span>
+                        <span class="badge bg-primary rounded-pill">3</span>
+                    </h4>
+                    <ul class="list-group mb-3">
+                        <li class="list-group-item d-flex justify-content-between lh-sm">
+                            <div>
+                                <h6 class="my-0">Product name</h6>
+                                <small class="text-body-secondary">Brief description</small>
+                            </div>
+                            <span class="text-body-secondary">$12</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between lh-sm">
+                            <div>
+                                <h6 class="my-0">Second product</h6>
+                                <small class="text-body-secondary">Brief description</small>
+                            </div>
+                            <span class="text-body-secondary">$8</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between lh-sm">
+                            <div>
+                                <h6 class="my-0">Third item</h6>
+                                <small class="text-body-secondary">Brief description</small>
+                            </div>
+                            <span class="text-body-secondary">$5</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between bg-body-tertiary">
+                            <div class="text-success">
+                                <h6 class="my-0">Promo code</h6>
+                                <small>EXAMPLECODE</small>
+                            </div>
+                            <span class="text-success">−$5</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between">
+                            <span>Total (USD)</span>
+                            <strong>$20</strong>
+                        </li>
+                    </ul>
+
+                    <form class="card p-2">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Promo code">
+                            <button type="submit" class="btn btn-secondary">Redeem</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-7 col-lg-8">
+                    <h4 class="mb-3">Billing address</h4>
+                    <form class="needs-validation" novalidate="">
+                        <div class="row g-3">
+                            <div class="col-sm-6">
+                                <label for="firstName" class="form-label">First name</label>
+                                <input type="text" class="form-control" id="firstName" placeholder="" value=""
+                                    required="">
+                                <div class="invalid-feedback">
+                                    Valid first name is required.
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6">
+                                <label for="lastName" class="form-label">Last name</label>
+                                <input type="text" class="form-control" id="lastName" placeholder="" value=""
+                                    required="">
+                                <div class="invalid-feedback">
+                                    Valid last name is required.
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <label for="username" class="form-label">Username</label>
+                                <div class="input-group has-validation">
+                                    <span class="input-group-text">@</span>
+                                    <input type="text" class="form-control" id="username" placeholder="Username"
+                                        required="">
+                                    <div class="invalid-feedback">
+                                        Your username is required.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <label for="email" class="form-label">Email <span
+                                        class="text-body-secondary">(Optional)</span></label>
+                                <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                                <div class="invalid-feedback">
+                                    Please enter a valid email address for shipping updates.
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <label for="address" class="form-label">Address</label>
+                                <input type="text" class="form-control" id="address" placeholder="1234 Main St"
+                                    required="">
+                                <div class="invalid-feedback">
+                                    Please enter your shipping address.
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <label for="address2" class="form-label">Address 2 <span
+                                        class="text-body-secondary">(Optional)</span></label>
+                                <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
+                            </div>
+
+                            <div class="col-md-5">
+                                <label for="country" class="form-label">Country</label>
+                                <select class="form-select" id="country" required="">
+                                    <option value="">Choose...</option>
+                                    <option>United States</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    Please select a valid country.
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <label for="state" class="form-label">State</label>
+                                <select class="form-select" id="state" required="">
+                                    <option value="">Choose...</option>
+                                    <option>California</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    Please provide a valid state.
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <label for="zip" class="form-label">Zip</label>
+                                <input type="text" class="form-control" id="zip" placeholder="" required="">
+                                <div class="invalid-feedback">
+                                    Zip code required.
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr class="my-4">
+
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="same-address">
+                            <label class="form-check-label" for="same-address">Shipping address is the same as my
+                                billing address</label>
+                        </div>
+
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="save-info">
+                            <label class="form-check-label" for="save-info">Save this information for next time</label>
+                        </div>
+
+                        <hr class="my-4">
+
+                        <h4 class="mb-3">Payment</h4>
+
+                        <div class="my-3">
+                            <div class="form-check">
+                                <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked=""
+                                    required="">
+                                <label class="form-check-label" for="credit">Credit card</label>
+                            </div>
+                            <div class="form-check">
+                                <input id="debit" name="paymentMethod" type="radio" class="form-check-input"
+                                    required="">
+                                <label class="form-check-label" for="debit">Debit card</label>
+                            </div>
+                            <div class="form-check">
+                                <input id="paypal" name="paymentMethod" type="radio" class="form-check-input"
+                                    required="">
+                                <label class="form-check-label" for="paypal">PayPal</label>
+                            </div>
+                        </div>
+
+                        <div class="row gy-3">
+                            <div class="col-md-6">
+                                <label for="cc-name" class="form-label">Name on card</label>
+                                <input type="text" class="form-control" id="cc-name" placeholder="" required="">
+                                <small class="text-body-secondary">Full name as displayed on card</small>
+                                <div class="invalid-feedback">
+                                    Name on card is required
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label for="cc-number" class="form-label">Credit card number</label>
+                                <input type="text" class="form-control" id="cc-number" placeholder="" required="">
+                                <div class="invalid-feedback">
+                                    Credit card number is required
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <label for="cc-expiration" class="form-label">Expiration</label>
+                                <input type="text" class="form-control" id="cc-expiration" placeholder="" required="">
+                                <div class="invalid-feedback">
+                                    Expiration date required
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <label for="cc-cvv" class="form-label">CVV</label>
+                                <input type="text" class="form-control" id="cc-cvv" placeholder="" required="">
+                                <div class="invalid-feedback">
+                                    Security code required
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr class="my-4">
+
+                        <button class="w-100 btn btn-primary btn-lg" type="submit">Continue to checkout</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+
+    <!-- Navbar toggle on scroll upward -->
+    <script>
+        let lastScroll = 0;
+        const navbar = document.getElementById("navbar");
+
+        window.addEventListener("scroll", () => {
+            const currentScroll = window.pageYOffset;
+
+            if (currentScroll > lastScroll && currentScroll > 100) {
+                // Hide navbar on scroll down
+                navbar.style.transform = "translateY(-100%)";
+            } else {
+                // Show navbar on scroll up
+                navbar.style.transform = "translateY(0)";
+            }
+
+            lastScroll = currentScroll;
+        });
+
+
+    </script>
+</body>
+
+</html>
