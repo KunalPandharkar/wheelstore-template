@@ -602,7 +602,7 @@ button {
 .bi-patch-check-fill {
     height: 0.8rem;
     width: 0.8rem;
-   
+
 }
 
 .total-reviews {
@@ -725,15 +725,44 @@ button {
     font-size: 0.79rem;
 }
 
-.product-description{
+.product-description {
     font-size: 0.8rem;
 }
 
-.service-card button{
+.service-card button {
     width: 100%;
 }
 
 
+
+.custom-multi-select {
+    position: relative;
+}
+
+.custom-multi-select .dropdown-menu {
+    max-height: 250px;
+    overflow-y: auto;
+    width: 100%;
+}
+
+.custom-multi-select .dropdown-toggle::after {
+    margin-left: 0.5rem;
+}
+
+.custom-multi-select .selected-text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block;
+}
+
+.custom-multi-select .dropdown-item input[type="checkbox"] {
+    margin-right: 0.5rem;
+}
+
+.register-shop-form .dropdown-toggle::after {
+    display: none !important;
+}
 
 
 /* // Medium devices (tablets, 600px and up) */
@@ -776,6 +805,10 @@ button {
     .heading {
         font-size: 1.1rem;
     }
+
+    .profile-info p{
+        font-size: 0.9rem;
+    } 
 
 
 
@@ -921,7 +954,7 @@ button {
         font-size: 0.8rem;
     }
 
-    .user-rating{
+    .user-rating {
         font-size: 1.2rem;
     }
 
@@ -1009,11 +1042,11 @@ button {
         font-size: 0.85rem;
     }
 
-    .service-card button{
-         width: 20%;
+    .service-card button {
+        width: 20%;
     }
 
-    .service-card .price{
+    .service-card .price {
         font-size: 1rem;
     }
 
@@ -1032,7 +1065,7 @@ button {
         font-size: 1.1rem;
     }
 
-    
+
 }
 
 /* // Large devices (desktops, 992px and up) */
@@ -1163,7 +1196,9 @@ button {
     .filter-items .badge {
         font-size: 0.875rem;
     }
-
+    .profile-info p{
+        font-size: 1rem;
+    } 
 
 
 }
