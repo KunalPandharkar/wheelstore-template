@@ -110,7 +110,7 @@
                             </a>
                             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
                                 <li><a class="dropdown-item" href="user-profile.html">Profile</a></li>
-                                <li><a class="dropdown-item" href="shop-profile.html">My Shops</a></li>
+                                <li><a class="dropdown-item" href="my-shops.html">My Shops</a></li>
                                 <li><a class="dropdown-item" href="#">Settings</a></li>
                                 <li><a class="dropdown-item" href="#">Logout</a></li>
                             </ul>
@@ -254,242 +254,153 @@
 
     </header>
 
+    <style>
+        .card {
+            height: 100%;
+        }
+    </style>
+
     <main style="padding-top: 56px">
 
 
-
-
-
-
-
-
-
-
-
-        <div class="user-profile container">
-            <!-- Profile Header -->
-            <div class="profile-header d-flex align-items-end">
-                <img src="assets/images/bhargav.avif" alt="Profile Photo" class="profile-photo">
-
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container hero-content">
+                <h1 class="">Register Your Shop on Wheelstore</h1>
+                <p>Step-by-step guide to getting your shop live on our platform. It's easy, fast, and free.</p>
             </div>
+        </section>
 
-            <!-- Profile Information Section -->
-            <div class="profile-info card mt-4 p-4 pb-3  shadow-sm border-0">
-                <div class="row align-items-center mt-1">
-                    <div class="col-md-8">
-                        <h4 class="heading">Kunal Yadav Pandharkar</h4>
-                        <p class="mb-1 fw-medium">7774843561</p>
-                        <p class="mb-1 fw-medium">johndoe@example.com</p>
-                        <p class="text-muted">Kunal Niwas, New Adarsh Colony, Purna, dist. Parbhani 431512</p>
-                    </div>
-                    <div class="col-md-4 text-md-end">
-                        <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#updateModal"><svg
-                                xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-pencil" viewBox="0 0 16 16">
-                                <path
-                                    d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325" />
-                            </svg> Edit
-                            Profile</button>
-                    </div>
-                </div>
-                <!-- Profile Stats -->
-                <div class="profile-stats mt-3   d-flex justify-content-center justify-content-sm-start gap-3">
-                    <div class="stat text-center">
-                        <p class="fw-bold mb-2">15</p>
-                        <p class="text-primary fw-medium">Saved Shops</p>
+        <!-- Steps Section -->
+        <div class="container my-4">
 
-                    </div>
-                    <div class="stat text-center">
-                        <p class="fw-bold mb-2">45</p>
-                        <p class="text-primary fw-medium">Total Reviews</p>
-
-                    </div>
-                    <div class="stat text-center">
-                        <p class="fw-bold mb-2">2023</p>
-                        <p class="text-primary fw-medium">Contributions</p>
-
-                    </div>
-
-                </div>
-
-
-            </div>
-
-        </div>
-
-        <div class="container">
-            <!-- Saved Shops Section -->
-            <div class="saved-shops mt-4">
-                <h2 class="heading">Saved Shops</h2>
-                <div class="shop-lists mt-3">
-                    <div class="row">
-
-                        <div class="col-12 col-sm-6 col-md-6 col-lg-4">
-                            <!-- Card -->
-
-                            <div class="card shop-card border-0 " style="margin-left: 0.05rem">
-                                <div class="" style="width: 100%; height: 150px; overflow: hidden;">
-                                    <img class="img-fluid rounded-2" src="assets/images/png/garage2.jpg"
-                                        alt="Card image cap"
-                                        style="width: 100%; height: 100%; object-fit: cover; border-top-left-radius: 0.25rem; border-bottom-left-radius: 0.25rem;">
-                                </div>
-                                <span class="card-pinned-top-start">
-                                    <span class="badge rating-badge bg-success me-2">4.4 ★</span>
-                                </span>
-
-                                <div class="card-body p-2">
-                                    <h3 class="card-title shop-card-title">
-                                        <a class="text-dark text-decoration-none" href="shop-info.html">Krishna
-                                            Narayan Two
-                                            Wheeler Bajaj
-                                            Service Center and
-                                            Automobile Shop
-                                            <svg xmlns="http://www.w3.org/2000/svg" fill="rgba(0, 128, 96, 1)"
-                                                class="bi bi-patch-check-fill" viewBox="0 0 16 16">
-                                                <path
-                                                    d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708" />
-                                            </svg>
-                                        </a>
-                                    </h3>
-                                    <p class="card-text shop-card-description d-flex flex-wrap gap-1">
-                                        <span class="badge shop-badge text-secondary  fw-medium rounded-1">Garage</span>
-                                        <span class="badge shop-badge text-secondary  fw-medium rounded-1">Service
-                                            Center</span>
-                                        <span class="badge shop-badge text-secondary  fw-medium fw-medium rounded-1">2
-                                            Wheeler</span>
-                                        <span class="badge shop-badge text-secondary  fw-medium fw-medium rounded-1">3
-                                            Wheeler</span>
-                                        <span class="badge shop-badge text-secondary  fw-medium fw-medium rounded-1">4
-                                            Wheeler</span>
-                                    </p>
-
-
-                                    <p class="card-text shop-card-description text-muted mb-0">
-                                        Kunal Niwas, New Adarsh Colony, Purna, Dist. Parbhani 431511
-                                        Maharashtra, India
-                                    </p>
-                                </div>
-
-                                <div class="card-footer p-2 pt-0">
-                                    <!-- <a class="badge  bg-success me-2 text-white text-decoration-none shop-card-description  fw-medium"
-                                href="#">Open till 6 PM</a> -->
-                                    <a class="badge border text-danger  text-decoration-none fw-medium" href="#">Opens
-                                        Tommorow 9.30AM</a>
-
-                                </div>
+            <h2 class="text-center mb-4">Follow These Steps</h2>
+            <div class="row g-4 steps-section">
+                <!-- Step 1 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="card shadow-sm text-center">
+                        <div class="card-body">
+                            <div class="step-icon bg-primary text-white rounded-circle mx-auto mb-3">
+                                1
                             </div>
-                            <!-- End Card -->
-
+                            <h5 class="card-title">Register Shop</h5>
+                            <p class="card-text">Fill out the <a href="register-shop.html">registration form</a> with
+                                your shop's basic details,
+                                including name, contact info, and location.</p>
                         </div>
-
-                        <div class="col-12 col-sm-6 col-md-6 col-lg-4">
-                            <!-- Card -->
-
-                            <div class="card shop-card border-0 " style="margin-left: 0.05rem">
-                                <div class="" style="width: 100%; height: 150px; overflow: hidden;">
-                                    <img class="img-fluid rounded-2" src="assets/images/png/garage2.jpg"
-                                        alt="Card image cap"
-                                        style="width: 100%; height: 100%; object-fit: cover; border-top-left-radius: 0.25rem; border-bottom-left-radius: 0.25rem;">
-                                </div>
-                                <span class="card-pinned-top-start">
-                                    <span class="badge rating-badge bg-success me-2">4.4 ★</span>
-                                </span>
-
-                                <div class="card-body p-2">
-                                    <h3 class="card-title shop-card-title">
-                                        <a class="text-dark text-decoration-none" href="shop-info.html">Krishna
-                                            Narayan Two
-                                            Wheeler Bajaj
-                                            Service Center and
-                                            Automobile Shop
-                                            <svg xmlns="http://www.w3.org/2000/svg" fill="rgba(0, 128, 96, 1)"
-                                                class="bi bi-patch-check-fill" viewBox="0 0 16 16">
-                                                <path
-                                                    d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708" />
-                                            </svg>
-                                        </a>
-                                    </h3>
-                                    <p class="card-text shop-card-description d-flex flex-wrap gap-1">
-                                        <span class="badge shop-badge text-secondary  fw-medium rounded-1">Garage</span>
-                                        <span class="badge shop-badge text-secondary  fw-medium rounded-1">Service
-                                            Center</span>
-                                        <span class="badge shop-badge text-secondary  fw-medium fw-medium rounded-1">2
-                                            Wheeler</span>
-                                        <span class="badge shop-badge text-secondary  fw-medium fw-medium rounded-1">3
-                                            Wheeler</span>
-                                        <span class="badge shop-badge text-secondary  fw-medium fw-medium rounded-1">4
-                                            Wheeler</span>
-                                    </p>
-
-
-                                    <p class="card-text shop-card-description text-muted mb-0">
-                                        Kunal Niwas, New Adarsh Colony, Purna, Dist. Parbhani 431511
-                                        Maharashtra, India
-                                    </p>
-                                </div>
-
-                                <div class="card-footer p-2 pt-0">
-                                    <!-- <a class="badge  bg-success me-2 text-white text-decoration-none shop-card-description  fw-medium"
-                                href="#">Open till 6 PM</a> -->
-                                    <a class="badge border text-danger  text-decoration-none fw-medium" href="#">Opens
-                                        Tommorow 9.30AM</a>
-
-                                </div>
+                    </div>
+                </div>
+                <!-- Step 2 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="card shadow-sm text-center">
+                        <div class="card-body">
+                            <div class="step-icon bg-primary text-white rounded-circle mx-auto mb-3">
+                                2
                             </div>
-                            <!-- End Card -->
-
+                            <h5 class="card-title">Verify OTP</h5>
+                            <p class="card-text">Enter the OTP sent to your mobile number to verify your shop
+                                registration.</p>
                         </div>
-
-
-
-
-
-
-
-
+                    </div>
+                </div>
+                <!-- Step 3 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="card shadow-sm text-center">
+                        <div class="card-body">
+                            <div class="step-icon bg-primary text-white rounded-circle mx-auto mb-3">
+                                3
+                            </div>
+                            <h5 class="card-title">Complete Profile</h5>
+                            <p class="card-text">Fill out your shop's profile with detailed information, including
+                                services, photos, and working hours.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Step 4 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="card shadow-sm text-center">
+                        <div class="card-body">
+                            <div class="step-icon bg-primary text-white rounded-circle mx-auto mb-3">
+                                4
+                            </div>
+                            <h5 class="card-title">Shop Verification</h5>
+                            <p class="card-text">Our team will verify your shop. Once approved, your shop will be live
+                                and visible to customers!</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
 
-
-        <!-- Update Profile Modal -->
-        <div class="modal fade" id="updateModal" tabindex="-1" aria-labelledby="updateModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="updateModalLabel">Update Profile</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <form>
-                            <div class="mb-3">
-                                <label for="name" class="form-label">Name</label>
-                                <input type="text" class="form-control" id="name" value="John Doe">
-                            </div>
-                            <div class="mb-3">
-                                <label for="email" class="form-label">Email</label>
-                                <input type="email" class="form-control" id="email" value="johndoe@example.com">
-                            </div>
-                            <div class="mb-3">
-                                <label for="phone" class="form-label">Phone</label>
-                                <input type="text" class="form-control" id="phone" value="+123 456 7890">
-                            </div>
-                            <div class="mb-3">
-                                <label for="address" class="form-label">Address</label>
-                                <textarea class="form-control" id="address"
-                                    rows="3">123 Main St, Anytown, USA</textarea>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save Changes</button>
+        <!-- Help Section -->
+        <section class="bg-light py-5 help-section">
+            <div class="container">
+                <h2 class="text-center mb-2 text-success">Need Help?</h2>
+                <div class="row justify-content-center">
+                    <div class="col-md-8 text-center">
+                        <p>If you face any issues during the registration process, feel free to reach out to us:</p>
                     </div>
                 </div>
+
+                <div class="row g-2">
+                    <!-- Call Now -->
+                    <div class="col-6 col-lg-4">
+                        <div class="card support-card p-2 ">
+
+                            <a type="button" class="btn text-primary">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-telephone-fill"
+                                    viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z">
+                                    </path>
+                                </svg>
+                                7774843561
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Email Us -->
+                    <div class="col-6 col-lg-4">
+                        <div class="card support-card p-2 ">
+
+
+
+                            <a type="button" class="btn text-primary" >
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-whatsapp" viewBox="0 0 16 16">
+                                    <path
+                                        d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232">
+                                    </path>
+                                </svg>
+                                9561601680
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Email Us -->
+                    <div class="col-12 col-lg-4">
+                        <div class="card support-card p-2 ">
+
+                            <a type="button" class="btn text-primary ">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-envelope"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z">
+                                    </path>
+                                </svg>
+                                kpthebaa@gmail.com
+                            </a>
+                        </div>
+                    </div>
+
+
+                </div>
+
             </div>
-        </div>
+        </section>
+
+
     </main>
 
 

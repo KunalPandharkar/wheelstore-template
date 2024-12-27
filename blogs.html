@@ -110,7 +110,7 @@
                             </a>
                             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
                                 <li><a class="dropdown-item" href="user-profile.html">Profile</a></li>
-                                <li><a class="dropdown-item" href="shop-profile.html">My Shops</a></li>
+                                <li><a class="dropdown-item" href="my-shops.html">My Shops</a></li>
                                 <li><a class="dropdown-item" href="#">Settings</a></li>
                                 <li><a class="dropdown-item" href="#">Logout</a></li>
                             </ul>
@@ -260,236 +260,157 @@
 
 
 
+        <style>
+            .blog-card {
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+                height: 100%;
+              
+            }
+
+            .blog-card:hover {
+                transform: translateY(-10px);
+                box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+            }
+
+            .blog-thumbnail {
+                height: 200px;
+                object-fit: cover;
+            }
+
+            .category-badge {
+                position: absolute;
+                bottom: 10px;
+                right: 10px;
+                background-color: rgba(0, 0, 0, 0.7);
+                color: #fff;
+                padding: 5px 10px;
+                font-size: 0.75rem;
+                border-radius: 5px;
+            }
+
+            .blog-meta {
+                font-size: 0.85rem;
+                color: #6c757d;
+            }
+        </style>
 
 
 
 
+        <div class="container mt-4">
 
 
-        <div class="user-profile container">
-            <!-- Profile Header -->
-            <div class="profile-header d-flex align-items-end">
-                <img src="assets/images/bhargav.avif" alt="Profile Photo" class="profile-photo">
-
+            <div class="nav-scroller py-1 mb-3 border-bottom">
+                <nav class="nav nav-underline justify-content-between">
+                    <a class="nav-item nav-link link-body-emphasis active" href="#">World</a>
+                    <a class="nav-item nav-link link-body-emphasis" href="#">U.S.</a>
+                    <a class="nav-item nav-link link-body-emphasis" href="#">Technology</a>
+                    <a class="nav-item nav-link link-body-emphasis" href="#">Design</a>
+                    <a class="nav-item nav-link link-body-emphasis" href="#">Culture</a>
+                    <a class="nav-item nav-link link-body-emphasis" href="#">Business</a>
+                    <a class="nav-item nav-link link-body-emphasis" href="#">Politics</a>
+                    <a class="nav-item nav-link link-body-emphasis" href="#">Opinion</a>
+                    <a class="nav-item nav-link link-body-emphasis" href="#">Science</a>
+                    <a class="nav-item nav-link link-body-emphasis" href="#">Health</a>
+                    <a class="nav-item nav-link link-body-emphasis" href="#">Style</a>
+                    <a class="nav-item nav-link link-body-emphasis" href="#">Travel</a>
+                </nav>
             </div>
-
-            <!-- Profile Information Section -->
-            <div class="profile-info card mt-4 p-4 pb-3  shadow-sm border-0">
-                <div class="row align-items-center mt-1">
-                    <div class="col-md-8">
-                        <h4 class="heading">Kunal Yadav Pandharkar</h4>
-                        <p class="mb-1 fw-medium">7774843561</p>
-                        <p class="mb-1 fw-medium">johndoe@example.com</p>
-                        <p class="text-muted">Kunal Niwas, New Adarsh Colony, Purna, dist. Parbhani 431512</p>
-                    </div>
-                    <div class="col-md-4 text-md-end">
-                        <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#updateModal"><svg
-                                xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-pencil" viewBox="0 0 16 16">
-                                <path
-                                    d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325" />
-                            </svg> Edit
-                            Profile</button>
-                    </div>
-                </div>
-                <!-- Profile Stats -->
-                <div class="profile-stats mt-3   d-flex justify-content-center justify-content-sm-start gap-3">
-                    <div class="stat text-center">
-                        <p class="fw-bold mb-2">15</p>
-                        <p class="text-primary fw-medium">Saved Shops</p>
-
-                    </div>
-                    <div class="stat text-center">
-                        <p class="fw-bold mb-2">45</p>
-                        <p class="text-primary fw-medium">Total Reviews</p>
-
-                    </div>
-                    <div class="stat text-center">
-                        <p class="fw-bold mb-2">2023</p>
-                        <p class="text-primary fw-medium">Contributions</p>
-
-                    </div>
-
-                </div>
-
-
-            </div>
-
         </div>
 
-        <div class="container">
-            <!-- Saved Shops Section -->
-            <div class="saved-shops mt-4">
-                <h2 class="heading">Saved Shops</h2>
-                <div class="shop-lists mt-3">
-                    <div class="row">
+        <!-- All Blogs Section -->
+        <section class="py-5 pt-2">
+            <div class="container">
+                <!-- Header -->
 
-                        <div class="col-12 col-sm-6 col-md-6 col-lg-4">
-                            <!-- Card -->
-
-                            <div class="card shop-card border-0 " style="margin-left: 0.05rem">
-                                <div class="" style="width: 100%; height: 150px; overflow: hidden;">
-                                    <img class="img-fluid rounded-2" src="assets/images/png/garage2.jpg"
-                                        alt="Card image cap"
-                                        style="width: 100%; height: 100%; object-fit: cover; border-top-left-radius: 0.25rem; border-bottom-left-radius: 0.25rem;">
-                                </div>
-                                <span class="card-pinned-top-start">
-                                    <span class="badge rating-badge bg-success me-2">4.4 ★</span>
-                                </span>
-
-                                <div class="card-body p-2">
-                                    <h3 class="card-title shop-card-title">
-                                        <a class="text-dark text-decoration-none" href="shop-info.html">Krishna
-                                            Narayan Two
-                                            Wheeler Bajaj
-                                            Service Center and
-                                            Automobile Shop
-                                            <svg xmlns="http://www.w3.org/2000/svg" fill="rgba(0, 128, 96, 1)"
-                                                class="bi bi-patch-check-fill" viewBox="0 0 16 16">
-                                                <path
-                                                    d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708" />
-                                            </svg>
-                                        </a>
-                                    </h3>
-                                    <p class="card-text shop-card-description d-flex flex-wrap gap-1">
-                                        <span class="badge shop-badge text-secondary  fw-medium rounded-1">Garage</span>
-                                        <span class="badge shop-badge text-secondary  fw-medium rounded-1">Service
-                                            Center</span>
-                                        <span class="badge shop-badge text-secondary  fw-medium fw-medium rounded-1">2
-                                            Wheeler</span>
-                                        <span class="badge shop-badge text-secondary  fw-medium fw-medium rounded-1">3
-                                            Wheeler</span>
-                                        <span class="badge shop-badge text-secondary  fw-medium fw-medium rounded-1">4
-                                            Wheeler</span>
-                                    </p>
-
-
-                                    <p class="card-text shop-card-description text-muted mb-0">
-                                        Kunal Niwas, New Adarsh Colony, Purna, Dist. Parbhani 431511
-                                        Maharashtra, India
-                                    </p>
-                                </div>
-
-                                <div class="card-footer p-2 pt-0">
-                                    <!-- <a class="badge  bg-success me-2 text-white text-decoration-none shop-card-description  fw-medium"
-                                href="#">Open till 6 PM</a> -->
-                                    <a class="badge border text-danger  text-decoration-none fw-medium" href="#">Opens
-                                        Tommorow 9.30AM</a>
-
-                                </div>
+                <!-- Blogs Grid -->
+                <div class="row g-3 g-lg-5">
+                    <!-- Blog Card -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card blog-card  shadow-sm">
+                            <div class="position-relative">
+                                <img src="assets/images/bhargav.avif" alt="Blog Thumbnail"
+                                    class="card-img-top blog-thumbnail">
+                                <span class="category-badge">Category</span>
                             </div>
-                            <!-- End Card -->
-
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold">How to Maintain Your Car Like a Pro</h5>
+                                <div class="blog-meta mb-2">
+                                    <span><i class="bi bi-person-fill"></i> John Doe</span> ·
+                                    <span><i class="bi bi-clock"></i> Dec 27, 2024</span> ·
+                                    <span><i class="bi bi-book"></i> 5 min read</span>
+                                </div>
+                                <p class="card-text text-muted">
+                                    Learn essential tips and tricks to keep your vehicle in top condition and save on
+                                    costly repairs.
+                                </p>
+                                <a href="/blog-detail" class="text-decoration-none text-primary fw-bold">
+                                    Read More >
+                                </a>
+                            </div>
                         </div>
-
-                        <div class="col-12 col-sm-6 col-md-6 col-lg-4">
-                            <!-- Card -->
-
-                            <div class="card shop-card border-0 " style="margin-left: 0.05rem">
-                                <div class="" style="width: 100%; height: 150px; overflow: hidden;">
-                                    <img class="img-fluid rounded-2" src="assets/images/png/garage2.jpg"
-                                        alt="Card image cap"
-                                        style="width: 100%; height: 100%; object-fit: cover; border-top-left-radius: 0.25rem; border-bottom-left-radius: 0.25rem;">
-                                </div>
-                                <span class="card-pinned-top-start">
-                                    <span class="badge rating-badge bg-success me-2">4.4 ★</span>
-                                </span>
-
-                                <div class="card-body p-2">
-                                    <h3 class="card-title shop-card-title">
-                                        <a class="text-dark text-decoration-none" href="shop-info.html">Krishna
-                                            Narayan Two
-                                            Wheeler Bajaj
-                                            Service Center and
-                                            Automobile Shop
-                                            <svg xmlns="http://www.w3.org/2000/svg" fill="rgba(0, 128, 96, 1)"
-                                                class="bi bi-patch-check-fill" viewBox="0 0 16 16">
-                                                <path
-                                                    d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708" />
-                                            </svg>
-                                        </a>
-                                    </h3>
-                                    <p class="card-text shop-card-description d-flex flex-wrap gap-1">
-                                        <span class="badge shop-badge text-secondary  fw-medium rounded-1">Garage</span>
-                                        <span class="badge shop-badge text-secondary  fw-medium rounded-1">Service
-                                            Center</span>
-                                        <span class="badge shop-badge text-secondary  fw-medium fw-medium rounded-1">2
-                                            Wheeler</span>
-                                        <span class="badge shop-badge text-secondary  fw-medium fw-medium rounded-1">3
-                                            Wheeler</span>
-                                        <span class="badge shop-badge text-secondary  fw-medium fw-medium rounded-1">4
-                                            Wheeler</span>
-                                    </p>
-
-
-                                    <p class="card-text shop-card-description text-muted mb-0">
-                                        Kunal Niwas, New Adarsh Colony, Purna, Dist. Parbhani 431511
-                                        Maharashtra, India
-                                    </p>
-                                </div>
-
-                                <div class="card-footer p-2 pt-0">
-                                    <!-- <a class="badge  bg-success me-2 text-white text-decoration-none shop-card-description  fw-medium"
-                                href="#">Open till 6 PM</a> -->
-                                    <a class="badge border text-danger  text-decoration-none fw-medium" href="#">Opens
-                                        Tommorow 9.30AM</a>
-
-                                </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card blog-card  shadow-sm">
+                            <div class="position-relative">
+                                <img src="assets/images/bhargav.avif" alt="Blog Thumbnail"
+                                    class="card-img-top blog-thumbnail">
+                                <span class="category-badge">Category</span>
                             </div>
-                            <!-- End Card -->
-
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold">How to Maintain Your Car Like a Pro</h5>
+                                <div class="blog-meta mb-2">
+                                    <span><i class="bi bi-person-fill"></i> John Doe</span> ·
+                                    <span><i class="bi bi-clock"></i> Dec 27, 2024</span> ·
+                                    <span><i class="bi bi-book"></i> 5 min read</span>
+                                </div>
+                                <p class="card-text text-muted">
+                                    Learn essential tips and tricks to keep your vehicle in top condition and save on
+                                    costly repairs.
+                                </p>
+                                <a href="/blog-detail" class="text-decoration-none text-primary fw-bold">
+                                    Read More >
+                                </a>
+                            </div>
                         </div>
-
-
-
-
-
-
-
-
                     </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card blog-card  shadow-sm">
+                            <div class="position-relative">
+                                <img src="assets/images/bhargav.avif" alt="Blog Thumbnail"
+                                    class="card-img-top blog-thumbnail">
+                                <span class="category-badge">Category</span>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold">How to Maintain Your Car Like a Pro</h5>
+                                <div class="blog-meta mb-2">
+                                    <span><i class="bi bi-person-fill"></i> John Doe</span> ·
+                                    <span><i class="bi bi-clock"></i> Dec 27, 2024</span> ·
+                                    <span><i class="bi bi-book"></i> 5 min read</span>
+                                </div>
+                                <p class="card-text text-muted">
+                                    Learn essential tips and tricks to keep your vehicle in top condition and save on
+                                    costly repairs.
+                                </p>
+                                <a href="/blog-detail" class="text-decoration-none text-primary fw-bold">
+                                    Read More >
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                  
                 </div>
+
             </div>
-        </div>
+        </section>
 
 
 
-        <!-- Update Profile Modal -->
-        <div class="modal fade" id="updateModal" tabindex="-1" aria-labelledby="updateModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="updateModalLabel">Update Profile</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <form>
-                            <div class="mb-3">
-                                <label for="name" class="form-label">Name</label>
-                                <input type="text" class="form-control" id="name" value="John Doe">
-                            </div>
-                            <div class="mb-3">
-                                <label for="email" class="form-label">Email</label>
-                                <input type="email" class="form-control" id="email" value="johndoe@example.com">
-                            </div>
-                            <div class="mb-3">
-                                <label for="phone" class="form-label">Phone</label>
-                                <input type="text" class="form-control" id="phone" value="+123 456 7890">
-                            </div>
-                            <div class="mb-3">
-                                <label for="address" class="form-label">Address</label>
-                                <textarea class="form-control" id="address"
-                                    rows="3">123 Main St, Anytown, USA</textarea>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save Changes</button>
-                    </div>
-                </div>
-            </div>
-        </div>
+
+
+
+
     </main>
 
 

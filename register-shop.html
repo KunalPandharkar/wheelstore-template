@@ -35,7 +35,8 @@
                         alt="Wheelstore Logo" class="me-2" />
                 </a>
 
-                <button class="btn btn-outline-primary rounded-circle p-2 lh-1 ms-auto" type="button">
+                <button class="btn btn-outline-primary rounded-circle p-2 lh-1 ms-auto" type="button"
+                    data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-geo-alt-fill"
                         viewBox="0 0 16 16">
                         <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6" />
@@ -78,8 +79,9 @@
                                 Find Nearby
                             </a>
 
-                            <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
-                                <li><a class="dropdown-item" href="#">Garages</a></li>
+                            <ul class="dropdown-menu gap-1 p-2 rounded-3 mx-0 shadow"
+                                aria-labelledby="servicesDropdown">
+                                <li><a class="dropdown-item  rounded-2 active" href="#">Garages</a></li>
                                 <li><a class="dropdown-item" href="#">Service Centers</a></li>
                                 <li><a class="dropdown-item" href="#">Showrooms</a></li>
                                 <li><a class="dropdown-item" href="#">Washing Centers</a></li>
@@ -99,33 +101,36 @@
                         <li class="nav-divider"></li>
 
                         <!-- User Avatar -->
-                        <!-- <li class="nav-item dropdown">
-                            <a class="nav-link  d-flex align-items-center" href="#" id="userDropdown"
-                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link  d-flex align-items-center" href="#" id="userDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
                                 <div class="rounded-circle red-color text-white text-center avatar">
                                     KP
                                 </div>
                             </a>
                             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
-                                <li><a class="dropdown-item" href="#">Profile</a></li>
+                                <li><a class="dropdown-item" href="user-profile.html">Profile</a></li>
+                                <li><a class="dropdown-item" href="my-shops.html">My Shops</a></li>
                                 <li><a class="dropdown-item" href="#">Settings</a></li>
                                 <li><a class="dropdown-item" href="#">Logout</a></li>
                             </ul>
-                        </li> -->
+                        </li>
 
-                        <li class="nav-item">
+                        <!-- <li class="nav-item">
                             <div class="nav-link">
-                                <!-- Login Button -->
+                           
                                 <button class="btn btn-danger red-color btn-lg px-4" data-bs-toggle="modal"
                                     data-bs-target="#signupModal">
                                     Login / Sign Up
                                 </button>
                             </div>
-                        </li>
+                        </li> -->
 
                         <!-- Location Button -->
                         <li class="nav-item">
-                            <button class="btn btn-success me-2 d-flex align-items-center gap-1" type="button">
+                            <button class="btn btn-success me-2 d-flex align-items-center gap-1" type="button"
+                                data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom"
+                                aria-controls="offcanvasBottom">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                     class="bi bi-geo-alt" viewBox="0 0 16 16">
                                     <path
@@ -198,7 +203,7 @@
                             <path
                                 d="M4.5 2a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm3 0a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm3 0a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm-6 3a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm3 0a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm3 0a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm-6 3a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm3 0a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5z" />
                         </svg>
-                        <a class="black-text ms-2 text-decoration-none" href="">Register Your Shop
+                        <a class="black-text ms-2 text-decoration-none" href="register-shop.html">Register Your Shop
                         </a>
                         <span class="badge red-color free-badge ms-auto rounded-0">FREE</span>
                     </li>
@@ -245,313 +250,169 @@
                 <!-- End List Group -->
             </div>
         </div>
+
+
     </header>
 
     <main style="padding-top: 56px">
 
-        <div class="container section mb-0">
-            <h4 class="heading ">Register Your Shop</h4>
-            <p class="text-muted">This information will be displayed publicly once the shop is live.</p>
-            <hr>
 
-        </div>
+        <div class="register-shop section">
+            <div class="container px-4 py-3">
+                <div class="row flex-lg-row-reverse align-items-center justify-content-center g-5 pt-0">
 
-        <div class="pb-4" style="background-color: #f8f9fa;">
+                    <div class="col-lg-6">
+                        <h1 class="fw-bold text-body-emphasis mb-3">
+                            Get Your Shop Page For <span class="red-text">Free</span>.
+                        </h1>
+                        <p class="lead">
+                            Get your shop online for free, showcase your services, and reach
+                            more customers
+                        </p>
 
-
-
-            <div class="container">
-
-                <form class="needs-validation register-shop-form" novalidate="">
-                    <div class="row g-3">
-
-
-                        <div class="col-sm-4">
-                            <label for="firstName" class="form-label fw-medium text-black">Shop Category</label>
-
-                            <!-- First Multi-Select -->
-                            <div class="custom-multi-select" data-multi-select>
-                                <button
-                                    class="form-select dropdown-toggle d-flex justify-content-between align-items-center"
-                                    type="button" data-bs-toggle="dropdown" data-bs-auto-close="false"
-                                    aria-expanded="false">
-                                    <span class="selected-text">Select options</span>
-                                </button>
-                                <ul class="dropdown-menu">
-                                    <li>
-                                        <label class="dropdown-item">
-                                            <input type="checkbox" value="Option 1A"> Garage
-                                        </label>
-                                    </li>
-                                    <li>
-                                        <label class="dropdown-item">
-                                            <input type="checkbox" value="Option 2A"> Service Center
-                                        </label>
-                                    </li>
-                                    <li>
-                                        <label class="dropdown-item">
-                                            <input type="checkbox" value="Option 3A"> Showroom
-                                        </label>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-
-
-                        <div class="col-sm-4">
-                            <label for="firstName" class="form-label fw-medium text-black">Vehicle Type</label>
-
-                            <!-- Second Multi-Select -->
-                            <div class="custom-multi-select" data-multi-select>
-                                <button
-                                    class="form-select dropdown-toggle d-flex justify-content-between align-items-center"
-                                    type="button" data-bs-toggle="dropdown" data-bs-auto-close="false"
-                                    aria-expanded="false">
-                                    <span class="selected-text">Select options</span>
-                                </button>
-                                <ul class="dropdown-menu">
-                                    <li>
-                                        <label class="dropdown-item">
-                                            <input type="checkbox" value="Option 1B"> 2-Wheeler
-                                        </label>
-                                    </li>
-                                    <li>
-                                        <label class="dropdown-item">
-                                            <input type="checkbox" value="Option 2B"> 3-Wheeler
-                                        </label>
-                                    </li>
-                                    <li>
-                                        <label class="dropdown-item">
-                                            <input type="checkbox" value="Option 3B"> 4-Wheeler
-                                        </label>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="col-md-4">
-                            <label for="country" class="form-label fw-medium">Shop Type</label>
-                            <select class="form-select" id="country" required="">
-                                <option value="">Choose...</option>
-                                <option>Authorized</option>
-                                <option>Not Authorized</option>
-                            </select>
-                            <div class="invalid-feedback">
-                                Please select a valid country.
-                            </div>
-                        </div>
-
-
-                        <div class="col-12">
-                            <label for="firstName" class="form-label fw-medium ">Shop name</label>
-                            <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
-                            <div class="invalid-feedback">
-                                Valid first name is required.
-                            </div>
-                        </div>
-
-
-
-                        <!-- <div class="col-sm-6">
-                        <label for="lastName" class="form-label">Last name</label>
-                        <input type="text" class="form-control" id="lastName" placeholder="" value=""
-                            required="">
-                        <div class="invalid-feedback">
-                            Valid last name is required.
-                        </div>
-                    </div>
-
-                    <div class="col-12">
-                        <label for="username" class="form-label">Username</label>
-                        <div class="input-group has-validation">
-                            <span class="input-group-text">@</span>
-                            <input type="text" class="form-control" id="username" placeholder="Username"
-                                required="">
-                            <div class="invalid-feedback">
-                                Your username is required.
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-12">
-                        <label for="email" class="form-label">Email <span
-                                class="text-body-secondary">(Optional)</span></label>
-                        <input type="email" class="form-control" id="email" placeholder="you@example.com">
-                        <div class="invalid-feedback">
-                            Please enter a valid email address for shipping updates.
-                        </div>
-                    </div>
-
-                    <div class="col-12">
-                        <label for="address" class="form-label">Address</label>
-                        <input type="text" class="form-control" id="address" placeholder="1234 Main St"
-                            required="">
-                        <div class="invalid-feedback">
-                            Please enter your shipping address.
-                        </div>
-                    </div>
-
-                    <div class="col-12">
-                        <label for="address2" class="form-label">Address 2 <span
-                                class="text-body-secondary">(Optional)</span></label>
-                        <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
-                    </div> -->
-
-                        <div class="col-md-4">
-                            <label for="country" class="form-label fw-medium">State</label>
-                            <select class="form-select" id="country" required="">
-                                <option value="">Choose...</option>
-                                <option>United States</option>
-                            </select>
-                            <div class="invalid-feedback">
-                                Please select a valid country.
-                            </div>
-                        </div>
-
-                        <div class="col-md-4">
-                            <label for="state" class="form-label fw-medium">City</label>
-                            <select class="form-select" id="state" required="">
-                                <option value="">Choose...</option>
-                                <option>California</option>
-                            </select>
-                            <div class="invalid-feedback">
-                                Please provide a valid state.
-                            </div>
-                        </div>
-
-                        <div class="col-md-4">
-                            <label for="zip" class="form-label fw-medium">Pincode</label>
-                            <input type="text" class="form-control" id="zip" placeholder="" required="">
-                            <div class="invalid-feedback">
-                                Zip code required.
-                            </div>
-                        </div>
-
-                        <div class="col-12">
-                            <label for="zip" class="form-label fw-medium">Address</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-
-                        </div>
-
-
-                        <div class="col-8 col-md-4">
-                            <label for="firstName" class="form-label fw-medium ">Owner Contact Number</label>
-                            <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
-                            <div class="invalid-feedback">
-                                Valid first name is required.
-                            </div>
-
-                        </div>
-
-                        <div class="col-4 col-md-4  d-flex align-items-center ">
-                            <button class="btn btn-primary btn-sm mt-4 " disabled>
-                                Send OTP
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                            <button type="button" class="btn btn-danger red-color px-4 me-md-2">
+                                Register Your Shop For Free
                             </button>
                         </div>
-
-                        <div class="col-12">
-                            <label for="firstName" class="form-label fw-medium "> We’ve sent a 6-digit OTP to your
-                                mobile number. Please enter it
-                                below.</label>
-
-
-
-                            <form id="otpForm">
-                                <div class="otp-input justify-content-start flex-wrap">
-                                    <input type="text" maxlength="1" class="form-control" required="">
-                                    <input type="text" maxlength="1" class="form-control" required="">
-                                    <input type="text" maxlength="1" class="form-control" required="">
-                                    <input type="text" maxlength="1" class="form-control" required="">
-                                    <input type="text" maxlength="1" class="form-control" required="">
-                                    <input type="text" maxlength="1" class="form-control" required="">
-                                </div>
-
-                            </form>
-                            <div class="mt-3">
-                                Didn’t receive the code? <a href="#" class="fw-medium">Resend OTP</a>
+                    </div>
+                    <div class="col-10 col-sm-8 col-lg-6 d-flex justify-content-center align-items-center">
+                        <div class="device-frame">
+                            <div class="screen">
+                                <img src="assets/images/WhatsApp Image 2024-11-06 at 13.46.06_1fe0adeb.jpg"
+                                    alt="Website Screenshot" class="screenshot" />
                             </div>
                         </div>
-
-
-
-
                     </div>
 
-                    <hr class="my-4">
-
-                    <div class="form-check">
-                        <input type="checkbox" class="form-check-input" id="same-address">
-                        <label class="form-check-label" for="same-address">By clicking register shop, you agree to
-                            the <a href="">terms and conditions</a>.</label>
-                    </div>
-
-
-
-                    <hr class="my-4">
-
-                    <!-- <h4 class="mb-3">Payment</h4>
-
-                <div class="my-3">
-                    <div class="form-check">
-                        <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked=""
-                            required="">
-                        <label class="form-check-label" for="credit">Credit card</label>
-                    </div>
-                    <div class="form-check">
-                        <input id="debit" name="paymentMethod" type="radio" class="form-check-input"
-                            required="">
-                        <label class="form-check-label" for="debit">Debit card</label>
-                    </div>
-                    <div class="form-check">
-                        <input id="paypal" name="paymentMethod" type="radio" class="form-check-input"
-                            required="">
-                        <label class="form-check-label" for="paypal">PayPal</label>
-                    </div>
                 </div>
-
-                <div class="row gy-3">
-                    <div class="col-md-6">
-                        <label for="cc-name" class="form-label">Name on card</label>
-                        <input type="text" class="form-control" id="cc-name" placeholder="" required="">
-                        <small class="text-body-secondary">Full name as displayed on card</small>
-                        <div class="invalid-feedback">
-                            Name on card is required
-                        </div>
-                    </div>
-
-                    <div class="col-md-6">
-                        <label for="cc-number" class="form-label">Credit card number</label>
-                        <input type="text" class="form-control" id="cc-number" placeholder="" required="">
-                        <div class="invalid-feedback">
-                            Credit card number is required
-                        </div>
-                    </div>
-
-                    <div class="col-md-3">
-                        <label for="cc-expiration" class="form-label">Expiration</label>
-                        <input type="text" class="form-control" id="cc-expiration" placeholder="" required="">
-                        <div class="invalid-feedback">
-                            Expiration date required
-                        </div>
-                    </div>
-
-                    <div class="col-md-3">
-                        <label for="cc-cvv" class="form-label">CVV</label>
-                        <input type="text" class="form-control" id="cc-cvv" placeholder="" required="">
-                        <div class="invalid-feedback">
-                            Security code required
-                        </div>
-                    </div>
-                </div>
-
-                <hr class="my-4"> -->
-                    <div class="">
-                        <button class="w-100 btn btn-success text-center" type="submit">Register My Shop</button>
-
-                    </div>
-                </form>
             </div>
         </div>
+
+        <section class="py-5 bg-light">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="fw-bold text-primary">Why Register Your Shop with <span
+                            class="text-success">Wheelstore?</span></h2>
+                    <p class="lead text-muted">Grow your business, reach more customers, and enhance your online presence.
+                    </p>
+                </div>
+                <div class="row gy-4">
+                    <!-- Benefit 1 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-body text-center">
+                                <div class="step-icon bg-primary text-white rounded-circle mx-auto mb-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-currency-rupee" viewBox="0 0 16 16">
+                                        <path d="M4 3.06h2.726c1.22 0 2.12.575 2.325 1.724H4v1.051h5.051C8.855 7.001 8 7.558 6.788 7.558H4v1.317L8.437 14h2.11L6.095 8.884h.855c2.316-.018 3.465-1.476 3.688-3.049H12V4.784h-1.345c-.08-.778-.357-1.335-.793-1.732H12V2H4z"/>
+                                      </svg>
+                                </div>
+                                <h5 class="card-title fw-semibold">Increase Your Visibility</h5>
+                                <p class="card-text text-muted">List your shop on our platform and reach thousands of
+                                    customers searching for services like yours.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Benefit 2 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-body text-center">
+                                <div class="step-icon bg-primary text-white rounded-circle mx-auto mb-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-currency-rupee" viewBox="0 0 16 16">
+                                        <path d="M4 3.06h2.726c1.22 0 2.12.575 2.325 1.724H4v1.051h5.051C8.855 7.001 8 7.558 6.788 7.558H4v1.317L8.437 14h2.11L6.095 8.884h.855c2.316-.018 3.465-1.476 3.688-3.049H12V4.784h-1.345c-.08-.778-.357-1.335-.793-1.732H12V2H4z"/>
+                                      </svg>
+                                </div>
+                                <h5 class="card-title fw-semibold">Connect with Local Customers</h5>
+                                <p class="card-text text-muted">Easily connect with customers nearby looking for
+                                    garages, service centers, and shops.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Benefit 3 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-body text-center">
+                                <div class="step-icon bg-primary text-white rounded-circle mx-auto mb-3">
+                                    4
+                                </div>
+                                <h5 class="card-title fw-semibold">Boost Your Revenue</h5>
+                                <p class="card-text text-muted">Get more customers and grow your revenue with targeted
+                                    marketing on our platform.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Benefit 4 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-body text-center">
+                                <div class="step-icon bg-primary text-white rounded-circle mx-auto mb-3">
+                                    4
+                                </div>
+                                <h5 class="card-title fw-semibold">Highlight Your Services</h5>
+                                <p class="card-text text-muted">Showcase your offerings, images, videos, reviews, and
+                                    ratings to attract more customers.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Benefit 5 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-body text-center">
+                                <div class="step-icon bg-primary text-white rounded-circle mx-auto mb-3">
+                                    4
+                                </div>
+                                <h5 class="card-title fw-semibold">Real-Time Updates</h5>
+                                <p class="card-text text-muted">Easily update your shop's details, services, and
+                                    promotions in real-time.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Benefit 6 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-body text-center">
+                                <div class="step-icon bg-primary text-white rounded-circle mx-auto mb-3">
+                                    4
+                                </div>
+                                <h5 class="card-title fw-semibold">Build Your Reputation</h5>
+                                <p class="card-text text-muted">Get verified and build trust with customers through
+                                    positive reviews and ratings.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-5">
+                    <a href="/register" class="btn btn-dark">Register Your Shop Now</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="stats">
+            <div class="container">
+                <div class="row text-center g-4">
+                    <div class="col-md-4">
+                        <div class="stat-item">
+                            <h3>50+</h3>
+                            <p>States & Cities Covered</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="stat-item">
+                            <h3>1M+</h3>
+                            <p>Total Shops Listed</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="stat-item">
+                            <h3>100K+</h3>
+                            <p>Happy Users</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
 
 
 
@@ -560,42 +421,346 @@
     </main>
 
 
+    <div class="b-example-divider"></div>
+
+    <footer class="">
+        <div class="footer container pt-5">
+            <div class="row">
+                <div class="col-md-3 col-lg-3 mb-5">
+                    <!-- Logo -->
+                    <a class="navbar-brand" href="#">
+                        <img src="assets/images/png/logo-no-background (1).png" loading="lazy" height="40"
+                            alt="Wheelstore Logo" class="me-2" />
+                    </a>
+                    <span class="d-block mt-4">
+                        <label for="selectLanguage" class="form-label selectLanguage">Choose language</label>
+                    </span>
+                    <div class="dropdown">
+                        <button class="btn btn-outline-danger red-text btn-sm dropdown-toggle language-btn"
+                            type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            English
+                        </button>
+                        <ul class="dropdown-menu" style="max-height: 200px; overflow-y: auto">
+                            <li><a class="dropdown-item red-text" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-6 col-sm  mb-5">
+                    <h5 class="heading ">Quick Links</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link p-0 text-body-secondary">Nearby Garages</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link p-0 text-body-secondary">Service Centers</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link p-0 text-body-secondary">Showrooms</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link p-0 text-body-secondary">Washing Centers</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link p-0 text-body-secondary">Spare Parts</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link p-0 text-body-secondary">2nd-Hand Dealers</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link p-0 text-body-secondary">Workshops
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-sm  mb-5">
+                    <h5 class="heading">Useful Links</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link p-0 text-body-secondary">Blogs</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link p-0 text-body-secondary">FAQs</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link p-0 text-body-secondary">Support
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                    class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5" />
+                                    <path fill-rule="evenodd"
+                                        d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z" />
+                                </svg></a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link p-0 text-body-secondary">Contact us</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link p-0 text-body-secondary">About us</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link p-0 text-body-secondary">Terms of use</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link p-0 text-body-secondary">Privacy policy
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                    class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5" />
+                                    <path fill-rule="evenodd"
+                                        d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z" />
+                                </svg></a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-sm  mb-5">
+                    <h5 class="heading">For Shop Owners</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link p-0 text-body-secondary">Register Your Shop</a>
+                        </li>
+
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link p-0 text-body-secondary">Pricing</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-sm  mb-5">
+                    <h5 class="heading">For Shop Owners</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link p-0 text-body-secondary">Register Your Shop</a>
+                        </li>
+
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link p-0 text-body-secondary">Pricing</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="d-flex flex-column flex-sm-row justify-content-between pt-4 border-top">
+                <p class="nav-link">© 2024 Wheelstore, Inc. All rights reserved.</p>
+                <ul class="list-unstyled d-flex">
+                    <li class="ms-3">
+                        <a class="link-body-emphasis" href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                                fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+                                <path
+                                    d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z" />
+                            </svg></a>
+                    </li>
+                    <li class="ms-3">
+                        <a class="link-body-emphasis" href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                                fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                            </svg></a>
+                    </li>
+                    <li class="ms-3">
+                        <a class="link-body-emphasis" href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                                fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                                <path
+                                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+                            </svg></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
     <script src="assets/js/bootstrap.bundle.min.js"></script>
-
     <script>
-        document.querySelectorAll('[data-multi-select]').forEach((multiSelect) => {
-            const dropdownButton = multiSelect.querySelector('.dropdown-toggle');
-            const dropdownItems = multiSelect.querySelectorAll('.dropdown-item input[type="checkbox"]');
-            const selectedText = multiSelect.querySelector('.selected-text');
-            const dropdownMenu = multiSelect.querySelector('.dropdown-menu');
-
-            dropdownItems.forEach((item) => {
-                item.addEventListener('change', () => {
-                    const selectedOptions = Array.from(dropdownItems)
-                        .filter((checkbox) => checkbox.checked)
-                        .map((checkbox) => checkbox.value);
-
-                    if (selectedOptions.length) {
-                        selectedText.textContent = selectedOptions.join(', ');
-                    } else {
-                        selectedText.textContent = 'Select options';
-                    }
-                });
+        // Auto-focus next input on keypress
+        const otpInputs = document.querySelectorAll(".otp-input input");
+        otpInputs.forEach((input, index) => {
+            input.addEventListener("input", () => {
+                if (input.value.length === 1 && index < otpInputs.length - 1) {
+                    otpInputs[index + 1].focus();
+                }
             });
 
-            // Close dropdown when clicking outside
-            document.addEventListener('click', (event) => {
-                const isClickInside = dropdownButton.contains(event.target) || dropdownMenu.contains(event.target);
-                if (!isClickInside) {
-                    dropdownButton.classList.remove('show');
-                    dropdownMenu.classList.remove('show');
+            input.addEventListener("keydown", (e) => {
+                if (e.key === "Backspace" && !input.value && index > 0) {
+                    otpInputs[index - 1].focus();
                 }
             });
         });
+
+        // Handle form submission
+        document.getElementById("otpForm").addEventListener("submit", (e) => {
+            e.preventDefault();
+            alert("OTP Verified Successfully!");
+        });
     </script>
-
-
-
 
     <!-- Navbar toggle on scroll upward -->
     <script>
@@ -615,8 +780,6 @@
 
             lastScroll = currentScroll;
         });
-
-
     </script>
 </body>
 

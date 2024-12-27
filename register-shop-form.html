@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Development | Wheelstore</title>
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/site.css" />
+    <link rel="stylesheet" href="assets/css/extra.css" />
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <!-- Mobile Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top d-lg-none" id="navbar">
+            <div class="container">
+                <!-- Navbar Toggle for Mobile -->
+                <a class="navbar-toggler" data-bs-toggle="offcanvas" href="#MobileSidebar" role="button"
+                    aria-controls="MobileSidebar">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="#1C1C1C">
+                        <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                    </svg>
+                </a>
+
+                <!-- Logo -->
+                <a class="navbar-brand" href="#">
+                    <img src="assets/images/png/logo-no-background (1).png" loading="lazy" height="38"
+                        alt="Wheelstore Logo" class="me-2" />
+                </a>
+
+                <button class="btn btn-outline-primary rounded-circle p-2 lh-1 ms-auto" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-geo-alt-fill"
+                        viewBox="0 0 16 16">
+                        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6" />
+                    </svg>
+                </button>
+
+                <span class="badge red-color rounded-0 p-2 d-lg-none advertise">Advertise</span>
+            </div>
+        </nav>
+
+        <!-- Desktop Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light shadow d-none d-lg-block fixed-top">
+            <div class="container">
+                <!-- Navbar Toggle for Mobile -->
+                <a class="navbar-toggler" data-bs-toggle="offcanvas" href="#MobileSidebar" role="button"
+                    aria-controls="MobileSidebar">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="#1C1C1C">
+                        <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                    </svg>
+                </a>
+
+                <!-- Logo -->
+                <a class="navbar-brand" href="#">
+                    <img src="assets/images/png/logo-no-background (1).png" alt="Wheelstore Logo" height="40"
+                        class="me-2" />
+                </a>
+
+                <!-- Navbar Links -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto align-items-center">
+                        <!-- Home Link -->
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+
+                        <!-- Services Dropdown -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Find Nearby
+                            </a>
+
+                            <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                                <li><a class="dropdown-item" href="#">Garages</a></li>
+                                <li><a class="dropdown-item" href="#">Service Centers</a></li>
+                                <li><a class="dropdown-item" href="#">Showrooms</a></li>
+                                <li><a class="dropdown-item" href="#">Washing Centers</a></li>
+                                <li><a class="dropdown-item" href="#">Workshops</a></li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Automobile Shops</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">2nd-Hand Dealers</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Find Spare Parts</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-divider"></li>
+
+                        <!-- User Avatar -->
+                        <!-- <li class="nav-item dropdown">
+                            <a class="nav-link  d-flex align-items-center" href="#" id="userDropdown"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <div class="rounded-circle red-color text-white text-center avatar">
+                                    KP
+                                </div>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+                                <li><a class="dropdown-item" href="#">Profile</a></li>
+                                <li><a class="dropdown-item" href="#">Settings</a></li>
+                                <li><a class="dropdown-item" href="#">Logout</a></li>
+                            </ul>
+                        </li> -->
+
+                        <li class="nav-item">
+                            <div class="nav-link">
+                                <!-- Login Button -->
+                                <button class="btn btn-danger red-color btn-lg px-4" data-bs-toggle="modal"
+                                    data-bs-target="#signupModal">
+                                    Login / Sign Up
+                                </button>
+                            </div>
+                        </li>
+
+                        <!-- Location Button -->
+                        <li class="nav-item">
+                            <button class="btn btn-success me-2 d-flex align-items-center gap-1" type="button">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                    <path
+                                        d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10" />
+                                    <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+                                </svg>New Adarsh Colony, Purna 431511
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Mobile Sidebar -->
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="MobileSidebar" aria-labelledby="MobileSidebar"
+            style="width: 19rem">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+                    Welcome, Kunal Pandharkar
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body p-0">
+                <!-- List Group -->
+                <ul class="list-group">
+                    <li class="list-group-item active list-group-item-action d-flex align-items-center" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-house"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z" />
+                        </svg>
+                        <a class="text-white ms-2 text-decoration-none d-flex align-items-center justify-content-center"
+                            href="">
+                            Home
+                        </a>
+                    </li>
+                    <li class="list-group-item d-flex list-group-item-action align-items-center" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-person-circle"
+                            viewBox="0 0 16 16">
+                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                            <path fill-rule="evenodd"
+                                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
+                        </svg>
+                        <a class="black-text ms-2 text-decoration-none" href="">User Profile</a>
+                    </li>
+                    <li class="list-group-item d-flex list-group-item-action align-items-center" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                            <path
+                                d="M36.8 192l566.3 0c20.3 0 36.8-16.5 36.8-36.8c0-7.3-2.2-14.4-6.2-20.4L558.2 21.4C549.3 8 534.4 0 518.3 0L121.7 0c-16 0-31 8-39.9 21.4L6.2 134.7c-4 6.1-6.2 13.2-6.2 20.4C0 175.5 16.5 192 36.8 192zM64 224l0 160 0 80c0 26.5 21.5 48 48 48l224 0c26.5 0 48-21.5 48-48l0-80 0-160-64 0 0 160-192 0 0-160-64 0zm448 0l0 256c0 17.7 14.3 32 32 32s32-14.3 32-32l0-256-64 0z" />
+                        </svg>
+                        <a class="black-text ms-2 text-decoration-none" href="">Shop Account</a>
+                    </li>
+                    <li class="list-group-item d-flex list-group-item-action align-items-center" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-bookmark"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z" />
+                        </svg>
+                        <a class="black-text ms-2 text-decoration-none" href="">Saved Shops</a>
+                        <span class="badge bg-primary rounded-pill ms-auto">14</span>
+                    </li>
+
+                    <li class="list-group-item d-flex list-group-item-action align-items-center" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-building-add" viewBox="0 0 16 16">
+                            <path
+                                d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m.5-5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 1 0" />
+                            <path
+                                d="M2 1a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v6.5a.5.5 0 0 1-1 0V1H3v14h3v-2.5a.5.5 0 0 1 .5-.5H8v4H3a1 1 0 0 1-1-1z" />
+                            <path
+                                d="M4.5 2a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm3 0a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm3 0a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm-6 3a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm3 0a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm3 0a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm-6 3a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm3 0a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5z" />
+                        </svg>
+                        <a class="black-text ms-2 text-decoration-none" href="">Register Your Shop
+                        </a>
+                        <span class="badge red-color free-badge ms-auto rounded-0">FREE</span>
+                    </li>
+                    <li class="list-group-item d-flex list-group-item-action align-items-center" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-person-vcard"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M5 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4m4-2.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5M9 8a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4A.5.5 0 0 1 9 8m1 2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5" />
+                            <path
+                                d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2zM1 4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H8.96q.04-.245.04-.5C9 10.567 7.21 9 5 9c-2.086 0-3.8 1.398-3.984 3.181A1 1 0 0 1 1 12z" />
+                        </svg>
+                        <a class="black-text text-decoration-none ms-2" href="">About Us</a>
+                    </li>
+                    <li class="list-group-item d-flex list-group-item-action align-items-center" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-telephone"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
+                        </svg>
+                        <a class="black-text ms-2 text-decoration-none" href="">Contact Us</a>
+                    </li>
+                    <li class="list-group-item d-flex list-group-item-action align-items-center" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-box-arrow-right"
+                            viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0z" />
+                            <path fill-rule="evenodd"
+                                d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708z" />
+                        </svg>
+                        <a class="black-text ms-2 text-decoration-none" href="">Logout</a>
+                    </li>
+                    <li class="list-group-item d-flex list-group-item-action align-items-center" data-bs-toggle="modal"
+                        data-bs-target="#signupModal">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-box-arrow-in-left"
+                            viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M10 3.5a.5.5 0 0 0-.5-.5h-8a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-2a.5.5 0 0 1 1 0v2A1.5 1.5 0 0 1 9.5 14h-8A1.5 1.5 0 0 1 0 12.5v-9A1.5 1.5 0 0 1 1.5 2h8A1.5 1.5 0 0 1 11 3.5v2a.5.5 0 0 1-1 0z" />
+                            <path fill-rule="evenodd"
+                                d="M4.146 8.354a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H14.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708z" />
+                        </svg>
+                        <a class="black-text text-decoration-none ms-2">Login/Sign Up</a>
+                    </li>
+                </ul>
+                <!-- End List Group -->
+            </div>
+        </div>
+    </header>
+
+    <main style="padding-top: 56px">
+
+        <div class="container section mb-0">
+            <h4 class="heading ">Register Your Shop</h4>
+            <p class="text-muted">This information will be displayed publicly once the shop is live.</p>
+            <hr>
+
+        </div>
+
+        <div class="pb-4" style="background-color: #f8f9fa;">
+
+
+
+            <div class="container">
+
+                <form class="needs-validation register-shop-form" novalidate="">
+                    <div class="row g-3">
+
+
+                        <div class="col-sm-4">
+                            <label for="firstName" class="form-label fw-medium text-black">Shop Category</label>
+
+                            <!-- First Multi-Select -->
+                            <div class="custom-multi-select" data-multi-select>
+                                <button
+                                    class="form-select dropdown-toggle d-flex justify-content-between align-items-center"
+                                    type="button" data-bs-toggle="dropdown" data-bs-auto-close="false"
+                                    aria-expanded="false">
+                                    <span class="selected-text">Select options</span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <label class="dropdown-item">
+                                            <input type="checkbox" value="Option 1A"> Garage
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="dropdown-item">
+                                            <input type="checkbox" value="Option 2A"> Service Center
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="dropdown-item">
+                                            <input type="checkbox" value="Option 3A"> Showroom
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+
+                        <div class="col-sm-4">
+                            <label for="firstName" class="form-label fw-medium text-black">Vehicle Type</label>
+
+                            <!-- Second Multi-Select -->
+                            <div class="custom-multi-select" data-multi-select>
+                                <button
+                                    class="form-select dropdown-toggle d-flex justify-content-between align-items-center"
+                                    type="button" data-bs-toggle="dropdown" data-bs-auto-close="false"
+                                    aria-expanded="false">
+                                    <span class="selected-text">Select options</span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <label class="dropdown-item">
+                                            <input type="checkbox" value="Option 1B"> 2-Wheeler
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="dropdown-item">
+                                            <input type="checkbox" value="Option 2B"> 3-Wheeler
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="dropdown-item">
+                                            <input type="checkbox" value="Option 3B"> 4-Wheeler
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <label for="country" class="form-label fw-medium">Shop Type</label>
+                            <select class="form-select" id="country" required="">
+                                <option value="">Choose...</option>
+                                <option>Authorized</option>
+                                <option>Not Authorized</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Please select a valid country.
+                            </div>
+                        </div>
+
+
+                        <div class="col-12">
+                            <label for="firstName" class="form-label fw-medium ">Shop name</label>
+                            <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+                            <div class="invalid-feedback">
+                                Valid first name is required.
+                            </div>
+                        </div>
+
+
+
+                        <!-- <div class="col-sm-6">
+                        <label for="lastName" class="form-label">Last name</label>
+                        <input type="text" class="form-control" id="lastName" placeholder="" value=""
+                            required="">
+                        <div class="invalid-feedback">
+                            Valid last name is required.
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <label for="username" class="form-label">Username</label>
+                        <div class="input-group has-validation">
+                            <span class="input-group-text">@</span>
+                            <input type="text" class="form-control" id="username" placeholder="Username"
+                                required="">
+                            <div class="invalid-feedback">
+                                Your username is required.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <label for="email" class="form-label">Email <span
+                                class="text-body-secondary">(Optional)</span></label>
+                        <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                        <div class="invalid-feedback">
+                            Please enter a valid email address for shipping updates.
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <label for="address" class="form-label">Address</label>
+                        <input type="text" class="form-control" id="address" placeholder="1234 Main St"
+                            required="">
+                        <div class="invalid-feedback">
+                            Please enter your shipping address.
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <label for="address2" class="form-label">Address 2 <span
+                                class="text-body-secondary">(Optional)</span></label>
+                        <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
+                    </div> -->
+
+                        <div class="col-md-4">
+                            <label for="country" class="form-label fw-medium">State</label>
+                            <select class="form-select" id="country" required="">
+                                <option value="">Choose...</option>
+                                <option>United States</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Please select a valid country.
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <label for="state" class="form-label fw-medium">City</label>
+                            <select class="form-select" id="state" required="">
+                                <option value="">Choose...</option>
+                                <option>California</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Please provide a valid state.
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <label for="zip" class="form-label fw-medium">Pincode</label>
+                            <input type="text" class="form-control" id="zip" placeholder="" required="">
+                            <div class="invalid-feedback">
+                                Zip code required.
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <label for="zip" class="form-label fw-medium">Address</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+
+                        </div>
+
+
+                        <div class="col-8 col-md-4">
+                            <label for="firstName" class="form-label fw-medium ">Owner Contact Number</label>
+                            <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+                            <div class="invalid-feedback">
+                                Valid first name is required.
+                            </div>
+
+                        </div>
+
+                        <div class="col-4 col-md-4  d-flex align-items-center ">
+                            <button class="btn btn-primary btn-sm mt-4 " disabled>
+                                Send OTP
+                            </button>
+                        </div>
+
+                        <div class="col-12">
+                            <label for="firstName" class="form-label fw-medium "> We’ve sent a 6-digit OTP to your
+                                mobile number. Please enter it
+                                below.</label>
+
+
+
+                            <form id="otpForm">
+                                <div class="otp-input justify-content-start flex-wrap">
+                                    <input type="text" maxlength="1" class="form-control" required="">
+                                    <input type="text" maxlength="1" class="form-control" required="">
+                                    <input type="text" maxlength="1" class="form-control" required="">
+                                    <input type="text" maxlength="1" class="form-control" required="">
+                                    <input type="text" maxlength="1" class="form-control" required="">
+                                    <input type="text" maxlength="1" class="form-control" required="">
+                                </div>
+
+                            </form>
+                            <div class="mt-3">
+                                Didn’t receive the code? <a href="#" class="fw-medium">Resend OTP</a>
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+
+                    <hr class="my-4">
+
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="same-address">
+                        <label class="form-check-label" for="same-address">By clicking register shop, you agree to
+                            the <a href="">terms and conditions</a>.</label>
+                    </div>
+
+
+
+                    <hr class="my-4">
+
+                    <!-- <h4 class="mb-3">Payment</h4>
+
+                <div class="my-3">
+                    <div class="form-check">
+                        <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked=""
+                            required="">
+                        <label class="form-check-label" for="credit">Credit card</label>
+                    </div>
+                    <div class="form-check">
+                        <input id="debit" name="paymentMethod" type="radio" class="form-check-input"
+                            required="">
+                        <label class="form-check-label" for="debit">Debit card</label>
+                    </div>
+                    <div class="form-check">
+                        <input id="paypal" name="paymentMethod" type="radio" class="form-check-input"
+                            required="">
+                        <label class="form-check-label" for="paypal">PayPal</label>
+                    </div>
+                </div>
+
+                <div class="row gy-3">
+                    <div class="col-md-6">
+                        <label for="cc-name" class="form-label">Name on card</label>
+                        <input type="text" class="form-control" id="cc-name" placeholder="" required="">
+                        <small class="text-body-secondary">Full name as displayed on card</small>
+                        <div class="invalid-feedback">
+                            Name on card is required
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <label for="cc-number" class="form-label">Credit card number</label>
+                        <input type="text" class="form-control" id="cc-number" placeholder="" required="">
+                        <div class="invalid-feedback">
+                            Credit card number is required
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <label for="cc-expiration" class="form-label">Expiration</label>
+                        <input type="text" class="form-control" id="cc-expiration" placeholder="" required="">
+                        <div class="invalid-feedback">
+                            Expiration date required
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <label for="cc-cvv" class="form-label">CVV</label>
+                        <input type="text" class="form-control" id="cc-cvv" placeholder="" required="">
+                        <div class="invalid-feedback">
+                            Security code required
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="my-4"> -->
+                    <div class="">
+                        <button class="w-100 btn btn-success text-center" type="submit">Register My Shop</button>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+
+
+
+    </main>
+
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        document.querySelectorAll('[data-multi-select]').forEach((multiSelect) => {
+            const dropdownButton = multiSelect.querySelector('.dropdown-toggle');
+            const dropdownItems = multiSelect.querySelectorAll('.dropdown-item input[type="checkbox"]');
+            const selectedText = multiSelect.querySelector('.selected-text');
+            const dropdownMenu = multiSelect.querySelector('.dropdown-menu');
+
+            dropdownItems.forEach((item) => {
+                item.addEventListener('change', () => {
+                    const selectedOptions = Array.from(dropdownItems)
+                        .filter((checkbox) => checkbox.checked)
+                        .map((checkbox) => checkbox.value);
+
+                    if (selectedOptions.length) {
+                        selectedText.textContent = selectedOptions.join(', ');
+                    } else {
+                        selectedText.textContent = 'Select options';
+                    }
+                });
+            });
+
+            // Close dropdown when clicking outside
+            document.addEventListener('click', (event) => {
+                const isClickInside = dropdownButton.contains(event.target) || dropdownMenu.contains(event.target);
+                if (!isClickInside) {
+                    dropdownButton.classList.remove('show');
+                    dropdownMenu.classList.remove('show');
+                }
+            });
+        });
+    </script>
+
+
+
+
+    <!-- Navbar toggle on scroll upward -->
+    <script>
+        let lastScroll = 0;
+        const navbar = document.getElementById("navbar");
+
+        window.addEventListener("scroll", () => {
+            const currentScroll = window.pageYOffset;
+
+            if (currentScroll > lastScroll && currentScroll > 100) {
+                // Hide navbar on scroll down
+                navbar.style.transform = "translateY(-100%)";
+            } else {
+                // Show navbar on scroll up
+                navbar.style.transform = "translateY(0)";
+            }
+
+            lastScroll = currentScroll;
+        });
+
+
+    </script>
+</body>
+
+</html>

@@ -764,6 +764,168 @@ button {
     display: none !important;
 }
 
+/* Profile Header Styles */
+.profile-header {
+    position: relative;
+    height: 200px;
+    background: url('../images/bhargav.avif') center center/cover;
+    color: white;
+}
+
+.profile-photo {
+    position: absolute;
+    bottom: -50px;
+    left: 20px;
+    border: 5px solid #fff;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    z-index: 1050;
+}
+
+.profile-info {
+    margin-top: 70px;
+}
+
+.dynamic-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.dynamic-row select,
+.dynamic-row input {
+    flex: 1;
+}
+
+.upload-container {
+    border: 2px dashed #ccc;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.upload-container:hover {
+    background-color: #f9f9f9;
+}
+
+.preview-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.image-preview {
+    position: relative;
+    width: 100px;
+    height: 100px;
+}
+
+.image-preview img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.remove-btn {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+
+.hero {
+    background: url('../images/bhargav.avif') no-repeat center center/cover;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+    position: relative;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero p {
+    margin-top: 15px;
+}
+
+.stats {
+    padding: 50px 20px;
+    background-color: #fff;
+    border-radius: 15px;
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stat-item h3 {
+    font-size: 2.5rem;
+    color: #007bff;
+}
+
+.stat-item p {
+    font-size: 1rem;
+    color: #6c757d;
+}
+
+.indian-flag {
+    height: 2rem;
+}
+
+.step-icon {
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    font-size: 24px;
+}
+
+.nav-scroller {
+    position: relative;
+    z-index: 2;
+    height: 2.75rem;
+    overflow-y: hidden;
+}
+
+.nav-scroller .nav {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-bottom: 1rem;
+    margin-top: -1px;
+    overflow-x: auto;
+    text-align: center;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+}
+
 
 /* // Medium devices (tablets, 600px and up) */
 @media (min-width: 600px) {
@@ -776,6 +938,10 @@ button {
 
     .toggle-btn {
         display: none;
+    }
+
+    .hero p {
+        font-size: 1rem;
     }
 }
 
@@ -806,9 +972,9 @@ button {
         font-size: 1.1rem;
     }
 
-    .profile-info p{
+    .profile-info p {
         font-size: 0.9rem;
-    } 
+    }
 
 
 
@@ -1050,9 +1216,18 @@ button {
         font-size: 1rem;
     }
 
+    /* Profile Header Styles */
+    .profile-header {
+        height: 300px;
+    }
 
+    .hero {
+        padding: 100px 20px;
+    }
 
-
+    .about-us p {
+        font-size: 1rem;
+    }
 }
 
 
@@ -1063,6 +1238,11 @@ button {
 
     .single-review h6 {
         font-size: 1.1rem;
+    }
+
+    .steps-section p,
+    .help-section p {
+        font-size: 0.9rem;
     }
 
 
@@ -1196,9 +1376,10 @@ button {
     .filter-items .badge {
         font-size: 0.875rem;
     }
-    .profile-info p{
+
+    .profile-info p {
         font-size: 1rem;
-    } 
+    }
 
 
 }
