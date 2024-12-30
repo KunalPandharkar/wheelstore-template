@@ -1245,6 +1245,10 @@ button {
         font-size: 0.9rem;
     }
 
+    .w-md-25 {
+        width: 25% !important
+    }
+
 
 }
 
